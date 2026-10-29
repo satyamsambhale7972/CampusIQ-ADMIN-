@@ -1,0 +1,404 @@
+/* ====================================================================
+   CAMPUSIQ — Precision Dual-Theme Collegiate Design System v6.0
+   Guarantees 100% visible brand identity, razor-sharp light mode,
+   and deep obsidian dark mode with zero blurry or invisible text.
+   ==================================================================== */
+
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
+  text-rendering: geometricPrecision !important;
+}
+
+.font-academic {
+  font-family: var(--font-sans) !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Custom Scrollbars */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+/* ====================================================================
+   1. UNIVERSAL HIGH-CONTRAST LIGHT MODE ARCHITECTURE
+   ==================================================================== */
+
+body:not(.dark-theme),
+html:not(.dark) body {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+body:not(.dark-theme) main {
+  background-color: #F8FAFC !important;
+}
+
+/* Headings in Light Mode */
+body:not(.dark-theme) main h1,
+body:not(.dark-theme) main h2,
+body:not(.dark-theme) main h3,
+body:not(.dark-theme) main h4,
+body:not(.dark-theme) main h5 {
+  color: #0F172A !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.015em;
+}
+
+/* Paragraphs & Text in Light Mode */
+body:not(.dark-theme) main p,
+body:not(.dark-theme) main label,
+body:not(.dark-theme) main li {
+  color: #1E293B;
+  font-weight: 600;
+}
+
+/* Card Surfaces in Light Mode */
+body:not(.dark-theme) main .bg-white,
+body:not(.dark-theme) header.bg-white {
+  background-color: #FFFFFF !important;
+  border-color: #CBD5E1 !important;
+  box-shadow: 0 1px 4px 0 rgba(15, 23, 42, 0.08) !important;
+  color: #0F172A !important;
+}
+
+/* Tables in Light Mode */
+body:not(.dark-theme) main table th {
+  background-color: #E2E8F0 !important;
+  color: #0F172A !important;
+  font-weight: 900 !important;
+  border-bottom: 2px solid #94A3B8 !important;
+  font-size: 11px !important;
+  letter-spacing: 0.04em;
+}
+
+body:not(.dark-theme) main table td {
+  color: #0F172A !important;
+  font-weight: 700 !important;
+  border-bottom: 1px solid #CBD5E1 !important;
+}
+
+body:not(.dark-theme) main table tr:hover td {
+  background-color: #F1F5F9 !important;
+}
+
+/* Form Inputs in Light Mode */
+body:not(.dark-theme) main input:not([type="checkbox"]):not([type="radio"]),
+body:not(.dark-theme) main select,
+body:not(.dark-theme) main textarea {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1.5px solid #94A3B8 !important;
+  font-weight: 700 !important;
+}
+
+body:not(.dark-theme) main input:focus,
+body:not(.dark-theme) main select:focus,
+body:not(.dark-theme) main textarea:focus {
+  border-color: #1D4ED8 !important;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15) !important;
+}
+
+/* Modals & Drawers in Light Mode */
+body:not(.dark-theme) #student-profile-drawer > div,
+body:not(.dark-theme) #admin-edit-student-modal > div,
+body:not(.dark-theme) #admin-direct-notice-modal > div,
+body:not(.dark-theme) #admin-resolve-ticket-modal > div,
+body:not(.dark-theme) #nexora-right-drawer {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
+/* Light Mode Component Rules */
+body:not(.dark-theme) .dept-attendance-title {
+  color: #0F172A !important;
+  font-weight: 900 !important;
+}
+
+body:not(.dark-theme) .notice-title {
+  color: #0F172A !important;
+  font-weight: 900 !important;
+}
+
+body:not(.dark-theme) .notice-summary-text {
+  color: #1E293B !important;
+  font-weight: 600 !important;
+}
+
+body:not(.dark-theme) .notice-meta-date,
+body:not(.dark-theme) .notice-meta-line {
+  color: #475569 !important;
+  font-weight: 700 !important;
+}
+
+body:not(.dark-theme) .ticket-subject {
+  color: #0F172A !important;
+  font-weight: 900 !important;
+}
+
+body:not(.dark-theme) .ticket-message-box {
+  background-color: #F1F5F9 !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+  font-weight: 600 !important;
+}
+
+body:not(.dark-theme) .ticket-meta {
+  color: #475569 !important;
+  border-color: #E2E8F0 !important;
+  font-weight: 700 !important;
+}
+
+body:not(.dark-theme) .student-highlight {
+  color: #0F172A !important;
+}
+
+body:not(.dark-theme) .faculty-name {
+  color: #0F172A !important;
+  font-weight: 900 !important;
+}
+
+body:not(.dark-theme) .faculty-email {
+  color: #1D4ED8 !important;
+  font-weight: 800 !important;
+}
+
+body:not(.dark-theme) .faculty-dept,
+body:not(.dark-theme) .faculty-lectures,
+body:not(.dark-theme) .faculty-hours {
+  color: #0F172A !important;
+}
+
+
+/* ====================================================================
+   2. PURE OBSIDIAN DARK MODE ARCHITECTURE (Crystal-Clear White Text)
+   ==================================================================== */
+
+.dark-theme body,
+html.dark body {
+  background-color: #070D19 !important;
+  color: #F8FAFC !important;
+}
+
+.dark-theme main,
+html.dark main {
+  background-color: #070D19 !important;
+}
+
+.dark-theme .bg-white,
+html.dark .bg-white,
+.dark-theme .bg-slate-800,
+html.dark .bg-slate-800 {
+  background-color: #0F172A !important;
+  border-color: #1E293B !important;
+  color: #F8FAFC !important;
+}
+
+.dark-theme header,
+html.dark header {
+  background-color: #081225 !important;
+  border-color: #1E293B !important;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5 {
+  color: #FFFFFF !important;
+}
+
+.dark-theme p,
+html.dark p,
+.dark-theme label,
+html.dark label {
+  color: #CBD5E1 !important;
+}
+
+/* Tables in Dark Mode */
+.dark-theme table th,
+html.dark table th {
+  background-color: #0B1325 !important;
+  color: #E2E8F0 !important;
+  border-color: #1E293B !important;
+}
+
+.dark-theme table td,
+html.dark table td {
+  color: #E2E8F0 !important;
+  border-color: #1E293B !important;
+}
+
+.dark-theme table tr:hover td,
+html.dark table tr:hover td {
+  background-color: #0F1B33 !important;
+}
+
+/* Form Inputs in Dark Mode */
+.dark-theme input:not([type="checkbox"]):not([type="radio"]),
+.dark-theme select,
+.dark-theme textarea,
+html.dark input:not([type="checkbox"]):not([type="radio"]),
+html.dark select,
+html.dark textarea {
+  background-color: #0B1325 !important;
+  color: #FFFFFF !important;
+  border-color: #334155 !important;
+}
+
+/* Modals & Drawers in Dark Mode */
+.dark-theme #student-profile-drawer > div,
+.dark-theme #admin-edit-student-modal > div,
+.dark-theme #admin-direct-notice-modal > div,
+.dark-theme #admin-resolve-ticket-modal > div,
+.dark-theme #nexora-right-drawer,
+html.dark #student-profile-drawer > div,
+html.dark #admin-edit-student-modal > div,
+html.dark #admin-direct-notice-modal > div,
+html.dark #admin-resolve-ticket-modal > div,
+html.dark #nexora-right-drawer {
+  background-color: #0B1325 !important;
+  color: #FFFFFF !important;
+  border-color: #1E293B !important;
+}
+
+/* Dark Mode Component Rules */
+.dark-theme .dept-attendance-title,
+html.dark .dept-attendance-title {
+  color: #FFFFFF !important;
+  font-weight: 900 !important;
+}
+
+.dark-theme .notice-title,
+html.dark .notice-title {
+  color: #FFFFFF !important;
+  font-weight: 900 !important;
+}
+
+.dark-theme .notice-summary-text,
+html.dark .notice-summary-text {
+  color: #E2E8F0 !important;
+  font-weight: 600 !important;
+}
+
+.dark-theme .notice-meta-date,
+html.dark .notice-meta-date,
+.dark-theme .notice-meta-line,
+html.dark .notice-meta-line {
+  color: #94A3B8 !important;
+  font-weight: 600 !important;
+}
+
+.dark-theme .ticket-subject,
+html.dark .ticket-subject {
+  color: #FFFFFF !important;
+  font-weight: 900 !important;
+}
+
+.dark-theme .ticket-message-box,
+html.dark .ticket-message-box {
+  background-color: #070D19 !important;
+  color: #E2E8F0 !important;
+  border-color: #1E293B !important;
+  font-weight: 600 !important;
+}
+
+.dark-theme .ticket-meta,
+html.dark .ticket-meta {
+  color: #94A3B8 !important;
+  border-color: #1E293B !important;
+  font-weight: 600 !important;
+}
+
+.dark-theme .student-highlight,
+html.dark .student-highlight {
+  color: #FFFFFF !important;
+}
+
+.dark-theme .faculty-name,
+html.dark .faculty-name {
+  color: #FFFFFF !important;
+  font-weight: 900 !important;
+}
+
+.dark-theme .faculty-email,
+html.dark .faculty-email {
+  color: #38BDF8 !important;
+  font-weight: 800 !important;
+}
+
+.dark-theme .faculty-dept,
+html.dark .faculty-dept,
+.dark-theme .faculty-lectures,
+html.dark .faculty-lectures,
+.dark-theme .faculty-hours,
+html.dark .faculty-hours {
+  color: #E2E8F0 !important;
+}
+
+
+/* ====================================================================
+   3. PROTECTED DARK ENCLAVES (Sidebar & Login Gate MUST ALWAYS KEEP WHITE TEXT)
+   ==================================================================== */
+#admin-main-sidebar,
+#admin-login-gate,
+#login-gate-screen {
+  background-color: #081225 !important;
+  color: #F8FAFC !important;
+}
+
+#admin-main-sidebar h1,
+#admin-login-gate h1,
+#login-gate-screen h1 {
+  color: #FFFFFF !important;
+  font-weight: 900 !important;
+}
+
+#admin-main-sidebar h1 span,
+#admin-login-gate h1 span,
+#login-gate-screen h1 span {
+  color: #F59E0B !important; /* Golden Amber IQ */
+}
+
+#admin-main-sidebar p,
+#admin-login-gate p,
+#login-gate-screen p {
+  color: #CBD5E1 !important;
+}
+
+#admin-main-sidebar .admin-nav-item span {
+  color: #E2E8F0 !important;
+}
+
+#admin-main-sidebar .admin-nav-item:hover {
+  background-color: #0F1B33 !important;
+}
+
+#admin-main-sidebar .admin-nav-item.bg-blue-600 {
+  background-color: #2563EB !important;
+}
+
+#admin-main-sidebar .admin-nav-item.bg-blue-600 span {
+  color: #FFFFFF !important;
+}
