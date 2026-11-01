@@ -30,7 +30,7 @@ class SupabaseAcademicService {
     }
 
     // 2. Load Student Master Registry from secure database file (Guaranteed all 1,000 students across 4 cohorts)
-    const CURRENT_VERSION = "2026_cohort_v5_balanced_1000";
+    const CURRENT_VERSION = "2026_cohort_v7_universal_2026";
     const cachedVer = localStorage.getItem("campusiq_registry_version");
     const cachedRegistry = localStorage.getItem("campusiq_registry_store");
     let validRegistry = null;
@@ -56,16 +56,69 @@ class SupabaseAcademicService {
     this.allStudentsRegistry = validRegistry;
 
     // 3. Restore authenticated session (if previously logged in)
-    const activeSession = localStorage.getItem("campusiq_authenticated_student");
+    const activeSession = sessionStorage.getItem("campusiq_authenticated_student") || localStorage.getItem("campusiq_authenticated_student");
     if (activeSession) {
       try {
-        this.currentUser = JSON.parse(activeSession);
+        const parsed = JSON.parse(activeSession);
+        if (parsed && parsed.student_id) {
+          // Re-sync with latest registry store using timestamp-aware merge
+          const latestFromRegistry = this.allStudentsRegistry.find(s => String(s.student_id).trim() === String(parsed.student_id).trim());
+          if (latestFromRegistry) {
+            const regTime = latestFromRegistry.updated_at ? new Date(latestFromRegistry.updated_at).getTime() : 0;
+            const parsedTime = parsed.updated_at ? new Date(parsed.updated_at).getTime() : 0;
+            if (regTime >= parsedTime) {
+              this.currentUser = { ...parsed, ...latestFromRegistry };
+            } else {
+              this.currentUser = { ...latestFromRegistry, ...parsed };
+              // Keep allStudentsRegistry in sync with newer active session
+              const rIdx = this.allStudentsRegistry.findIndex(s => String(s.student_id).trim() === String(parsed.student_id).trim());
+              if (rIdx !== -1) {
+                this.allStudentsRegistry[rIdx] = { ...this.allStudentsRegistry[rIdx], ...parsed };
+                try {
+                  localStorage.setItem("campusiq_registry_store", JSON.stringify(this.allStudentsRegistry));
+                } catch (e) {}
+              }
+            }
+          } else {
+            this.currentUser = parsed;
+          }
+          sessionStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
+          localStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
+        } else {
+          this.currentUser = null;
+        }
       } catch (e) {
         this.currentUser = null;
       }
     } else {
       // By default, student must login! No public leak
       this.currentUser = null;
+    }
+
+    // 3b. Real-time storage listener to sync allStudentsRegistry across windows/tabs
+    if (typeof window !== "undefined") {
+      window.addEventListener("storage", (e) => {
+        if (e.key === "campusiq_registry_store" && e.newValue) {
+          try {
+            const updatedRegistry = JSON.parse(e.newValue);
+            if (Array.isArray(updatedRegistry)) {
+              this.allStudentsRegistry = updatedRegistry;
+              if (this.currentUser) {
+                const refreshed = updatedRegistry.find(s => String(s.student_id).trim() === String(this.currentUser.student_id).trim());
+                if (refreshed) {
+                  const currT = this.currentUser.updated_at ? new Date(this.currentUser.updated_at).getTime() : 0;
+                  const refT = refreshed.updated_at ? new Date(refreshed.updated_at).getTime() : 0;
+                  if (refT >= currT) {
+                    this.currentUser = { ...this.currentUser, ...refreshed };
+                    localStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
+                    sessionStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
+                  }
+                }
+              }
+            }
+          } catch (err) {}
+        }
+      });
     }
 
     // 4. Test connectivity
@@ -102,23 +155,62 @@ class SupabaseAcademicService {
 
   // --- Strict Student Authentication (Only Particular Student Data Loaded) ---
   async loginStudent(rollOrEmail, password) {
-    const cleanId = rollOrEmail.trim().toLowerCase();
+    if (!rollOrEmail) {
+      return { success: false, message: "Roll number or college email is required." };
+    }
+    const cleanId = String(rollOrEmail).trim().toLowerCase();
+    const cleanPass = String(password || "").trim();
     
+    // Always refresh allStudentsRegistry from localStorage so any admin updates are immediately present
+    const cachedRegistry = localStorage.getItem("campusiq_registry_store");
+    if (cachedRegistry) {
+      try {
+        const parsed = JSON.parse(cachedRegistry);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          this.allStudentsRegistry = parsed;
+        }
+      } catch (e) {}
+    } else if (!this.allStudentsRegistry || this.allStudentsRegistry.length === 0) {
+      if (typeof window !== "undefined" && window.CAMPUSIQ_STUDENTS && window.CAMPUSIQ_STUDENTS.length > 0) {
+        this.allStudentsRegistry = window.CAMPUSIQ_STUDENTS;
+      }
+    }
+
     // Look up in 1000-student registry
     const match = this.allStudentsRegistry.find(s => 
-      s.student_id.toLowerCase() === cleanId || 
-      s.email.toLowerCase() === cleanId
+      String(s.student_id).trim().toLowerCase() === cleanId || 
+      String(s.email).trim().toLowerCase() === cleanId
     );
 
     if (match) {
-      // Check password (default is student123)
-      if (password && password !== "student123" && password !== match.password) {
-        return { success: false, message: "Invalid password. Default demo password is: student123" };
+      // Check password: Password is '2026' for all enrolled students
+      const isPassValid = (cleanPass === "2026" || cleanPass === "student123" || cleanPass === String(match.password).trim());
+      if (!isPassValid) {
+        return { success: false, message: "Invalid Security Password. Please enter '2026'." };
       }
 
       this.currentUser = { ...match };
+      sessionStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
       localStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
       window.dispatchEvent(new CustomEvent("campusiq:session-changed", { detail: this.currentUser }));
+
+      // Record Student Sign In / Login Event in Supabase Cloud
+      this.logAuditEvent({
+        action_type: "STUDENT_LOGIN",
+        actor_name: this.currentUser.full_name,
+        actor_role: "Student",
+        target_entity: "StudentSession",
+        target_id: this.currentUser.student_id,
+        details: {
+          roll_number: this.currentUser.student_id,
+          email: this.currentUser.email,
+          branch: this.currentUser.branch,
+          cgpa: this.currentUser.cgpa,
+          overall_attendance: this.currentUser.overall_attendance
+        },
+        ip_address: "10.0.12.84 (Campus Student Wi-Fi)"
+      });
+
       return { success: true, user: this.currentUser };
     }
 
@@ -157,12 +249,28 @@ class SupabaseAcademicService {
 
     return { 
       success: false, 
-      message: "No student enrolled with Roll/Email '" + rollOrEmail + "'. Try Roll No: 252921201 or 252921202 with pass 'student123'." 
+      message: "No student enrolled with Roll/Email '" + rollOrEmail + "'. Try Roll No: 252921201 or 252921202 with pass '2026'." 
     };
   }
 
   logoutStudent() {
+    if (this.currentUser) {
+      // Record Student Sign Out / Logout Event in Supabase Cloud
+      this.logAuditEvent({
+        action_type: "STUDENT_LOGOUT",
+        actor_name: this.currentUser.full_name,
+        actor_role: "Student",
+        target_entity: "StudentSession",
+        target_id: this.currentUser.student_id,
+        details: {
+          roll_number: this.currentUser.student_id,
+          message: "Student signed out of portal."
+        },
+        ip_address: "10.0.12.84 (Campus Student Wi-Fi)"
+      });
+    }
     this.currentUser = null;
+    sessionStorage.removeItem("campusiq_authenticated_student");
     localStorage.removeItem("campusiq_authenticated_student");
     window.dispatchEvent(new CustomEvent("campusiq:session-changed", { detail: null }));
     return { success: true };
@@ -173,6 +281,7 @@ class SupabaseAcademicService {
     if (!this.currentUser) return { success: false };
 
     this.currentUser.avatar_url = dataUrl;
+    this.currentUser.updated_at = new Date().toISOString();
     
     // Update active student in registry
     const idx = this.allStudentsRegistry.findIndex(s => s.student_id === this.currentUser.student_id);
@@ -214,6 +323,7 @@ class SupabaseAcademicService {
       let tot = 0, att = 0;
       this.currentUser.subjects.forEach(s => { tot += s.total; att += s.attended; });
       this.currentUser.overall_attendance = tot > 0 ? Number(((att / tot) * 100).toFixed(1)) : 0;
+      this.currentUser.updated_at = new Date().toISOString();
 
       const idx = this.allStudentsRegistry.findIndex(s => s.student_id === this.currentUser.student_id);
       if (idx !== -1) {
@@ -242,6 +352,51 @@ class SupabaseAcademicService {
       } catch (e) {
         console.log("Attendance saved locally");
       }
+
+      // Also sync new overall_attendance and subjects into Supabase profiles table
+      try {
+        fetch(`${this.url}/rest/v1/profiles?student_id=eq.${this.currentUser.student_id}`, {
+          method: "PATCH",
+          headers: {
+            apikey: this.key,
+            Authorization: `Bearer ${this.key}`,
+            "Content-Type": "application/json",
+            "Prefer": "return=minimal"
+          },
+          body: JSON.stringify({
+            overall_attendance: this.currentUser.overall_attendance,
+            subjects: this.currentUser.subjects,
+            updated_at: new Date().toISOString()
+          })
+        }).catch(() => {});
+      } catch (e) {}
+
+      // Log Attendance Event to Supabase audit_logs
+      this.logAuditEvent({
+        action_type: "ATTENDANCE_LOGGED",
+        actor_name: this.currentUser.full_name,
+        actor_role: "Student",
+        target_entity: "AttendanceRecord",
+        target_id: this.currentUser.student_id,
+        details: {
+          subject_id: subjectId,
+          status: isPresent ? "present" : "absent",
+          new_overall_attendance: this.currentUser.overall_attendance
+        },
+        ip_address: "10.0.12.84 (Student Portal)"
+      });
+
+      // Broadcast update across apps
+      if (typeof BroadcastChannel !== "undefined") {
+        try {
+          const bus = new BroadcastChannel("campusiq_realtime_bus");
+          bus.postMessage({
+            type: "STUDENT_UPDATED",
+            studentId: this.currentUser.student_id,
+            student: this.currentUser
+          });
+        } catch (e) {}
+      }
     }
   }
 
@@ -264,6 +419,18 @@ class SupabaseAcademicService {
     const tickets = JSON.parse(localStorage.getItem("campusiq_tickets") || "[]");
     tickets.unshift(tkt);
     localStorage.setItem("campusiq_tickets", JSON.stringify(tickets));
+    window.dispatchEvent(new Event("campusiq_tickets_updated"));
+
+    // Broadcast across tabs instantly
+    if (typeof BroadcastChannel !== "undefined") {
+      try {
+        const bus = new BroadcastChannel("campusiq_realtime_bus");
+        bus.postMessage({
+          type: "NEW_TICKET_SUBMITTED",
+          ticket: tkt
+        });
+      } catch (e) {}
+    }
 
     try {
       await fetch(`${this.url}/rest/v1/support_tickets`, {
@@ -276,16 +443,34 @@ class SupabaseAcademicService {
         body: JSON.stringify({
           ticket_number: tkt.ticket_number,
           student_id: tkt.student_id,
+          student_name: tkt.student_name,
           subject: tkt.subject,
           category: tkt.category,
           priority: tkt.priority,
           message: tkt.message,
-          status: "open"
+          status: "open",
+          sla_guarantee: tkt.sla_guarantee
         })
       });
     } catch (e) {
       console.warn("Ticket saved locally");
     }
+
+    // Log Support Ticket Submission to Supabase audit_logs
+    this.logAuditEvent({
+      action_type: "SUPPORT_TICKET_SUBMITTED",
+      actor_name: tkt.student_name,
+      actor_role: "Student",
+      target_entity: "SupportTicket",
+      target_id: tkt.ticket_number,
+      details: {
+        ticket_number: tkt.ticket_number,
+        subject: tkt.subject,
+        category: tkt.category,
+        priority: tkt.priority
+      },
+      ip_address: "10.0.12.84 (Student Portal)"
+    });
 
     return tkt;
   }
@@ -329,7 +514,7 @@ class SupabaseAcademicService {
   // ADVANCED SMART CAMPUS ENTERPRISE EXTENSIONS (v5.0)
   // ====================================================================
 
-  // --- 1. Audit Trail Logging ---
+  // --- 1. Audit Trail Logging (Real-Time Cloud Supabase Sync) ---
   logAuditEvent(event) {
     const logs = JSON.parse(localStorage.getItem("campusiq_audit_logs") || "[]");
     const entry = {
@@ -340,24 +525,65 @@ class SupabaseAcademicService {
       target_entity: event.target_entity || "System",
       target_id: String(event.target_id || "GLOBAL"),
       details: event.details || {},
-      ip_address: "10.0.4.18 (Campus Admin VPN)",
+      ip_address: event.ip_address || "10.0.4.18 (Campus Admin VPN)",
       timestamp: new Date().toISOString()
     };
     logs.unshift(entry);
     if (logs.length > 500) logs.pop();
     localStorage.setItem("campusiq_audit_logs", JSON.stringify(logs));
 
-    // Try cloud sync
-    if (this.isConnected && this.client) {
+    // Real-Time Cloud Supabase Persistence to audit_logs table
+    if (this.url && this.key) {
       try {
         fetch(`${this.url}/rest/v1/audit_logs`, {
           method: "POST",
-          headers: { apikey: this.key, Authorization: `Bearer ${this.key}`, "Content-Type": "application/json" },
-          body: JSON.stringify(entry)
-        }).catch(() => {});
+          headers: {
+            apikey: this.key,
+            Authorization: `Bearer ${this.key}`,
+            "Content-Type": "application/json",
+            "Prefer": "return=minimal"
+          },
+          body: JSON.stringify({
+            actor_name: entry.actor_name,
+            actor_role: entry.actor_role,
+            action_type: entry.action_type,
+            target_entity: entry.target_entity,
+            target_id: String(entry.target_id || "GLOBAL"),
+            details: typeof entry.details === "object" ? entry.details : { message: String(entry.details || "") },
+            ip_address: entry.ip_address
+          })
+        }).catch(err => console.warn("Supabase audit log sync:", err));
       } catch (e) {}
     }
     return entry;
+  }
+
+  async fetchAuditLogsFromCloud(limit = 60) {
+    if (!this.url || !this.key) return this.getAuditLogs();
+    try {
+      const res = await fetch(`${this.url}/rest/v1/audit_logs?order=created_at.desc&limit=${limit}`, {
+        headers: { apikey: this.key, Authorization: `Bearer ${this.key}` }
+      });
+      if (res.ok) {
+        const cloudLogs = await res.json();
+        if (Array.isArray(cloudLogs) && cloudLogs.length > 0) {
+          const mapped = cloudLogs.map(l => ({
+            id: l.id,
+            actor_name: l.actor_name,
+            actor_role: l.actor_role,
+            action_type: l.action_type,
+            target_entity: l.target_entity,
+            target_id: l.target_id,
+            details: l.details,
+            ip_address: l.ip_address || "10.0.4.18",
+            timestamp: l.created_at
+          }));
+          localStorage.setItem("campusiq_audit_logs", JSON.stringify(mapped));
+          return mapped;
+        }
+      }
+    } catch (e) {}
+    return this.getAuditLogs();
   }
 
   getAuditLogs() {
@@ -529,12 +755,12 @@ class SupabaseAcademicService {
     const entry = {
       id: "ind_" + Date.now(),
       notice_id: "IND-" + Math.floor(100000 + Math.random() * 900000),
-      recipient_student_id: String(notice.recipient_student_id),
+      recipient_student_id: String(notice.recipient_student_id).trim(),
       recipient_name: notice.recipient_name || "Enrolled Student",
       sender_title: notice.sender_title || "Office of the Dean & Academic Senate",
       title: notice.title,
       message: notice.message,
-      priority: notice.priority || "normal",
+      priority: notice.priority || "urgent",
       category: notice.category || "Academic & Disciplinary",
       is_read: false,
       is_acknowledged: false,
@@ -545,6 +771,64 @@ class SupabaseAcademicService {
 
     allNotices.unshift(entry);
     localStorage.setItem("campusiq_individual_notices", JSON.stringify(allNotices));
+
+    // Also merge into common notices store for immediate universal visibility
+    try {
+      const commonNotices = JSON.parse(localStorage.getItem("campusiq_notices") || "[]");
+      commonNotices.unshift({
+        id: entry.id,
+        notice_id: entry.notice_id,
+        title: entry.title,
+        target: entry.recipient_student_id,
+        recipient_student_id: entry.recipient_student_id,
+        student_name: entry.recipient_name,
+        category: entry.category,
+        priority: entry.priority,
+        date: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
+        department: "Office of the Dean",
+        author: entry.sender_title,
+        summary: entry.message,
+        message: entry.message,
+        created_at: entry.created_at
+      });
+      localStorage.setItem("campusiq_notices", JSON.stringify(commonNotices));
+    } catch (e) {}
+
+    // Save directly to Supabase individual_notices table
+    if (this.url && this.key) {
+      fetch(`${this.url}/rest/v1/individual_notices`, {
+        method: "POST",
+        headers: {
+          apikey: this.key,
+          Authorization: `Bearer ${this.key}`,
+          "Content-Type": "application/json",
+          "Prefer": "return=minimal"
+        },
+        body: JSON.stringify({
+          notice_id: entry.notice_id,
+          recipient_student_id: entry.recipient_student_id,
+          recipient_name: entry.recipient_name,
+          sender_title: entry.sender_title,
+          title: entry.title,
+          message: entry.message,
+          priority: entry.priority,
+          category: entry.category,
+          publication_status: "published"
+        })
+      }).catch(err => console.warn("Supabase individual notice cloud sync:", err));
+    }
+
+    // Instant Real-Time Cross-Tab / Cross-App Bus
+    if (typeof BroadcastChannel !== "undefined") {
+      try {
+        const bus = new BroadcastChannel("campusiq_realtime_bus");
+        bus.postMessage({
+          type: "INDIVIDUAL_NOTICE_DISPATCHED",
+          notice: entry,
+          target: entry.recipient_student_id
+        });
+      } catch (err) {}
+    }
 
     this.logAuditEvent({
       action_type: "INDIVIDUAL_NOTICE_DISPATCHED",
@@ -557,14 +841,15 @@ class SupabaseAcademicService {
       }
     });
 
-    // Notify window event so student portal can update reactively
+    // Notify window events so student portal can update reactively
     window.dispatchEvent(new CustomEvent("campusiq:new-notice", { detail: entry }));
+    window.dispatchEvent(new Event("campusiq_notices_updated"));
     return entry;
   }
 
   getStudentIndividualNotices(studentId) {
     const allNotices = JSON.parse(localStorage.getItem("campusiq_individual_notices") || "[]");
-    return allNotices.filter(n => String(n.recipient_student_id) === String(studentId) && n.publication_status === "published");
+    return allNotices.filter(n => String(n.recipient_student_id).trim() === String(studentId).trim() && n.publication_status === "published");
   }
 
   getAllIndividualNotices() {
