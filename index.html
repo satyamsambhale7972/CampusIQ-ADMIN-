@@ -37,9 +37,7 @@
           localStorage.removeItem("campusiq_registry_store");
           localStorage.setItem("campusiq_registry_version", "2026_cohort_v5_balanced_1000");
         }
-        // STRICT SECURITY: Wipe stored administrative session on page open
-        localStorage.removeItem("campusiq_admin_session");
-        sessionStorage.removeItem("campusiq_admin_active_session");
+        // Session check managed by AdminApp
       } catch(e) {}
     })();
   </script>
@@ -101,6 +99,29 @@
           </div>
         </div>
 
+        <!-- Default Authorized Credentials Helper Card -->
+        <div class="mb-4 p-3 rounded-2xl bg-blue-950/70 border border-blue-500/40 text-xs flex items-center justify-between gap-2 shadow-inner">
+          <div class="space-y-0.5">
+            <div class="text-[10px] uppercase font-black text-amber-400 tracking-wider flex items-center gap-1">
+              <i data-lucide="shield" class="w-3 h-3 text-amber-400"></i>
+              <span>Authorized Admin Credentials</span>
+            </div>
+            <div class="text-slate-300 font-mono text-[11px]">
+              <span class="text-white font-bold">User:</span> <code class="text-amber-300 bg-slate-900/80 px-1 py-0.5 rounded">admin</code>
+              &nbsp;&bull;&nbsp;
+              <span class="text-white font-bold">Pass:</span> <code class="text-amber-300 bg-slate-900/80 px-1 py-0.5 rounded">admin</code> <span class="text-slate-400 text-[10px]">(or 2026)</span>
+            </div>
+          </div>
+          <button 
+            type="button" 
+            onclick="if(window.AdminApp) window.AdminApp.quickFillCredentials()" 
+            class="px-2.5 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 active:bg-amber-500/40 text-amber-300 border border-amber-500/50 font-bold text-[11px] transition cursor-pointer flex-shrink-0"
+            title="Auto-fill credentials"
+          >
+            Quick Fill
+          </button>
+        </div>
+
         <!-- Error Alert -->
         <div id="admin-login-error" class="hidden mb-4 p-3 rounded-xl bg-red-950/80 border border-red-500 text-red-200 text-xs font-semibold"></div>
 
@@ -115,7 +136,7 @@
                 required 
                 value="" 
                 autocomplete="off"
-                placeholder=""
+                placeholder="e.g. admin or campusiq"
                 class="w-full bg-[#0B132B] text-white placeholder-slate-500 text-xs sm:text-sm font-semibold rounded-xl pl-9 pr-4 py-3 border border-slate-600 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20"
                 onkeydown="if(event.key==='Enter'){event.preventDefault(); if(window.AdminApp) window.AdminApp.handleAdminLogin(event);}"
               >
@@ -132,7 +153,7 @@
                 required 
                 value="" 
                 autocomplete="new-password"
-                placeholder=""
+                placeholder="e.g. admin or 2026"
                 class="w-full bg-[#0B132B] text-white placeholder-slate-500 text-xs sm:text-sm font-semibold rounded-xl pl-9 pr-11 py-3 border border-slate-600 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20"
                 onkeydown="if(event.key==='Enter'){event.preventDefault(); if(window.AdminApp) window.AdminApp.handleAdminLogin(event);}"
               >
@@ -150,7 +171,7 @@
             </div>
           </div>
 
-          <button type="button" onclick="event.preventDefault(); if(window.AdminApp) window.AdminApp.handleAdminLogin(event); return false;" class="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30 cursor-pointer">
+          <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30 cursor-pointer">
             <i data-lucide="shield-check" class="w-4 h-4"></i>
             <span>Authenticate Administrative Session</span>
           </button>
@@ -172,7 +193,7 @@
   <!-- ====================================================================
        VIEW 2: AUTHENTICATED ADMINISTRATIVE DASHBOARD LAYOUT
        ==================================================================== -->
-  <div id="admin-portal-layout" class="hidden min-h-screen flex flex-col md:flex-row" style="display: none !important;">
+  <div id="admin-portal-layout" class="hidden min-h-screen flex flex-col md:flex-row">
     
     <!-- LEFT ADMINISTRATIVE SIDEBAR (Dedicated to Admin only; no student portal link) -->
     <!-- LEFT ADMINISTRATIVE SIDEBAR (SaaS Multi-Module Navigation Tree) -->
@@ -255,7 +276,7 @@
             </div>
           </div>
 
-          <button onclick="window.AdminApp.openNexoraDrawer()" data-tab="nexora-ai" class="admin-nav-item w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-xs font-bold transition text-left bg-gradient-to-r from-blue-900/70 via-indigo-900/60 to-purple-900/50 border border-blue-400/50 shadow-lg shadow-blue-900/30 cursor-pointer">
+          <button onclick="window.AdminApp.switchTab('nexora-ai')" data-tab="nexora-ai" class="admin-nav-item w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-xs font-bold transition text-left bg-gradient-to-r from-blue-900/70 via-indigo-900/60 to-purple-900/50 border border-blue-400/50 shadow-lg shadow-blue-900/30 cursor-pointer">
             <div class="flex items-center gap-2.5">
               <i data-lucide="bot" class="w-4 h-4 text-cyan-300"></i>
               <span class="font-black text-cyan-200">NEXORA AI Assistant</span>

@@ -4,7 +4,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921201",
     "student_id": "252921201",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Satyam Sambhale",
     "email": "satyam.sambhale@campusiq.edu",
     "phone_number": "+91 79721 21395",
@@ -284,7 +284,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921202",
     "student_id": "252921202",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Sharma",
     "email": "aarav.sharma@campusiq.edu",
     "phone_number": "+91 98234 11092",
@@ -564,7 +564,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921203",
     "student_id": "252921203",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Priya Sharma",
     "email": "priya.sharma@campusiq.edu",
     "phone_number": "+91 94033 87612",
@@ -845,7 +845,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921204",
     "student_id": "252921204",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Deshmukh",
     "email": "rohan.deshmukh@campusiq.edu",
     "phone_number": "+91 91580 44321",
@@ -1125,7 +1125,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921205",
     "student_id": "252921205",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Yadav",
     "email": "vivaan.yadav205@campusiq.edu",
     "phone_number": "+91 95506 42098",
@@ -1210,7 +1210,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921206",
     "student_id": "252921206",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Tiwari",
     "email": "pranav.tiwari206@campusiq.edu",
     "phone_number": "+91 96514 23396",
@@ -1295,7 +1295,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921207",
     "student_id": "252921207",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Gupta",
     "email": "sameer.gupta207@campusiq.edu",
     "phone_number": "+91 96977 31319",
@@ -1380,7 +1380,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921208",
     "student_id": "252921208",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Shah",
     "email": "riya.shah208@campusiq.edu",
     "phone_number": "+91 96155 37869",
@@ -1465,7 +1465,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921209",
     "student_id": "252921209",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Pandey",
     "email": "manish.pandey209@campusiq.edu",
     "phone_number": "+91 92040 60432",
@@ -1550,7 +1550,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921210",
     "student_id": "252921210",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Choudhary",
     "email": "om.choudhary210@campusiq.edu",
     "phone_number": "+91 99317 89818",
@@ -1635,7 +1635,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921211",
     "student_id": "252921211",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Kale",
     "email": "shaurya.kale211@campusiq.edu",
     "phone_number": "+91 99645 89507",
@@ -1720,7 +1720,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921212",
     "student_id": "252921212",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Shah",
     "email": "arjun.shah212@campusiq.edu",
     "phone_number": "+91 91514 53309",
@@ -1805,7 +1805,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921213",
     "student_id": "252921213",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Shinde",
     "email": "reyansh.shinde213@campusiq.edu",
     "phone_number": "+91 94139 34931",
@@ -1890,7 +1890,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921214",
     "student_id": "252921214",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Yadav",
     "email": "tanvi.yadav214@campusiq.edu",
     "phone_number": "+91 98973 30289",
@@ -1975,7 +1975,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921215",
     "student_id": "252921215",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Mishra",
     "email": "gaurav.mishra215@campusiq.edu",
     "phone_number": "+91 99565 51467",
@@ -2060,7 +2060,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921216",
     "student_id": "252921216",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Gaikwad",
     "email": "sanya.gaikwad216@campusiq.edu",
     "phone_number": "+91 99666 11025",
@@ -2145,7 +2145,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921217",
     "student_id": "252921217",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Sharma",
     "email": "aditya.sharma217@campusiq.edu",
     "phone_number": "+91 96464 27146",
@@ -2230,7 +2230,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921218",
     "student_id": "252921218",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Mane",
     "email": "kavya.mane218@campusiq.edu",
     "phone_number": "+91 97658 91351",
@@ -2315,7 +2315,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921219",
     "student_id": "252921219",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Dubey",
     "email": "swati.dubey219@campusiq.edu",
     "phone_number": "+91 94728 39219",
@@ -2400,7 +2400,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921220",
     "student_id": "252921220",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Wagh",
     "email": "deepika.wagh220@campusiq.edu",
     "phone_number": "+91 94114 43386",
@@ -2485,7 +2485,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921221",
     "student_id": "252921221",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Joshi",
     "email": "deepika.joshi221@campusiq.edu",
     "phone_number": "+91 95930 63225",
@@ -2570,7 +2570,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921222",
     "student_id": "252921222",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Sharma",
     "email": "ishaan.sharma222@campusiq.edu",
     "phone_number": "+91 91757 42092",
@@ -2655,7 +2655,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921223",
     "student_id": "252921223",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Kadam",
     "email": "meera.kadam223@campusiq.edu",
     "phone_number": "+91 99702 83259",
@@ -2740,7 +2740,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921224",
     "student_id": "252921224",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Patil",
     "email": "pari.patil224@campusiq.edu",
     "phone_number": "+91 93267 29769",
@@ -2825,7 +2825,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921225",
     "student_id": "252921225",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Mane",
     "email": "pooja.mane225@campusiq.edu",
     "phone_number": "+91 94613 73993",
@@ -2910,7 +2910,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921226",
     "student_id": "252921226",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Kale",
     "email": "varun.kale226@campusiq.edu",
     "phone_number": "+91 97906 43065",
@@ -2995,7 +2995,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921227",
     "student_id": "252921227",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Pandey",
     "email": "shaurya.pandey227@campusiq.edu",
     "phone_number": "+91 92876 31465",
@@ -3080,7 +3080,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921228",
     "student_id": "252921228",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Choudhary",
     "email": "gaurav.choudhary228@campusiq.edu",
     "phone_number": "+91 99031 23833",
@@ -3165,7 +3165,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921229",
     "student_id": "252921229",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Bhosale",
     "email": "aditi.bhosale229@campusiq.edu",
     "phone_number": "+91 96511 13761",
@@ -3250,7 +3250,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921230",
     "student_id": "252921230",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Gaikwad",
     "email": "aaryav.gaikwad230@campusiq.edu",
     "phone_number": "+91 97046 72031",
@@ -3335,7 +3335,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921231",
     "student_id": "252921231",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Singh",
     "email": "aarav.singh231@campusiq.edu",
     "phone_number": "+91 99751 26591",
@@ -3420,7 +3420,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921232",
     "student_id": "252921232",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Avani Verma",
     "email": "avani.verma232@campusiq.edu",
     "phone_number": "+91 93485 29555",
@@ -3505,7 +3505,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921233",
     "student_id": "252921233",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Patil",
     "email": "aditi.patil233@campusiq.edu",
     "phone_number": "+91 93573 41439",
@@ -3590,7 +3590,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921234",
     "student_id": "252921234",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Gaikwad",
     "email": "shruti.gaikwad234@campusiq.edu",
     "phone_number": "+91 95728 67560",
@@ -3675,7 +3675,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921235",
     "student_id": "252921235",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Joshi",
     "email": "dhruv.joshi235@campusiq.edu",
     "phone_number": "+91 98141 93202",
@@ -3760,7 +3760,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921236",
     "student_id": "252921236",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Mishra",
     "email": "aarav.mishra236@campusiq.edu",
     "phone_number": "+91 99889 70552",
@@ -3845,7 +3845,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921237",
     "student_id": "252921237",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Gupta",
     "email": "ayaan.gupta237@campusiq.edu",
     "phone_number": "+91 93522 75323",
@@ -3930,7 +3930,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921238",
     "student_id": "252921238",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Sawant",
     "email": "aditi.sawant238@campusiq.edu",
     "phone_number": "+91 93434 68529",
@@ -4015,7 +4015,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921239",
     "student_id": "252921239",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Mehta",
     "email": "reyansh.mehta239@campusiq.edu",
     "phone_number": "+91 98213 23069",
@@ -4100,7 +4100,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921240",
     "student_id": "252921240",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Gaikwad",
     "email": "shreya.gaikwad240@campusiq.edu",
     "phone_number": "+91 94727 21846",
@@ -4185,7 +4185,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921241",
     "student_id": "252921241",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Sawant",
     "email": "aaryav.sawant241@campusiq.edu",
     "phone_number": "+91 93344 40433",
@@ -4270,7 +4270,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921242",
     "student_id": "252921242",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Gaikwad",
     "email": "riya.gaikwad242@campusiq.edu",
     "phone_number": "+91 95837 12875",
@@ -4355,7 +4355,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921243",
     "student_id": "252921243",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Agarwal",
     "email": "sai.agarwal243@campusiq.edu",
     "phone_number": "+91 95835 52823",
@@ -4440,7 +4440,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921244",
     "student_id": "252921244",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Dubey",
     "email": "divya.dubey244@campusiq.edu",
     "phone_number": "+91 96992 21836",
@@ -4525,7 +4525,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921245",
     "student_id": "252921245",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Gaikwad",
     "email": "aditya.gaikwad245@campusiq.edu",
     "phone_number": "+91 99071 25220",
@@ -4610,7 +4610,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921246",
     "student_id": "252921246",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Kale",
     "email": "aniket.kale246@campusiq.edu",
     "phone_number": "+91 94109 26011",
@@ -4695,7 +4695,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921247",
     "student_id": "252921247",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Kale",
     "email": "pari.kale247@campusiq.edu",
     "phone_number": "+91 93858 24408",
@@ -4780,7 +4780,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921248",
     "student_id": "252921248",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Gupta",
     "email": "sameer.gupta248@campusiq.edu",
     "phone_number": "+91 91510 17972",
@@ -4865,7 +4865,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921249",
     "student_id": "252921249",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Yadav",
     "email": "chiara.yadav249@campusiq.edu",
     "phone_number": "+91 94522 66370",
@@ -4950,7 +4950,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921250",
     "student_id": "252921250",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Mane",
     "email": "chiara.mane250@campusiq.edu",
     "phone_number": "+91 96400 97819",
@@ -5035,7 +5035,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921251",
     "student_id": "252921251",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Mane",
     "email": "isha.mane251@campusiq.edu",
     "phone_number": "+91 91430 89822",
@@ -5120,7 +5120,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921252",
     "student_id": "252921252",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Pandey",
     "email": "riya.pandey252@campusiq.edu",
     "phone_number": "+91 92391 16895",
@@ -5205,7 +5205,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921253",
     "student_id": "252921253",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Sharma",
     "email": "vihaan.sharma253@campusiq.edu",
     "phone_number": "+91 94349 49507",
@@ -5290,7 +5290,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921254",
     "student_id": "252921254",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Chavan",
     "email": "prisha.chavan254@campusiq.edu",
     "phone_number": "+91 95743 25096",
@@ -5375,7 +5375,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921255",
     "student_id": "252921255",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Jadhav",
     "email": "nikhil.jadhav255@campusiq.edu",
     "phone_number": "+91 93419 40968",
@@ -5460,7 +5460,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921256",
     "student_id": "252921256",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Verma",
     "email": "harsh.verma256@campusiq.edu",
     "phone_number": "+91 91932 58331",
@@ -5545,7 +5545,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921257",
     "student_id": "252921257",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Kadam",
     "email": "sanya.kadam257@campusiq.edu",
     "phone_number": "+91 98199 78690",
@@ -5630,7 +5630,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921258",
     "student_id": "252921258",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Singh",
     "email": "aarohi.singh258@campusiq.edu",
     "phone_number": "+91 92388 50577",
@@ -5715,7 +5715,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921259",
     "student_id": "252921259",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Choudhary",
     "email": "pari.choudhary259@campusiq.edu",
     "phone_number": "+91 99626 14947",
@@ -5800,7 +5800,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921260",
     "student_id": "252921260",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Jadhav",
     "email": "advik.jadhav260@campusiq.edu",
     "phone_number": "+91 98218 70513",
@@ -5885,7 +5885,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921261",
     "student_id": "252921261",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Sharma",
     "email": "sakshi.sharma261@campusiq.edu",
     "phone_number": "+91 97797 16980",
@@ -5970,7 +5970,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921262",
     "student_id": "252921262",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Kulkarni",
     "email": "rashmi.kulkarni262@campusiq.edu",
     "phone_number": "+91 99991 89807",
@@ -6055,7 +6055,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921263",
     "student_id": "252921263",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Patil",
     "email": "aditi.patil263@campusiq.edu",
     "phone_number": "+91 99576 57265",
@@ -6140,7 +6140,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921264",
     "student_id": "252921264",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Gupta",
     "email": "swati.gupta264@campusiq.edu",
     "phone_number": "+91 93868 99742",
@@ -6225,7 +6225,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921265",
     "student_id": "252921265",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Kale",
     "email": "rohan.kale265@campusiq.edu",
     "phone_number": "+91 93039 58237",
@@ -6310,7 +6310,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921266",
     "student_id": "252921266",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Jadhav",
     "email": "harsh.jadhav266@campusiq.edu",
     "phone_number": "+91 98325 15551",
@@ -6395,7 +6395,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921267",
     "student_id": "252921267",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Jadhav",
     "email": "karan.jadhav267@campusiq.edu",
     "phone_number": "+91 98273 20077",
@@ -6480,7 +6480,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921268",
     "student_id": "252921268",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Joshi",
     "email": "harsh.joshi268@campusiq.edu",
     "phone_number": "+91 98292 21506",
@@ -6565,7 +6565,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921269",
     "student_id": "252921269",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Patil",
     "email": "gayatri.patil269@campusiq.edu",
     "phone_number": "+91 92077 50539",
@@ -6650,7 +6650,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921270",
     "student_id": "252921270",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Joshi",
     "email": "shaurya.joshi270@campusiq.edu",
     "phone_number": "+91 96286 39552",
@@ -6735,7 +6735,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921271",
     "student_id": "252921271",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Tiwari",
     "email": "isha.tiwari271@campusiq.edu",
     "phone_number": "+91 95336 95344",
@@ -6820,7 +6820,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921272",
     "student_id": "252921272",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Jadhav",
     "email": "nikita.jadhav272@campusiq.edu",
     "phone_number": "+91 97532 27139",
@@ -6905,7 +6905,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921273",
     "student_id": "252921273",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Sawant",
     "email": "om.sawant273@campusiq.edu",
     "phone_number": "+91 91379 21802",
@@ -6990,7 +6990,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921274",
     "student_id": "252921274",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Gaikwad",
     "email": "chiara.gaikwad274@campusiq.edu",
     "phone_number": "+91 92204 60639",
@@ -7075,7 +7075,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921275",
     "student_id": "252921275",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Kadam",
     "email": "aadhya.kadam275@campusiq.edu",
     "phone_number": "+91 93440 89463",
@@ -7160,7 +7160,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921276",
     "student_id": "252921276",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Tiwari",
     "email": "shruti.tiwari276@campusiq.edu",
     "phone_number": "+91 94728 16731",
@@ -7245,7 +7245,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921277",
     "student_id": "252921277",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Mishra",
     "email": "siddharth.mishra277@campusiq.edu",
     "phone_number": "+91 98837 78875",
@@ -7330,7 +7330,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921278",
     "student_id": "252921278",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Dubey",
     "email": "sakshi.dubey278@campusiq.edu",
     "phone_number": "+91 95480 47721",
@@ -7415,7 +7415,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921279",
     "student_id": "252921279",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Shinde",
     "email": "aaryav.shinde279@campusiq.edu",
     "phone_number": "+91 91831 97796",
@@ -7500,7 +7500,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921280",
     "student_id": "252921280",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Mane",
     "email": "advaith.mane280@campusiq.edu",
     "phone_number": "+91 91611 32946",
@@ -7585,7 +7585,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921281",
     "student_id": "252921281",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Deshmukh",
     "email": "meera.deshmukh281@campusiq.edu",
     "phone_number": "+91 96417 31298",
@@ -7670,7 +7670,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921282",
     "student_id": "252921282",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Kale",
     "email": "neha.kale282@campusiq.edu",
     "phone_number": "+91 96400 49576",
@@ -7755,7 +7755,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921283",
     "student_id": "252921283",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Agarwal",
     "email": "chiara.agarwal283@campusiq.edu",
     "phone_number": "+91 98714 80453",
@@ -7840,7 +7840,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921284",
     "student_id": "252921284",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Kadam",
     "email": "ananya.kadam284@campusiq.edu",
     "phone_number": "+91 91911 69432",
@@ -7925,7 +7925,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921285",
     "student_id": "252921285",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Tiwari",
     "email": "krishna.tiwari285@campusiq.edu",
     "phone_number": "+91 97887 59081",
@@ -8010,7 +8010,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921286",
     "student_id": "252921286",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Kulkarni",
     "email": "nikhil.kulkarni286@campusiq.edu",
     "phone_number": "+91 95516 34704",
@@ -8095,7 +8095,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921287",
     "student_id": "252921287",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Yadav",
     "email": "shreya.yadav287@campusiq.edu",
     "phone_number": "+91 96224 85690",
@@ -8180,7 +8180,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921288",
     "student_id": "252921288",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Joshi",
     "email": "varun.joshi288@campusiq.edu",
     "phone_number": "+91 99813 72065",
@@ -8265,7 +8265,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921289",
     "student_id": "252921289",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Pawar",
     "email": "arjun.pawar289@campusiq.edu",
     "phone_number": "+91 94555 72835",
@@ -8350,7 +8350,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921290",
     "student_id": "252921290",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Yadav",
     "email": "meera.yadav290@campusiq.edu",
     "phone_number": "+91 98692 51973",
@@ -8435,7 +8435,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921291",
     "student_id": "252921291",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Dubey",
     "email": "sneha.dubey291@campusiq.edu",
     "phone_number": "+91 96770 32185",
@@ -8520,7 +8520,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921292",
     "student_id": "252921292",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Chavan",
     "email": "chiara.chavan292@campusiq.edu",
     "phone_number": "+91 91194 12192",
@@ -8605,7 +8605,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921293",
     "student_id": "252921293",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Patil",
     "email": "divya.patil293@campusiq.edu",
     "phone_number": "+91 91519 22255",
@@ -8690,7 +8690,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921294",
     "student_id": "252921294",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Agarwal",
     "email": "atharva.agarwal294@campusiq.edu",
     "phone_number": "+91 96152 12052",
@@ -8775,7 +8775,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921295",
     "student_id": "252921295",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun More",
     "email": "arjun.more295@campusiq.edu",
     "phone_number": "+91 97499 52778",
@@ -8860,7 +8860,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921296",
     "student_id": "252921296",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Kadam",
     "email": "om.kadam296@campusiq.edu",
     "phone_number": "+91 96896 45358",
@@ -8945,7 +8945,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921297",
     "student_id": "252921297",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Kale",
     "email": "om.kale297@campusiq.edu",
     "phone_number": "+91 99079 29127",
@@ -9030,7 +9030,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921298",
     "student_id": "252921298",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Gaikwad",
     "email": "krishna.gaikwad298@campusiq.edu",
     "phone_number": "+91 96253 89064",
@@ -9115,7 +9115,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921299",
     "student_id": "252921299",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Singh",
     "email": "rashmi.singh299@campusiq.edu",
     "phone_number": "+91 92133 63627",
@@ -9200,7 +9200,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921300",
     "student_id": "252921300",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Verma",
     "email": "anvi.verma300@campusiq.edu",
     "phone_number": "+91 97547 53463",
@@ -9285,7 +9285,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921301",
     "student_id": "252921301",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Salunkhe",
     "email": "pranav.salunkhe301@campusiq.edu",
     "phone_number": "+91 98912 55652",
@@ -9370,7 +9370,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921302",
     "student_id": "252921302",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Mishra",
     "email": "prisha.mishra302@campusiq.edu",
     "phone_number": "+91 98080 61849",
@@ -9455,7 +9455,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921303",
     "student_id": "252921303",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Jadhav",
     "email": "ayaan.jadhav303@campusiq.edu",
     "phone_number": "+91 96766 70012",
@@ -9540,7 +9540,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921304",
     "student_id": "252921304",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Mane",
     "email": "atharva.mane304@campusiq.edu",
     "phone_number": "+91 93733 74178",
@@ -9625,7 +9625,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921305",
     "student_id": "252921305",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Joshi",
     "email": "rudra.joshi305@campusiq.edu",
     "phone_number": "+91 98492 84140",
@@ -9710,7 +9710,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921306",
     "student_id": "252921306",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Tiwari",
     "email": "ayaan.tiwari306@campusiq.edu",
     "phone_number": "+91 94882 37509",
@@ -9795,7 +9795,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921307",
     "student_id": "252921307",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Mehta",
     "email": "dhruv.mehta307@campusiq.edu",
     "phone_number": "+91 93078 27392",
@@ -9880,7 +9880,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921308",
     "student_id": "252921308",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Yadav",
     "email": "divya.yadav308@campusiq.edu",
     "phone_number": "+91 92526 70089",
@@ -9965,7 +9965,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921309",
     "student_id": "252921309",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Chavan",
     "email": "aarav.chavan309@campusiq.edu",
     "phone_number": "+91 94314 27290",
@@ -10050,7 +10050,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921310",
     "student_id": "252921310",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Salunkhe",
     "email": "advaith.salunkhe310@campusiq.edu",
     "phone_number": "+91 98291 11217",
@@ -10135,7 +10135,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921311",
     "student_id": "252921311",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Joshi",
     "email": "isha.joshi311@campusiq.edu",
     "phone_number": "+91 98210 56030",
@@ -10220,7 +10220,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921312",
     "student_id": "252921312",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Shah",
     "email": "aditi.shah312@campusiq.edu",
     "phone_number": "+91 95942 36928",
@@ -10305,7 +10305,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921313",
     "student_id": "252921313",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Sharma",
     "email": "arjun.sharma313@campusiq.edu",
     "phone_number": "+91 95295 38277",
@@ -10390,7 +10390,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921314",
     "student_id": "252921314",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Gaikwad",
     "email": "arjun.gaikwad314@campusiq.edu",
     "phone_number": "+91 98167 41278",
@@ -10475,7 +10475,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921315",
     "student_id": "252921315",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Tiwari",
     "email": "ayaan.tiwari315@campusiq.edu",
     "phone_number": "+91 91480 53910",
@@ -10560,7 +10560,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921316",
     "student_id": "252921316",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Kulkarni",
     "email": "shreya.kulkarni316@campusiq.edu",
     "phone_number": "+91 93932 14635",
@@ -10645,7 +10645,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921317",
     "student_id": "252921317",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Kadam",
     "email": "chiara.kadam317@campusiq.edu",
     "phone_number": "+91 91130 58354",
@@ -10730,7 +10730,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921318",
     "student_id": "252921318",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Shinde",
     "email": "aadhya.shinde318@campusiq.edu",
     "phone_number": "+91 97878 74491",
@@ -10815,7 +10815,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921319",
     "student_id": "252921319",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Dubey",
     "email": "sakshi.dubey319@campusiq.edu",
     "phone_number": "+91 97438 52762",
@@ -10900,7 +10900,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921320",
     "student_id": "252921320",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Singh",
     "email": "sanya.singh320@campusiq.edu",
     "phone_number": "+91 91660 38183",
@@ -10985,7 +10985,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921321",
     "student_id": "252921321",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Bhosale",
     "email": "swati.bhosale321@campusiq.edu",
     "phone_number": "+91 97098 99952",
@@ -11070,7 +11070,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921322",
     "student_id": "252921322",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Jadhav",
     "email": "atharva.jadhav322@campusiq.edu",
     "phone_number": "+91 94517 34530",
@@ -11155,7 +11155,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921323",
     "student_id": "252921323",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Salunkhe",
     "email": "riya.salunkhe323@campusiq.edu",
     "phone_number": "+91 96269 60905",
@@ -11240,7 +11240,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921324",
     "student_id": "252921324",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra More",
     "email": "myra.more324@campusiq.edu",
     "phone_number": "+91 96878 87537",
@@ -11325,7 +11325,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921325",
     "student_id": "252921325",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Wagh",
     "email": "ishaan.wagh325@campusiq.edu",
     "phone_number": "+91 93320 24538",
@@ -11410,7 +11410,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921326",
     "student_id": "252921326",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Gaikwad",
     "email": "varun.gaikwad326@campusiq.edu",
     "phone_number": "+91 95825 26691",
@@ -11495,7 +11495,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921327",
     "student_id": "252921327",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri More",
     "email": "gayatri.more327@campusiq.edu",
     "phone_number": "+91 98317 11493",
@@ -11580,7 +11580,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921328",
     "student_id": "252921328",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Gaikwad",
     "email": "aditya.gaikwad328@campusiq.edu",
     "phone_number": "+91 91328 51774",
@@ -11665,7 +11665,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921329",
     "student_id": "252921329",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Yadav",
     "email": "chiara.yadav329@campusiq.edu",
     "phone_number": "+91 99849 44768",
@@ -11750,7 +11750,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921330",
     "student_id": "252921330",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Sawant",
     "email": "diya.sawant330@campusiq.edu",
     "phone_number": "+91 95341 21945",
@@ -11835,7 +11835,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921331",
     "student_id": "252921331",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Bhosale",
     "email": "rashmi.bhosale331@campusiq.edu",
     "phone_number": "+91 99561 64870",
@@ -11920,7 +11920,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921332",
     "student_id": "252921332",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Gupta",
     "email": "swati.gupta332@campusiq.edu",
     "phone_number": "+91 93422 87994",
@@ -12005,7 +12005,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921333",
     "student_id": "252921333",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Chavan",
     "email": "gayatri.chavan333@campusiq.edu",
     "phone_number": "+91 95327 60206",
@@ -12090,7 +12090,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921334",
     "student_id": "252921334",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Shinde",
     "email": "nikita.shinde334@campusiq.edu",
     "phone_number": "+91 93201 49384",
@@ -12175,7 +12175,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921335",
     "student_id": "252921335",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Verma",
     "email": "aaryav.verma335@campusiq.edu",
     "phone_number": "+91 98478 16626",
@@ -12260,7 +12260,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921336",
     "student_id": "252921336",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Wagh",
     "email": "divya.wagh336@campusiq.edu",
     "phone_number": "+91 94511 39012",
@@ -12345,7 +12345,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921337",
     "student_id": "252921337",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Choudhary",
     "email": "aadhya.choudhary337@campusiq.edu",
     "phone_number": "+91 97506 86609",
@@ -12430,7 +12430,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921338",
     "student_id": "252921338",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Mishra",
     "email": "siddharth.mishra338@campusiq.edu",
     "phone_number": "+91 93292 13336",
@@ -12515,7 +12515,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921339",
     "student_id": "252921339",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Yadav",
     "email": "kabir.yadav339@campusiq.edu",
     "phone_number": "+91 93999 99091",
@@ -12600,7 +12600,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921340",
     "student_id": "252921340",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik More",
     "email": "advik.more340@campusiq.edu",
     "phone_number": "+91 97704 84632",
@@ -12685,7 +12685,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921341",
     "student_id": "252921341",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Chavan",
     "email": "aniket.chavan341@campusiq.edu",
     "phone_number": "+91 98821 60242",
@@ -12770,7 +12770,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921342",
     "student_id": "252921342",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Salunkhe",
     "email": "aarohi.salunkhe342@campusiq.edu",
     "phone_number": "+91 96535 66841",
@@ -12855,7 +12855,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921343",
     "student_id": "252921343",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Pandey",
     "email": "pari.pandey343@campusiq.edu",
     "phone_number": "+91 91796 87846",
@@ -12940,7 +12940,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921344",
     "student_id": "252921344",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Deshmukh",
     "email": "anvi.deshmukh344@campusiq.edu",
     "phone_number": "+91 95631 24943",
@@ -13025,7 +13025,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921345",
     "student_id": "252921345",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Deshmukh",
     "email": "sneha.deshmukh345@campusiq.edu",
     "phone_number": "+91 95192 94454",
@@ -13110,7 +13110,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921346",
     "student_id": "252921346",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Joshi",
     "email": "rohan.joshi346@campusiq.edu",
     "phone_number": "+91 92865 62530",
@@ -13195,7 +13195,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921347",
     "student_id": "252921347",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Avani Shah",
     "email": "avani.shah347@campusiq.edu",
     "phone_number": "+91 93140 73318",
@@ -13280,7 +13280,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921348",
     "student_id": "252921348",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Mehta",
     "email": "diya.mehta348@campusiq.edu",
     "phone_number": "+91 99123 31679",
@@ -13365,7 +13365,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921349",
     "student_id": "252921349",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Chavan",
     "email": "aniket.chavan349@campusiq.edu",
     "phone_number": "+91 91587 83024",
@@ -13450,7 +13450,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921350",
     "student_id": "252921350",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Jadhav",
     "email": "rohan.jadhav350@campusiq.edu",
     "phone_number": "+91 95783 81786",
@@ -13535,7 +13535,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921351",
     "student_id": "252921351",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Salunkhe",
     "email": "myra.salunkhe351@campusiq.edu",
     "phone_number": "+91 93205 75382",
@@ -13620,7 +13620,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921352",
     "student_id": "252921352",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Shah",
     "email": "tanvi.shah352@campusiq.edu",
     "phone_number": "+91 99393 49179",
@@ -13705,7 +13705,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921353",
     "student_id": "252921353",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Chavan",
     "email": "divya.chavan353@campusiq.edu",
     "phone_number": "+91 91209 78515",
@@ -13790,7 +13790,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921354",
     "student_id": "252921354",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Agarwal",
     "email": "vihaan.agarwal354@campusiq.edu",
     "phone_number": "+91 97251 60797",
@@ -13875,7 +13875,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921355",
     "student_id": "252921355",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Chavan",
     "email": "aditya.chavan355@campusiq.edu",
     "phone_number": "+91 95572 82954",
@@ -13960,7 +13960,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921356",
     "student_id": "252921356",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Shinde",
     "email": "nikhil.shinde356@campusiq.edu",
     "phone_number": "+91 94495 96944",
@@ -14045,7 +14045,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921357",
     "student_id": "252921357",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Gaikwad",
     "email": "aditya.gaikwad357@campusiq.edu",
     "phone_number": "+91 94154 51984",
@@ -14130,7 +14130,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921358",
     "student_id": "252921358",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya More",
     "email": "sanya.more358@campusiq.edu",
     "phone_number": "+91 91620 21471",
@@ -14215,7 +14215,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921359",
     "student_id": "252921359",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Mishra",
     "email": "shruti.mishra359@campusiq.edu",
     "phone_number": "+91 95937 89503",
@@ -14300,7 +14300,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921360",
     "student_id": "252921360",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Mane",
     "email": "aniket.mane360@campusiq.edu",
     "phone_number": "+91 99970 21157",
@@ -14385,7 +14385,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921361",
     "student_id": "252921361",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Yadav",
     "email": "advik.yadav361@campusiq.edu",
     "phone_number": "+91 98982 53365",
@@ -14470,7 +14470,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921362",
     "student_id": "252921362",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Chavan",
     "email": "isha.chavan362@campusiq.edu",
     "phone_number": "+91 95533 57118",
@@ -14555,7 +14555,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921363",
     "student_id": "252921363",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Wagh",
     "email": "myra.wagh363@campusiq.edu",
     "phone_number": "+91 97637 87337",
@@ -14640,7 +14640,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921364",
     "student_id": "252921364",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Mishra",
     "email": "riya.mishra364@campusiq.edu",
     "phone_number": "+91 93395 73373",
@@ -14725,7 +14725,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921365",
     "student_id": "252921365",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Joshi",
     "email": "riya.joshi365@campusiq.edu",
     "phone_number": "+91 97171 95678",
@@ -14810,7 +14810,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921366",
     "student_id": "252921366",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Joshi",
     "email": "ishaan.joshi366@campusiq.edu",
     "phone_number": "+91 93578 57477",
@@ -14895,7 +14895,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921367",
     "student_id": "252921367",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Agarwal",
     "email": "kabir.agarwal367@campusiq.edu",
     "phone_number": "+91 93949 77717",
@@ -14980,7 +14980,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921368",
     "student_id": "252921368",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Bhosale",
     "email": "advaith.bhosale368@campusiq.edu",
     "phone_number": "+91 97315 27329",
@@ -15065,7 +15065,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921369",
     "student_id": "252921369",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Sawant",
     "email": "meera.sawant369@campusiq.edu",
     "phone_number": "+91 97246 55943",
@@ -15150,7 +15150,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921370",
     "student_id": "252921370",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Dubey",
     "email": "tanvi.dubey370@campusiq.edu",
     "phone_number": "+91 96175 63588",
@@ -15235,7 +15235,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921371",
     "student_id": "252921371",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Kadam",
     "email": "advaith.kadam371@campusiq.edu",
     "phone_number": "+91 93650 23143",
@@ -15320,7 +15320,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921372",
     "student_id": "252921372",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Singh",
     "email": "rudra.singh372@campusiq.edu",
     "phone_number": "+91 91941 32973",
@@ -15405,7 +15405,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921373",
     "student_id": "252921373",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Singh",
     "email": "pooja.singh373@campusiq.edu",
     "phone_number": "+91 92124 21818",
@@ -15490,7 +15490,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921374",
     "student_id": "252921374",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Dubey",
     "email": "swati.dubey374@campusiq.edu",
     "phone_number": "+91 95098 68034",
@@ -15575,7 +15575,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921375",
     "student_id": "252921375",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Bhosale",
     "email": "sai.bhosale375@campusiq.edu",
     "phone_number": "+91 96603 19965",
@@ -15660,7 +15660,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921376",
     "student_id": "252921376",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Sawant",
     "email": "aditi.sawant376@campusiq.edu",
     "phone_number": "+91 91108 80972",
@@ -15745,7 +15745,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921377",
     "student_id": "252921377",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Sharma",
     "email": "tanvi.sharma377@campusiq.edu",
     "phone_number": "+91 91193 98356",
@@ -15830,7 +15830,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921378",
     "student_id": "252921378",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Mishra",
     "email": "riya.mishra378@campusiq.edu",
     "phone_number": "+91 94744 23090",
@@ -15915,7 +15915,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921379",
     "student_id": "252921379",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Deshmukh",
     "email": "prisha.deshmukh379@campusiq.edu",
     "phone_number": "+91 98370 53864",
@@ -16000,7 +16000,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921380",
     "student_id": "252921380",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Mehta",
     "email": "ishaan.mehta380@campusiq.edu",
     "phone_number": "+91 93745 93962",
@@ -16085,7 +16085,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921381",
     "student_id": "252921381",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Yadav",
     "email": "krishna.yadav381@campusiq.edu",
     "phone_number": "+91 94844 96772",
@@ -16170,7 +16170,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921382",
     "student_id": "252921382",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Salunkhe",
     "email": "krishna.salunkhe382@campusiq.edu",
     "phone_number": "+91 93795 13744",
@@ -16255,7 +16255,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921383",
     "student_id": "252921383",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Chavan",
     "email": "karan.chavan383@campusiq.edu",
     "phone_number": "+91 95256 30410",
@@ -16340,7 +16340,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921384",
     "student_id": "252921384",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Bhosale",
     "email": "isha.bhosale384@campusiq.edu",
     "phone_number": "+91 97199 38913",
@@ -16425,7 +16425,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921385",
     "student_id": "252921385",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Sharma",
     "email": "pari.sharma385@campusiq.edu",
     "phone_number": "+91 94046 23405",
@@ -16510,7 +16510,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921386",
     "student_id": "252921386",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Choudhary",
     "email": "deepika.choudhary386@campusiq.edu",
     "phone_number": "+91 95097 60014",
@@ -16595,7 +16595,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921387",
     "student_id": "252921387",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Shah",
     "email": "karan.shah387@campusiq.edu",
     "phone_number": "+91 91853 97385",
@@ -16680,7 +16680,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921388",
     "student_id": "252921388",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Gupta",
     "email": "neha.gupta388@campusiq.edu",
     "phone_number": "+91 91983 17834",
@@ -16765,7 +16765,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921389",
     "student_id": "252921389",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Mane",
     "email": "atharva.mane389@campusiq.edu",
     "phone_number": "+91 96696 52425",
@@ -16850,7 +16850,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921390",
     "student_id": "252921390",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Mishra",
     "email": "arjun.mishra390@campusiq.edu",
     "phone_number": "+91 99830 60789",
@@ -16935,7 +16935,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921391",
     "student_id": "252921391",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Pandey",
     "email": "aadhya.pandey391@campusiq.edu",
     "phone_number": "+91 95193 16433",
@@ -17020,7 +17020,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921392",
     "student_id": "252921392",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Deshmukh",
     "email": "aadhya.deshmukh392@campusiq.edu",
     "phone_number": "+91 92658 40279",
@@ -17105,7 +17105,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921393",
     "student_id": "252921393",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Mehta",
     "email": "siddharth.mehta393@campusiq.edu",
     "phone_number": "+91 97090 64046",
@@ -17190,7 +17190,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921394",
     "student_id": "252921394",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Sharma",
     "email": "siddharth.sharma394@campusiq.edu",
     "phone_number": "+91 95521 82569",
@@ -17275,7 +17275,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921395",
     "student_id": "252921395",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Singh",
     "email": "deepika.singh395@campusiq.edu",
     "phone_number": "+91 92562 88018",
@@ -17360,7 +17360,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921396",
     "student_id": "252921396",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Singh",
     "email": "ananya.singh396@campusiq.edu",
     "phone_number": "+91 94617 30079",
@@ -17445,7 +17445,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921397",
     "student_id": "252921397",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Mane",
     "email": "diya.mane397@campusiq.edu",
     "phone_number": "+91 94245 73944",
@@ -17530,7 +17530,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921398",
     "student_id": "252921398",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Choudhary",
     "email": "anvi.choudhary398@campusiq.edu",
     "phone_number": "+91 98245 91681",
@@ -17615,7 +17615,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921399",
     "student_id": "252921399",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Tiwari",
     "email": "aadhya.tiwari399@campusiq.edu",
     "phone_number": "+91 95237 81932",
@@ -17700,7 +17700,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921400",
     "student_id": "252921400",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Salunkhe",
     "email": "varun.salunkhe400@campusiq.edu",
     "phone_number": "+91 92631 51347",
@@ -17785,7 +17785,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921401",
     "student_id": "252921401",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Shah",
     "email": "varun.shah401@campusiq.edu",
     "phone_number": "+91 91482 82737",
@@ -17870,7 +17870,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921402",
     "student_id": "252921402",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Kulkarni",
     "email": "nikita.kulkarni402@campusiq.edu",
     "phone_number": "+91 96062 78656",
@@ -17955,7 +17955,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921403",
     "student_id": "252921403",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Sharma",
     "email": "atharva.sharma403@campusiq.edu",
     "phone_number": "+91 95372 89377",
@@ -18040,7 +18040,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921404",
     "student_id": "252921404",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Pawar",
     "email": "aditi.pawar404@campusiq.edu",
     "phone_number": "+91 94351 18668",
@@ -18125,7 +18125,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921405",
     "student_id": "252921405",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Verma",
     "email": "pooja.verma405@campusiq.edu",
     "phone_number": "+91 97347 77649",
@@ -18210,7 +18210,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921406",
     "student_id": "252921406",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Kadam",
     "email": "atharva.kadam406@campusiq.edu",
     "phone_number": "+91 94308 69596",
@@ -18295,7 +18295,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921407",
     "student_id": "252921407",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Kulkarni",
     "email": "nikita.kulkarni407@campusiq.edu",
     "phone_number": "+91 93656 28953",
@@ -18380,7 +18380,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921408",
     "student_id": "252921408",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Chavan",
     "email": "sameer.chavan408@campusiq.edu",
     "phone_number": "+91 98239 20407",
@@ -18465,7 +18465,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921409",
     "student_id": "252921409",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Singh",
     "email": "aditi.singh409@campusiq.edu",
     "phone_number": "+91 93906 69682",
@@ -18550,7 +18550,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921410",
     "student_id": "252921410",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Sawant",
     "email": "sai.sawant410@campusiq.edu",
     "phone_number": "+91 95705 65974",
@@ -18635,7 +18635,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921411",
     "student_id": "252921411",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Chavan",
     "email": "gaurav.chavan411@campusiq.edu",
     "phone_number": "+91 91745 53750",
@@ -18720,7 +18720,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921412",
     "student_id": "252921412",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Verma",
     "email": "meera.verma412@campusiq.edu",
     "phone_number": "+91 93224 73110",
@@ -18805,7 +18805,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921413",
     "student_id": "252921413",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Gupta",
     "email": "varun.gupta413@campusiq.edu",
     "phone_number": "+91 99753 31753",
@@ -18890,7 +18890,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921414",
     "student_id": "252921414",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Sawant",
     "email": "meera.sawant414@campusiq.edu",
     "phone_number": "+91 99192 30195",
@@ -18975,7 +18975,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921415",
     "student_id": "252921415",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Wagh",
     "email": "vivaan.wagh415@campusiq.edu",
     "phone_number": "+91 96114 93735",
@@ -19060,7 +19060,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921416",
     "student_id": "252921416",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Shah",
     "email": "anvi.shah416@campusiq.edu",
     "phone_number": "+91 96549 80854",
@@ -19145,7 +19145,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921417",
     "student_id": "252921417",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Singh",
     "email": "shreya.singh417@campusiq.edu",
     "phone_number": "+91 98672 22748",
@@ -19230,7 +19230,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921418",
     "student_id": "252921418",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Tiwari",
     "email": "rudra.tiwari418@campusiq.edu",
     "phone_number": "+91 96711 89225",
@@ -19315,7 +19315,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921419",
     "student_id": "252921419",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Singh",
     "email": "pari.singh419@campusiq.edu",
     "phone_number": "+91 94869 32686",
@@ -19400,7 +19400,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921420",
     "student_id": "252921420",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Tiwari",
     "email": "deepika.tiwari420@campusiq.edu",
     "phone_number": "+91 91003 29231",
@@ -19485,7 +19485,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921421",
     "student_id": "252921421",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Mane",
     "email": "deepika.mane421@campusiq.edu",
     "phone_number": "+91 91870 10110",
@@ -19570,7 +19570,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921422",
     "student_id": "252921422",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Mishra",
     "email": "nikita.mishra422@campusiq.edu",
     "phone_number": "+91 93056 27600",
@@ -19655,7 +19655,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921423",
     "student_id": "252921423",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Chavan",
     "email": "dhruv.chavan423@campusiq.edu",
     "phone_number": "+91 99948 85543",
@@ -19740,7 +19740,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921424",
     "student_id": "252921424",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Sawant",
     "email": "aarav.sawant424@campusiq.edu",
     "phone_number": "+91 98438 77195",
@@ -19825,7 +19825,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921425",
     "student_id": "252921425",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Mehta",
     "email": "arjun.mehta425@campusiq.edu",
     "phone_number": "+91 95552 43036",
@@ -19910,7 +19910,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921426",
     "student_id": "252921426",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Mishra",
     "email": "aaryav.mishra426@campusiq.edu",
     "phone_number": "+91 98211 93568",
@@ -19995,7 +19995,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921427",
     "student_id": "252921427",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Salunkhe",
     "email": "siddharth.salunkhe427@campusiq.edu",
     "phone_number": "+91 91672 22761",
@@ -20080,7 +20080,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921428",
     "student_id": "252921428",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Salunkhe",
     "email": "reyansh.salunkhe428@campusiq.edu",
     "phone_number": "+91 92702 99849",
@@ -20165,7 +20165,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921429",
     "student_id": "252921429",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Gupta",
     "email": "arjun.gupta429@campusiq.edu",
     "phone_number": "+91 98429 46226",
@@ -20250,7 +20250,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921430",
     "student_id": "252921430",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Kulkarni",
     "email": "reyansh.kulkarni430@campusiq.edu",
     "phone_number": "+91 99857 66525",
@@ -20335,7 +20335,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921431",
     "student_id": "252921431",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Tiwari",
     "email": "sanya.tiwari431@campusiq.edu",
     "phone_number": "+91 99039 72670",
@@ -20420,7 +20420,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921432",
     "student_id": "252921432",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Mane",
     "email": "atharva.mane432@campusiq.edu",
     "phone_number": "+91 91644 60353",
@@ -20505,7 +20505,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921433",
     "student_id": "252921433",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Yadav",
     "email": "shruti.yadav433@campusiq.edu",
     "phone_number": "+91 91701 63150",
@@ -20590,7 +20590,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921434",
     "student_id": "252921434",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Choudhary",
     "email": "arjun.choudhary434@campusiq.edu",
     "phone_number": "+91 92742 24965",
@@ -20675,7 +20675,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921435",
     "student_id": "252921435",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Verma",
     "email": "myra.verma435@campusiq.edu",
     "phone_number": "+91 93185 23102",
@@ -20760,7 +20760,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921436",
     "student_id": "252921436",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Joshi",
     "email": "aarohi.joshi436@campusiq.edu",
     "phone_number": "+91 99190 90222",
@@ -20845,7 +20845,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921437",
     "student_id": "252921437",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Verma",
     "email": "aditya.verma437@campusiq.edu",
     "phone_number": "+91 96966 47363",
@@ -20930,7 +20930,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921438",
     "student_id": "252921438",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Shinde",
     "email": "reyansh.shinde438@campusiq.edu",
     "phone_number": "+91 97759 36208",
@@ -21015,7 +21015,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921439",
     "student_id": "252921439",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Chavan",
     "email": "sameer.chavan439@campusiq.edu",
     "phone_number": "+91 93804 55033",
@@ -21100,7 +21100,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921440",
     "student_id": "252921440",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Wagh",
     "email": "shreya.wagh440@campusiq.edu",
     "phone_number": "+91 91083 64758",
@@ -21185,7 +21185,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921441",
     "student_id": "252921441",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Joshi",
     "email": "om.joshi441@campusiq.edu",
     "phone_number": "+91 98524 84760",
@@ -21270,7 +21270,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921442",
     "student_id": "252921442",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Yadav",
     "email": "rohan.yadav442@campusiq.edu",
     "phone_number": "+91 91898 77467",
@@ -21355,7 +21355,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921443",
     "student_id": "252921443",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Kale",
     "email": "deepika.kale443@campusiq.edu",
     "phone_number": "+91 99250 99158",
@@ -21440,7 +21440,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921444",
     "student_id": "252921444",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Kulkarni",
     "email": "tanvi.kulkarni444@campusiq.edu",
     "phone_number": "+91 99131 29726",
@@ -21525,7 +21525,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921445",
     "student_id": "252921445",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Singh",
     "email": "aditi.singh445@campusiq.edu",
     "phone_number": "+91 99686 81888",
@@ -21610,7 +21610,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921446",
     "student_id": "252921446",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Shinde",
     "email": "shaurya.shinde446@campusiq.edu",
     "phone_number": "+91 92915 15393",
@@ -21695,7 +21695,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921447",
     "student_id": "252921447",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Gupta",
     "email": "rohan.gupta447@campusiq.edu",
     "phone_number": "+91 95842 72116",
@@ -21780,7 +21780,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921448",
     "student_id": "252921448",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Salunkhe",
     "email": "myra.salunkhe448@campusiq.edu",
     "phone_number": "+91 94639 46428",
@@ -21865,7 +21865,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921449",
     "student_id": "252921449",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Pawar",
     "email": "sai.pawar449@campusiq.edu",
     "phone_number": "+91 98278 64474",
@@ -21950,7 +21950,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921450",
     "student_id": "252921450",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Tiwari",
     "email": "riya.tiwari450@campusiq.edu",
     "phone_number": "+91 93243 36117",
@@ -22035,7 +22035,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921451",
     "student_id": "252921451",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Tiwari",
     "email": "ayaan.tiwari451@campusiq.edu",
     "phone_number": "+91 95541 74625",
@@ -22120,7 +22120,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921452",
     "student_id": "252921452",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Gupta",
     "email": "gaurav.gupta452@campusiq.edu",
     "phone_number": "+91 96832 16385",
@@ -22205,7 +22205,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921453",
     "student_id": "252921453",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Chavan",
     "email": "saanvi.chavan453@campusiq.edu",
     "phone_number": "+91 96575 31368",
@@ -22290,7 +22290,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921454",
     "student_id": "252921454",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Deshmukh",
     "email": "swati.deshmukh454@campusiq.edu",
     "phone_number": "+91 94643 26870",
@@ -22375,7 +22375,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921455",
     "student_id": "252921455",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Deshmukh",
     "email": "neha.deshmukh455@campusiq.edu",
     "phone_number": "+91 93028 88878",
@@ -22460,7 +22460,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921456",
     "student_id": "252921456",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Deshmukh",
     "email": "sneha.deshmukh456@campusiq.edu",
     "phone_number": "+91 94506 76085",
@@ -22545,7 +22545,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921457",
     "student_id": "252921457",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Deshmukh",
     "email": "saanvi.deshmukh457@campusiq.edu",
     "phone_number": "+91 97304 47173",
@@ -22630,7 +22630,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921458",
     "student_id": "252921458",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Kulkarni",
     "email": "ayaan.kulkarni458@campusiq.edu",
     "phone_number": "+91 97468 62510",
@@ -22715,7 +22715,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921459",
     "student_id": "252921459",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Sawant",
     "email": "aniket.sawant459@campusiq.edu",
     "phone_number": "+91 99379 46554",
@@ -22800,7 +22800,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921460",
     "student_id": "252921460",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Sawant",
     "email": "saanvi.sawant460@campusiq.edu",
     "phone_number": "+91 99270 44296",
@@ -22885,7 +22885,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921461",
     "student_id": "252921461",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Wagh",
     "email": "ayaan.wagh461@campusiq.edu",
     "phone_number": "+91 99037 96517",
@@ -22970,7 +22970,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921462",
     "student_id": "252921462",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Sharma",
     "email": "myra.sharma462@campusiq.edu",
     "phone_number": "+91 96591 59882",
@@ -23055,7 +23055,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921463",
     "student_id": "252921463",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Sawant",
     "email": "tanvi.sawant463@campusiq.edu",
     "phone_number": "+91 91364 51486",
@@ -23140,7 +23140,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921464",
     "student_id": "252921464",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Yadav",
     "email": "anvi.yadav464@campusiq.edu",
     "phone_number": "+91 92506 85784",
@@ -23225,7 +23225,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921465",
     "student_id": "252921465",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Gupta",
     "email": "vivaan.gupta465@campusiq.edu",
     "phone_number": "+91 99457 34450",
@@ -23310,7 +23310,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921466",
     "student_id": "252921466",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Mishra",
     "email": "kabir.mishra466@campusiq.edu",
     "phone_number": "+91 94868 63197",
@@ -23395,7 +23395,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921467",
     "student_id": "252921467",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Dubey",
     "email": "saanvi.dubey467@campusiq.edu",
     "phone_number": "+91 91326 17251",
@@ -23480,7 +23480,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921468",
     "student_id": "252921468",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Yadav",
     "email": "meera.yadav468@campusiq.edu",
     "phone_number": "+91 94865 65426",
@@ -23565,7 +23565,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921469",
     "student_id": "252921469",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Pandey",
     "email": "deepika.pandey469@campusiq.edu",
     "phone_number": "+91 91570 96798",
@@ -23650,7 +23650,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921470",
     "student_id": "252921470",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Shah",
     "email": "nikita.shah470@campusiq.edu",
     "phone_number": "+91 93625 67520",
@@ -23735,7 +23735,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921471",
     "student_id": "252921471",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Gupta",
     "email": "isha.gupta471@campusiq.edu",
     "phone_number": "+91 94010 92595",
@@ -23820,7 +23820,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921472",
     "student_id": "252921472",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Joshi",
     "email": "karan.joshi472@campusiq.edu",
     "phone_number": "+91 97447 59456",
@@ -23905,7 +23905,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921473",
     "student_id": "252921473",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Agarwal",
     "email": "shreya.agarwal473@campusiq.edu",
     "phone_number": "+91 98433 98291",
@@ -23990,7 +23990,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921474",
     "student_id": "252921474",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Shinde",
     "email": "shreya.shinde474@campusiq.edu",
     "phone_number": "+91 97056 86402",
@@ -24075,7 +24075,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921475",
     "student_id": "252921475",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Bhosale",
     "email": "om.bhosale475@campusiq.edu",
     "phone_number": "+91 97076 27332",
@@ -24160,7 +24160,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921476",
     "student_id": "252921476",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Agarwal",
     "email": "neha.agarwal476@campusiq.edu",
     "phone_number": "+91 95321 77760",
@@ -24245,7 +24245,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921477",
     "student_id": "252921477",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Mehta",
     "email": "ayaan.mehta477@campusiq.edu",
     "phone_number": "+91 93425 26207",
@@ -24330,7 +24330,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921478",
     "student_id": "252921478",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Choudhary",
     "email": "reyansh.choudhary478@campusiq.edu",
     "phone_number": "+91 96300 30155",
@@ -24415,7 +24415,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921479",
     "student_id": "252921479",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Patil",
     "email": "varun.patil479@campusiq.edu",
     "phone_number": "+91 97534 43444",
@@ -24500,7 +24500,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921480",
     "student_id": "252921480",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Pandey",
     "email": "riya.pandey480@campusiq.edu",
     "phone_number": "+91 97931 21825",
@@ -24585,7 +24585,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921481",
     "student_id": "252921481",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Chavan",
     "email": "aadhya.chavan481@campusiq.edu",
     "phone_number": "+91 95841 84519",
@@ -24670,7 +24670,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921482",
     "student_id": "252921482",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Kadam",
     "email": "sneha.kadam482@campusiq.edu",
     "phone_number": "+91 98371 91764",
@@ -24755,7 +24755,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921483",
     "student_id": "252921483",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Pandey",
     "email": "om.pandey483@campusiq.edu",
     "phone_number": "+91 96910 98316",
@@ -24840,7 +24840,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921484",
     "student_id": "252921484",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Sharma",
     "email": "manish.sharma484@campusiq.edu",
     "phone_number": "+91 92908 31771",
@@ -24925,7 +24925,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921485",
     "student_id": "252921485",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Mishra",
     "email": "sakshi.mishra485@campusiq.edu",
     "phone_number": "+91 98993 40396",
@@ -25010,7 +25010,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921486",
     "student_id": "252921486",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Agarwal",
     "email": "rohan.agarwal486@campusiq.edu",
     "phone_number": "+91 98675 27191",
@@ -25095,7 +25095,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921487",
     "student_id": "252921487",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Jadhav",
     "email": "vivaan.jadhav487@campusiq.edu",
     "phone_number": "+91 95273 56798",
@@ -25180,7 +25180,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921488",
     "student_id": "252921488",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Tiwari",
     "email": "rashmi.tiwari488@campusiq.edu",
     "phone_number": "+91 92817 23879",
@@ -25265,7 +25265,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921489",
     "student_id": "252921489",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Kadam",
     "email": "advik.kadam489@campusiq.edu",
     "phone_number": "+91 97811 10863",
@@ -25350,7 +25350,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921490",
     "student_id": "252921490",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Kadam",
     "email": "vivaan.kadam490@campusiq.edu",
     "phone_number": "+91 93385 11303",
@@ -25435,7 +25435,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921491",
     "student_id": "252921491",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Salunkhe",
     "email": "deepika.salunkhe491@campusiq.edu",
     "phone_number": "+91 93406 62944",
@@ -25520,7 +25520,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921492",
     "student_id": "252921492",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Shah",
     "email": "vivaan.shah492@campusiq.edu",
     "phone_number": "+91 99846 87660",
@@ -25605,7 +25605,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921493",
     "student_id": "252921493",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Bhosale",
     "email": "sanya.bhosale493@campusiq.edu",
     "phone_number": "+91 99514 42457",
@@ -25690,7 +25690,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921494",
     "student_id": "252921494",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Kadam",
     "email": "manish.kadam494@campusiq.edu",
     "phone_number": "+91 99020 64646",
@@ -25775,7 +25775,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921495",
     "student_id": "252921495",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Jadhav",
     "email": "ayaan.jadhav495@campusiq.edu",
     "phone_number": "+91 95995 59081",
@@ -25860,7 +25860,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921496",
     "student_id": "252921496",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Pandey",
     "email": "rashmi.pandey496@campusiq.edu",
     "phone_number": "+91 93175 28156",
@@ -25945,7 +25945,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921497",
     "student_id": "252921497",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Pawar",
     "email": "sai.pawar497@campusiq.edu",
     "phone_number": "+91 99877 85609",
@@ -26030,7 +26030,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921498",
     "student_id": "252921498",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Chavan",
     "email": "atharva.chavan498@campusiq.edu",
     "phone_number": "+91 91394 79193",
@@ -26115,7 +26115,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921499",
     "student_id": "252921499",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Bhosale",
     "email": "kabir.bhosale499@campusiq.edu",
     "phone_number": "+91 92981 16799",
@@ -26200,7 +26200,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921500",
     "student_id": "252921500",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Gaikwad",
     "email": "krishna.gaikwad500@campusiq.edu",
     "phone_number": "+91 97664 68455",
@@ -26285,7 +26285,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921501",
     "student_id": "252921501",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Jadhav",
     "email": "varun.jadhav501@campusiq.edu",
     "phone_number": "+91 94485 86697",
@@ -26370,7 +26370,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921502",
     "student_id": "252921502",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Pawar",
     "email": "rohan.pawar502@campusiq.edu",
     "phone_number": "+91 98533 88579",
@@ -26455,7 +26455,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921503",
     "student_id": "252921503",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Choudhary",
     "email": "atharva.choudhary503@campusiq.edu",
     "phone_number": "+91 91138 26353",
@@ -26540,7 +26540,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921504",
     "student_id": "252921504",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Kale",
     "email": "nikita.kale504@campusiq.edu",
     "phone_number": "+91 99197 74751",
@@ -26625,7 +26625,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921505",
     "student_id": "252921505",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Gupta",
     "email": "manish.gupta505@campusiq.edu",
     "phone_number": "+91 91849 52336",
@@ -26710,7 +26710,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921506",
     "student_id": "252921506",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Shinde",
     "email": "shreya.shinde506@campusiq.edu",
     "phone_number": "+91 94225 31558",
@@ -26795,7 +26795,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921507",
     "student_id": "252921507",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Verma",
     "email": "shreya.verma507@campusiq.edu",
     "phone_number": "+91 97183 51062",
@@ -26880,7 +26880,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921508",
     "student_id": "252921508",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Pandey",
     "email": "gayatri.pandey508@campusiq.edu",
     "phone_number": "+91 92659 54514",
@@ -26965,7 +26965,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921509",
     "student_id": "252921509",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Kulkarni",
     "email": "vihaan.kulkarni509@campusiq.edu",
     "phone_number": "+91 96106 86614",
@@ -27050,7 +27050,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921510",
     "student_id": "252921510",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Pawar",
     "email": "rohan.pawar510@campusiq.edu",
     "phone_number": "+91 98794 71263",
@@ -27135,7 +27135,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921511",
     "student_id": "252921511",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Choudhary",
     "email": "atharva.choudhary511@campusiq.edu",
     "phone_number": "+91 91110 57555",
@@ -27220,7 +27220,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921512",
     "student_id": "252921512",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Choudhary",
     "email": "vivaan.choudhary512@campusiq.edu",
     "phone_number": "+91 93248 59666",
@@ -27305,7 +27305,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921513",
     "student_id": "252921513",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Agarwal",
     "email": "aaryav.agarwal513@campusiq.edu",
     "phone_number": "+91 91756 90744",
@@ -27390,7 +27390,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921514",
     "student_id": "252921514",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Singh",
     "email": "diya.singh514@campusiq.edu",
     "phone_number": "+91 99106 72096",
@@ -27475,7 +27475,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921515",
     "student_id": "252921515",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Verma",
     "email": "myra.verma515@campusiq.edu",
     "phone_number": "+91 98622 77143",
@@ -27560,7 +27560,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921516",
     "student_id": "252921516",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Pawar",
     "email": "pari.pawar516@campusiq.edu",
     "phone_number": "+91 96468 35774",
@@ -27645,7 +27645,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921517",
     "student_id": "252921517",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Wagh",
     "email": "aadhya.wagh517@campusiq.edu",
     "phone_number": "+91 98679 70476",
@@ -27730,7 +27730,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921518",
     "student_id": "252921518",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Sharma",
     "email": "myra.sharma518@campusiq.edu",
     "phone_number": "+91 91527 28236",
@@ -27815,7 +27815,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921519",
     "student_id": "252921519",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Pandey",
     "email": "tanvi.pandey519@campusiq.edu",
     "phone_number": "+91 99005 13517",
@@ -27900,7 +27900,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921520",
     "student_id": "252921520",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Gaikwad",
     "email": "pranav.gaikwad520@campusiq.edu",
     "phone_number": "+91 98081 97135",
@@ -27985,7 +27985,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921521",
     "student_id": "252921521",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Kadam",
     "email": "shreya.kadam521@campusiq.edu",
     "phone_number": "+91 96681 48987",
@@ -28070,7 +28070,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921522",
     "student_id": "252921522",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Tiwari",
     "email": "gaurav.tiwari522@campusiq.edu",
     "phone_number": "+91 92986 58330",
@@ -28155,7 +28155,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921523",
     "student_id": "252921523",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Kadam",
     "email": "pooja.kadam523@campusiq.edu",
     "phone_number": "+91 98942 70470",
@@ -28240,7 +28240,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921524",
     "student_id": "252921524",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Pawar",
     "email": "pari.pawar524@campusiq.edu",
     "phone_number": "+91 98242 16259",
@@ -28325,7 +28325,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921525",
     "student_id": "252921525",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Shinde",
     "email": "arjun.shinde525@campusiq.edu",
     "phone_number": "+91 92582 97046",
@@ -28410,7 +28410,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921526",
     "student_id": "252921526",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Gupta",
     "email": "dhruv.gupta526@campusiq.edu",
     "phone_number": "+91 97045 15759",
@@ -28495,7 +28495,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921527",
     "student_id": "252921527",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Gupta",
     "email": "ananya.gupta527@campusiq.edu",
     "phone_number": "+91 94808 75984",
@@ -28580,7 +28580,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921528",
     "student_id": "252921528",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Gupta",
     "email": "siddharth.gupta528@campusiq.edu",
     "phone_number": "+91 91648 78271",
@@ -28665,7 +28665,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921529",
     "student_id": "252921529",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Verma",
     "email": "advik.verma529@campusiq.edu",
     "phone_number": "+91 93318 36767",
@@ -28750,7 +28750,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921530",
     "student_id": "252921530",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Bhosale",
     "email": "karan.bhosale530@campusiq.edu",
     "phone_number": "+91 97188 31989",
@@ -28835,7 +28835,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921531",
     "student_id": "252921531",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Sawant",
     "email": "aarohi.sawant531@campusiq.edu",
     "phone_number": "+91 92178 53677",
@@ -28920,7 +28920,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921532",
     "student_id": "252921532",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Chavan",
     "email": "neha.chavan532@campusiq.edu",
     "phone_number": "+91 95182 55688",
@@ -29005,7 +29005,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921533",
     "student_id": "252921533",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Choudhary",
     "email": "aditi.choudhary533@campusiq.edu",
     "phone_number": "+91 93644 11617",
@@ -29090,7 +29090,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921534",
     "student_id": "252921534",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Yadav",
     "email": "sakshi.yadav534@campusiq.edu",
     "phone_number": "+91 97520 50383",
@@ -29175,7 +29175,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921535",
     "student_id": "252921535",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Tiwari",
     "email": "meera.tiwari535@campusiq.edu",
     "phone_number": "+91 94143 43993",
@@ -29260,7 +29260,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921536",
     "student_id": "252921536",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Deshmukh",
     "email": "aditya.deshmukh536@campusiq.edu",
     "phone_number": "+91 94458 78463",
@@ -29345,7 +29345,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921537",
     "student_id": "252921537",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Bhosale",
     "email": "tanvi.bhosale537@campusiq.edu",
     "phone_number": "+91 93275 13365",
@@ -29430,7 +29430,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921538",
     "student_id": "252921538",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Patil",
     "email": "shruti.patil538@campusiq.edu",
     "phone_number": "+91 96707 66087",
@@ -29515,7 +29515,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921539",
     "student_id": "252921539",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Tiwari",
     "email": "shaurya.tiwari539@campusiq.edu",
     "phone_number": "+91 92465 23824",
@@ -29600,7 +29600,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921540",
     "student_id": "252921540",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Mane",
     "email": "shruti.mane540@campusiq.edu",
     "phone_number": "+91 98159 40587",
@@ -29685,7 +29685,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921541",
     "student_id": "252921541",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Wagh",
     "email": "aarohi.wagh541@campusiq.edu",
     "phone_number": "+91 94639 23970",
@@ -29770,7 +29770,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921542",
     "student_id": "252921542",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera More",
     "email": "meera.more542@campusiq.edu",
     "phone_number": "+91 93501 37605",
@@ -29855,7 +29855,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921543",
     "student_id": "252921543",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna More",
     "email": "krishna.more543@campusiq.edu",
     "phone_number": "+91 91886 49855",
@@ -29940,7 +29940,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921544",
     "student_id": "252921544",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Joshi",
     "email": "diya.joshi544@campusiq.edu",
     "phone_number": "+91 91859 25380",
@@ -30025,7 +30025,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921545",
     "student_id": "252921545",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Sawant",
     "email": "ayaan.sawant545@campusiq.edu",
     "phone_number": "+91 99351 39482",
@@ -30110,7 +30110,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921546",
     "student_id": "252921546",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Dubey",
     "email": "swati.dubey546@campusiq.edu",
     "phone_number": "+91 93033 37192",
@@ -30195,7 +30195,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921547",
     "student_id": "252921547",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Sharma",
     "email": "aditi.sharma547@campusiq.edu",
     "phone_number": "+91 95068 49400",
@@ -30280,7 +30280,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921548",
     "student_id": "252921548",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Kale",
     "email": "nikhil.kale548@campusiq.edu",
     "phone_number": "+91 93105 91567",
@@ -30365,7 +30365,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921549",
     "student_id": "252921549",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Chavan",
     "email": "shruti.chavan549@campusiq.edu",
     "phone_number": "+91 97208 13396",
@@ -30450,7 +30450,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921550",
     "student_id": "252921550",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Shah",
     "email": "sneha.shah550@campusiq.edu",
     "phone_number": "+91 96022 87178",
@@ -30535,7 +30535,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921551",
     "student_id": "252921551",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Gupta",
     "email": "sneha.gupta551@campusiq.edu",
     "phone_number": "+91 97064 42651",
@@ -30620,7 +30620,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921552",
     "student_id": "252921552",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Patil",
     "email": "vihaan.patil552@campusiq.edu",
     "phone_number": "+91 95683 82634",
@@ -30705,7 +30705,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921553",
     "student_id": "252921553",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Patil",
     "email": "atharva.patil553@campusiq.edu",
     "phone_number": "+91 97013 27474",
@@ -30790,7 +30790,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921554",
     "student_id": "252921554",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Jadhav",
     "email": "vihaan.jadhav554@campusiq.edu",
     "phone_number": "+91 91096 90678",
@@ -30875,7 +30875,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921555",
     "student_id": "252921555",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Mane",
     "email": "atharva.mane555@campusiq.edu",
     "phone_number": "+91 95415 24246",
@@ -30960,7 +30960,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921556",
     "student_id": "252921556",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Mishra",
     "email": "meera.mishra556@campusiq.edu",
     "phone_number": "+91 93087 52583",
@@ -31045,7 +31045,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921557",
     "student_id": "252921557",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Pandey",
     "email": "aaryav.pandey557@campusiq.edu",
     "phone_number": "+91 93498 77009",
@@ -31130,7 +31130,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921558",
     "student_id": "252921558",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Verma",
     "email": "nikita.verma558@campusiq.edu",
     "phone_number": "+91 97231 63385",
@@ -31215,7 +31215,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921559",
     "student_id": "252921559",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Kale",
     "email": "diya.kale559@campusiq.edu",
     "phone_number": "+91 92650 66479",
@@ -31300,7 +31300,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921560",
     "student_id": "252921560",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Agarwal",
     "email": "myra.agarwal560@campusiq.edu",
     "phone_number": "+91 94120 35287",
@@ -31385,7 +31385,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921561",
     "student_id": "252921561",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Agarwal",
     "email": "aadhya.agarwal561@campusiq.edu",
     "phone_number": "+91 99255 12867",
@@ -31470,7 +31470,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921562",
     "student_id": "252921562",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Shah",
     "email": "aarav.shah562@campusiq.edu",
     "phone_number": "+91 99401 69695",
@@ -31555,7 +31555,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921563",
     "student_id": "252921563",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Gupta",
     "email": "aarav.gupta563@campusiq.edu",
     "phone_number": "+91 96692 92927",
@@ -31640,7 +31640,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921564",
     "student_id": "252921564",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Singh",
     "email": "pooja.singh564@campusiq.edu",
     "phone_number": "+91 97258 95698",
@@ -31725,7 +31725,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921565",
     "student_id": "252921565",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Gupta",
     "email": "atharva.gupta565@campusiq.edu",
     "phone_number": "+91 95621 12758",
@@ -31810,7 +31810,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921566",
     "student_id": "252921566",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Shinde",
     "email": "krishna.shinde566@campusiq.edu",
     "phone_number": "+91 92369 45082",
@@ -31895,7 +31895,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921567",
     "student_id": "252921567",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Deshmukh",
     "email": "rudra.deshmukh567@campusiq.edu",
     "phone_number": "+91 99381 64432",
@@ -31980,7 +31980,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921568",
     "student_id": "252921568",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Salunkhe",
     "email": "manish.salunkhe568@campusiq.edu",
     "phone_number": "+91 96486 88592",
@@ -32065,7 +32065,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921569",
     "student_id": "252921569",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Wagh",
     "email": "ayaan.wagh569@campusiq.edu",
     "phone_number": "+91 98003 46500",
@@ -32150,7 +32150,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921570",
     "student_id": "252921570",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Wagh",
     "email": "aadhya.wagh570@campusiq.edu",
     "phone_number": "+91 94593 21436",
@@ -32235,7 +32235,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921571",
     "student_id": "252921571",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Singh",
     "email": "vivaan.singh571@campusiq.edu",
     "phone_number": "+91 97958 58717",
@@ -32320,7 +32320,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921572",
     "student_id": "252921572",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Singh",
     "email": "isha.singh572@campusiq.edu",
     "phone_number": "+91 91216 47587",
@@ -32405,7 +32405,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921573",
     "student_id": "252921573",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Yadav",
     "email": "krishna.yadav573@campusiq.edu",
     "phone_number": "+91 94471 62481",
@@ -32490,7 +32490,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921574",
     "student_id": "252921574",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Sharma",
     "email": "rohan.sharma574@campusiq.edu",
     "phone_number": "+91 94924 46989",
@@ -32575,7 +32575,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921575",
     "student_id": "252921575",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Pawar",
     "email": "ananya.pawar575@campusiq.edu",
     "phone_number": "+91 96152 61202",
@@ -32660,7 +32660,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921576",
     "student_id": "252921576",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Kulkarni",
     "email": "isha.kulkarni576@campusiq.edu",
     "phone_number": "+91 93638 75748",
@@ -32745,7 +32745,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921577",
     "student_id": "252921577",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Dubey",
     "email": "meera.dubey577@campusiq.edu",
     "phone_number": "+91 92428 75393",
@@ -32830,7 +32830,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921578",
     "student_id": "252921578",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Pandey",
     "email": "divya.pandey578@campusiq.edu",
     "phone_number": "+91 93113 67780",
@@ -32915,7 +32915,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921579",
     "student_id": "252921579",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Kadam",
     "email": "nikita.kadam579@campusiq.edu",
     "phone_number": "+91 92531 55735",
@@ -33000,7 +33000,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921580",
     "student_id": "252921580",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Gupta",
     "email": "ishaan.gupta580@campusiq.edu",
     "phone_number": "+91 94497 51967",
@@ -33085,7 +33085,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921581",
     "student_id": "252921581",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Pawar",
     "email": "aadhya.pawar581@campusiq.edu",
     "phone_number": "+91 95250 34127",
@@ -33170,7 +33170,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921582",
     "student_id": "252921582",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Kadam",
     "email": "deepika.kadam582@campusiq.edu",
     "phone_number": "+91 93416 75463",
@@ -33255,7 +33255,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921583",
     "student_id": "252921583",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Sharma",
     "email": "karan.sharma583@campusiq.edu",
     "phone_number": "+91 95947 50234",
@@ -33340,7 +33340,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921584",
     "student_id": "252921584",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Gupta",
     "email": "manish.gupta584@campusiq.edu",
     "phone_number": "+91 95640 91313",
@@ -33425,7 +33425,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921585",
     "student_id": "252921585",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Dubey",
     "email": "nikhil.dubey585@campusiq.edu",
     "phone_number": "+91 98601 64124",
@@ -33510,7 +33510,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921586",
     "student_id": "252921586",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Choudhary",
     "email": "aadhya.choudhary586@campusiq.edu",
     "phone_number": "+91 96201 53920",
@@ -33595,7 +33595,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921587",
     "student_id": "252921587",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Choudhary",
     "email": "aniket.choudhary587@campusiq.edu",
     "phone_number": "+91 95263 82470",
@@ -33680,7 +33680,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921588",
     "student_id": "252921588",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Verma",
     "email": "aditi.verma588@campusiq.edu",
     "phone_number": "+91 95505 20874",
@@ -33765,7 +33765,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921589",
     "student_id": "252921589",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Patil",
     "email": "prisha.patil589@campusiq.edu",
     "phone_number": "+91 94445 65038",
@@ -33850,7 +33850,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921590",
     "student_id": "252921590",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Deshmukh",
     "email": "karan.deshmukh590@campusiq.edu",
     "phone_number": "+91 94554 13866",
@@ -33935,7 +33935,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921591",
     "student_id": "252921591",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Gaikwad",
     "email": "myra.gaikwad591@campusiq.edu",
     "phone_number": "+91 93714 36978",
@@ -34020,7 +34020,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921592",
     "student_id": "252921592",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Jadhav",
     "email": "aadhya.jadhav592@campusiq.edu",
     "phone_number": "+91 97525 13924",
@@ -34105,7 +34105,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921593",
     "student_id": "252921593",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Deshmukh",
     "email": "pranav.deshmukh593@campusiq.edu",
     "phone_number": "+91 95555 89679",
@@ -34190,7 +34190,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921594",
     "student_id": "252921594",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Sharma",
     "email": "rudra.sharma594@campusiq.edu",
     "phone_number": "+91 91076 70525",
@@ -34275,7 +34275,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921595",
     "student_id": "252921595",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Agarwal",
     "email": "isha.agarwal595@campusiq.edu",
     "phone_number": "+91 92989 59008",
@@ -34360,7 +34360,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921596",
     "student_id": "252921596",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Singh",
     "email": "rohan.singh596@campusiq.edu",
     "phone_number": "+91 97218 45377",
@@ -34445,7 +34445,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921597",
     "student_id": "252921597",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Mehta",
     "email": "rashmi.mehta597@campusiq.edu",
     "phone_number": "+91 94971 96439",
@@ -34530,7 +34530,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921598",
     "student_id": "252921598",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Agarwal",
     "email": "advaith.agarwal598@campusiq.edu",
     "phone_number": "+91 96957 60538",
@@ -34615,7 +34615,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921599",
     "student_id": "252921599",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Deshmukh",
     "email": "kabir.deshmukh599@campusiq.edu",
     "phone_number": "+91 92377 56455",
@@ -34700,7 +34700,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921600",
     "student_id": "252921600",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Shinde",
     "email": "ayaan.shinde600@campusiq.edu",
     "phone_number": "+91 92887 16964",
@@ -34785,7 +34785,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921601",
     "student_id": "252921601",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Mehta",
     "email": "om.mehta601@campusiq.edu",
     "phone_number": "+91 94909 32312",
@@ -34870,7 +34870,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921602",
     "student_id": "252921602",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Sharma",
     "email": "swati.sharma602@campusiq.edu",
     "phone_number": "+91 95762 39922",
@@ -34955,7 +34955,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921603",
     "student_id": "252921603",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Sharma",
     "email": "prisha.sharma603@campusiq.edu",
     "phone_number": "+91 93423 63781",
@@ -35040,7 +35040,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921604",
     "student_id": "252921604",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Gaikwad",
     "email": "dhruv.gaikwad604@campusiq.edu",
     "phone_number": "+91 94122 15387",
@@ -35125,7 +35125,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921605",
     "student_id": "252921605",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Pawar",
     "email": "aditya.pawar605@campusiq.edu",
     "phone_number": "+91 95636 87735",
@@ -35210,7 +35210,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921606",
     "student_id": "252921606",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Avani Gupta",
     "email": "avani.gupta606@campusiq.edu",
     "phone_number": "+91 97328 65386",
@@ -35295,7 +35295,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921607",
     "student_id": "252921607",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Bhosale",
     "email": "atharva.bhosale607@campusiq.edu",
     "phone_number": "+91 98158 22588",
@@ -35380,7 +35380,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921608",
     "student_id": "252921608",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Pandey",
     "email": "krishna.pandey608@campusiq.edu",
     "phone_number": "+91 99900 84130",
@@ -35465,7 +35465,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921609",
     "student_id": "252921609",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Sawant",
     "email": "pooja.sawant609@campusiq.edu",
     "phone_number": "+91 93234 39300",
@@ -35550,7 +35550,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921610",
     "student_id": "252921610",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Shinde",
     "email": "swati.shinde610@campusiq.edu",
     "phone_number": "+91 99957 44114",
@@ -35635,7 +35635,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921611",
     "student_id": "252921611",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Chavan",
     "email": "swati.chavan611@campusiq.edu",
     "phone_number": "+91 93427 13666",
@@ -35720,7 +35720,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921612",
     "student_id": "252921612",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Gupta",
     "email": "nikhil.gupta612@campusiq.edu",
     "phone_number": "+91 96558 70225",
@@ -35805,7 +35805,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921613",
     "student_id": "252921613",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Shinde",
     "email": "shaurya.shinde613@campusiq.edu",
     "phone_number": "+91 92581 97197",
@@ -35890,7 +35890,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921614",
     "student_id": "252921614",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Bhosale",
     "email": "harsh.bhosale614@campusiq.edu",
     "phone_number": "+91 93182 93544",
@@ -35975,7 +35975,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921615",
     "student_id": "252921615",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Yadav",
     "email": "shreya.yadav615@campusiq.edu",
     "phone_number": "+91 99653 75034",
@@ -36060,7 +36060,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921616",
     "student_id": "252921616",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Bhosale",
     "email": "kabir.bhosale616@campusiq.edu",
     "phone_number": "+91 96863 18906",
@@ -36145,7 +36145,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921617",
     "student_id": "252921617",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Agarwal",
     "email": "rohan.agarwal617@campusiq.edu",
     "phone_number": "+91 92021 40882",
@@ -36230,7 +36230,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921618",
     "student_id": "252921618",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Dubey",
     "email": "shruti.dubey618@campusiq.edu",
     "phone_number": "+91 94214 80016",
@@ -36315,7 +36315,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921619",
     "student_id": "252921619",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Chavan",
     "email": "advaith.chavan619@campusiq.edu",
     "phone_number": "+91 99785 84455",
@@ -36400,7 +36400,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921620",
     "student_id": "252921620",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Yadav",
     "email": "sanya.yadav620@campusiq.edu",
     "phone_number": "+91 96848 38873",
@@ -36485,7 +36485,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921621",
     "student_id": "252921621",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Singh",
     "email": "aaryav.singh621@campusiq.edu",
     "phone_number": "+91 98213 95184",
@@ -36570,7 +36570,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921622",
     "student_id": "252921622",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Tiwari",
     "email": "pari.tiwari622@campusiq.edu",
     "phone_number": "+91 96698 13406",
@@ -36655,7 +36655,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921623",
     "student_id": "252921623",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Shinde",
     "email": "sakshi.shinde623@campusiq.edu",
     "phone_number": "+91 93160 11990",
@@ -36740,7 +36740,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921624",
     "student_id": "252921624",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Verma",
     "email": "sameer.verma624@campusiq.edu",
     "phone_number": "+91 96877 72941",
@@ -36825,7 +36825,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921625",
     "student_id": "252921625",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra More",
     "email": "myra.more625@campusiq.edu",
     "phone_number": "+91 91687 82536",
@@ -36910,7 +36910,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921626",
     "student_id": "252921626",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Sharma",
     "email": "ishaan.sharma626@campusiq.edu",
     "phone_number": "+91 96350 89556",
@@ -36995,7 +36995,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921627",
     "student_id": "252921627",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Bhosale",
     "email": "ishaan.bhosale627@campusiq.edu",
     "phone_number": "+91 92285 20133",
@@ -37080,7 +37080,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921628",
     "student_id": "252921628",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Yadav",
     "email": "siddharth.yadav628@campusiq.edu",
     "phone_number": "+91 92890 41594",
@@ -37165,7 +37165,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921629",
     "student_id": "252921629",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Patil",
     "email": "ayaan.patil629@campusiq.edu",
     "phone_number": "+91 97692 65184",
@@ -37250,7 +37250,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921630",
     "student_id": "252921630",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Chavan",
     "email": "deepika.chavan630@campusiq.edu",
     "phone_number": "+91 96805 26705",
@@ -37335,7 +37335,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921631",
     "student_id": "252921631",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Salunkhe",
     "email": "sakshi.salunkhe631@campusiq.edu",
     "phone_number": "+91 92372 29956",
@@ -37420,7 +37420,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921632",
     "student_id": "252921632",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Wagh",
     "email": "dhruv.wagh632@campusiq.edu",
     "phone_number": "+91 96150 23037",
@@ -37505,7 +37505,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921633",
     "student_id": "252921633",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Wagh",
     "email": "rudra.wagh633@campusiq.edu",
     "phone_number": "+91 97987 68304",
@@ -37590,7 +37590,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921634",
     "student_id": "252921634",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Yadav",
     "email": "prisha.yadav634@campusiq.edu",
     "phone_number": "+91 99402 98091",
@@ -37675,7 +37675,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921635",
     "student_id": "252921635",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Gupta",
     "email": "advik.gupta635@campusiq.edu",
     "phone_number": "+91 92453 77673",
@@ -37760,7 +37760,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921636",
     "student_id": "252921636",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Gupta",
     "email": "shruti.gupta636@campusiq.edu",
     "phone_number": "+91 97425 88360",
@@ -37845,7 +37845,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921637",
     "student_id": "252921637",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Salunkhe",
     "email": "dhruv.salunkhe637@campusiq.edu",
     "phone_number": "+91 94524 63609",
@@ -37930,7 +37930,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921638",
     "student_id": "252921638",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Sharma",
     "email": "pari.sharma638@campusiq.edu",
     "phone_number": "+91 91345 59700",
@@ -38015,7 +38015,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921639",
     "student_id": "252921639",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Verma",
     "email": "aarav.verma639@campusiq.edu",
     "phone_number": "+91 91328 79016",
@@ -38100,7 +38100,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921640",
     "student_id": "252921640",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Choudhary",
     "email": "pooja.choudhary640@campusiq.edu",
     "phone_number": "+91 99875 89281",
@@ -38185,7 +38185,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921641",
     "student_id": "252921641",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Mane",
     "email": "tanvi.mane641@campusiq.edu",
     "phone_number": "+91 99300 42062",
@@ -38270,7 +38270,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921642",
     "student_id": "252921642",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Kulkarni",
     "email": "sai.kulkarni642@campusiq.edu",
     "phone_number": "+91 97605 90804",
@@ -38355,7 +38355,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921643",
     "student_id": "252921643",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Salunkhe",
     "email": "diya.salunkhe643@campusiq.edu",
     "phone_number": "+91 92334 23768",
@@ -38440,7 +38440,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921644",
     "student_id": "252921644",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Mishra",
     "email": "gayatri.mishra644@campusiq.edu",
     "phone_number": "+91 95441 78482",
@@ -38525,7 +38525,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921645",
     "student_id": "252921645",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Gaikwad",
     "email": "aarav.gaikwad645@campusiq.edu",
     "phone_number": "+91 94074 36118",
@@ -38610,7 +38610,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921646",
     "student_id": "252921646",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Pawar",
     "email": "aditi.pawar646@campusiq.edu",
     "phone_number": "+91 92269 87678",
@@ -38695,7 +38695,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921647",
     "student_id": "252921647",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Kulkarni",
     "email": "vihaan.kulkarni647@campusiq.edu",
     "phone_number": "+91 99383 67630",
@@ -38780,7 +38780,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921648",
     "student_id": "252921648",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Mishra",
     "email": "kabir.mishra648@campusiq.edu",
     "phone_number": "+91 92970 83125",
@@ -38865,7 +38865,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921649",
     "student_id": "252921649",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Agarwal",
     "email": "ananya.agarwal649@campusiq.edu",
     "phone_number": "+91 91212 89531",
@@ -38950,7 +38950,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921650",
     "student_id": "252921650",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Patil",
     "email": "krishna.patil650@campusiq.edu",
     "phone_number": "+91 97874 25653",
@@ -39035,7 +39035,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921651",
     "student_id": "252921651",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Patil",
     "email": "dhruv.patil651@campusiq.edu",
     "phone_number": "+91 93827 68117",
@@ -39120,7 +39120,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921652",
     "student_id": "252921652",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Kadam",
     "email": "karan.kadam652@campusiq.edu",
     "phone_number": "+91 92331 42339",
@@ -39205,7 +39205,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921653",
     "student_id": "252921653",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Jadhav",
     "email": "saanvi.jadhav653@campusiq.edu",
     "phone_number": "+91 96957 55725",
@@ -39290,7 +39290,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921654",
     "student_id": "252921654",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Joshi",
     "email": "prisha.joshi654@campusiq.edu",
     "phone_number": "+91 98785 28325",
@@ -39375,7 +39375,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921655",
     "student_id": "252921655",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Singh",
     "email": "riya.singh655@campusiq.edu",
     "phone_number": "+91 98126 62341",
@@ -39460,7 +39460,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921656",
     "student_id": "252921656",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Tiwari",
     "email": "riya.tiwari656@campusiq.edu",
     "phone_number": "+91 93286 27025",
@@ -39545,7 +39545,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921657",
     "student_id": "252921657",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Sharma",
     "email": "karan.sharma657@campusiq.edu",
     "phone_number": "+91 98820 30883",
@@ -39630,7 +39630,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921658",
     "student_id": "252921658",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Mishra",
     "email": "saanvi.mishra658@campusiq.edu",
     "phone_number": "+91 91440 39057",
@@ -39715,7 +39715,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921659",
     "student_id": "252921659",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Joshi",
     "email": "gaurav.joshi659@campusiq.edu",
     "phone_number": "+91 93679 62194",
@@ -39800,7 +39800,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921660",
     "student_id": "252921660",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Agarwal",
     "email": "meera.agarwal660@campusiq.edu",
     "phone_number": "+91 98377 75806",
@@ -39885,7 +39885,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921661",
     "student_id": "252921661",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Pandey",
     "email": "gayatri.pandey661@campusiq.edu",
     "phone_number": "+91 97050 43072",
@@ -39970,7 +39970,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921662",
     "student_id": "252921662",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Sawant",
     "email": "prisha.sawant662@campusiq.edu",
     "phone_number": "+91 98063 46004",
@@ -40055,7 +40055,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921663",
     "student_id": "252921663",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Shah",
     "email": "pooja.shah663@campusiq.edu",
     "phone_number": "+91 92298 66811",
@@ -40140,7 +40140,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921664",
     "student_id": "252921664",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Sharma",
     "email": "pranav.sharma664@campusiq.edu",
     "phone_number": "+91 97788 96142",
@@ -40225,7 +40225,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921665",
     "student_id": "252921665",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Kulkarni",
     "email": "harsh.kulkarni665@campusiq.edu",
     "phone_number": "+91 98568 75401",
@@ -40310,7 +40310,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921666",
     "student_id": "252921666",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Mane",
     "email": "rudra.mane666@campusiq.edu",
     "phone_number": "+91 99040 40765",
@@ -40395,7 +40395,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921667",
     "student_id": "252921667",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Shah",
     "email": "aditi.shah667@campusiq.edu",
     "phone_number": "+91 96206 75838",
@@ -40480,7 +40480,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921668",
     "student_id": "252921668",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Shinde",
     "email": "anvi.shinde668@campusiq.edu",
     "phone_number": "+91 93270 89915",
@@ -40565,7 +40565,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921669",
     "student_id": "252921669",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Patil",
     "email": "rudra.patil669@campusiq.edu",
     "phone_number": "+91 91506 37132",
@@ -40650,7 +40650,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921670",
     "student_id": "252921670",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Shah",
     "email": "kabir.shah670@campusiq.edu",
     "phone_number": "+91 99803 25857",
@@ -40735,7 +40735,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921671",
     "student_id": "252921671",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Kulkarni",
     "email": "rohan.kulkarni671@campusiq.edu",
     "phone_number": "+91 94982 73254",
@@ -40820,7 +40820,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921672",
     "student_id": "252921672",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Gaikwad",
     "email": "sanya.gaikwad672@campusiq.edu",
     "phone_number": "+91 96024 30749",
@@ -40905,7 +40905,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921673",
     "student_id": "252921673",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Kulkarni",
     "email": "isha.kulkarni673@campusiq.edu",
     "phone_number": "+91 99209 51195",
@@ -40990,7 +40990,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921674",
     "student_id": "252921674",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Sharma",
     "email": "shreya.sharma674@campusiq.edu",
     "phone_number": "+91 99587 39933",
@@ -41075,7 +41075,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921675",
     "student_id": "252921675",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Patil",
     "email": "dhruv.patil675@campusiq.edu",
     "phone_number": "+91 94113 18345",
@@ -41160,7 +41160,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921676",
     "student_id": "252921676",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Deshmukh",
     "email": "deepika.deshmukh676@campusiq.edu",
     "phone_number": "+91 98252 94230",
@@ -41245,7 +41245,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921677",
     "student_id": "252921677",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Sawant",
     "email": "atharva.sawant677@campusiq.edu",
     "phone_number": "+91 91106 51839",
@@ -41330,7 +41330,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921678",
     "student_id": "252921678",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Wagh",
     "email": "pranav.wagh678@campusiq.edu",
     "phone_number": "+91 93532 52436",
@@ -41415,7 +41415,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921679",
     "student_id": "252921679",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Kadam",
     "email": "siddharth.kadam679@campusiq.edu",
     "phone_number": "+91 96046 65744",
@@ -41500,7 +41500,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921680",
     "student_id": "252921680",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Pawar",
     "email": "pooja.pawar680@campusiq.edu",
     "phone_number": "+91 94522 90944",
@@ -41585,7 +41585,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921681",
     "student_id": "252921681",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Sawant",
     "email": "ayaan.sawant681@campusiq.edu",
     "phone_number": "+91 93200 19697",
@@ -41670,7 +41670,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921682",
     "student_id": "252921682",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Shah",
     "email": "karan.shah682@campusiq.edu",
     "phone_number": "+91 98304 38155",
@@ -41755,7 +41755,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921683",
     "student_id": "252921683",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Gupta",
     "email": "rohan.gupta683@campusiq.edu",
     "phone_number": "+91 92099 19902",
@@ -41840,7 +41840,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921684",
     "student_id": "252921684",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Wagh",
     "email": "aniket.wagh684@campusiq.edu",
     "phone_number": "+91 95813 10832",
@@ -41925,7 +41925,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921685",
     "student_id": "252921685",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Verma",
     "email": "divya.verma685@campusiq.edu",
     "phone_number": "+91 93086 80788",
@@ -42010,7 +42010,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921686",
     "student_id": "252921686",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Pawar",
     "email": "advik.pawar686@campusiq.edu",
     "phone_number": "+91 97234 87360",
@@ -42095,7 +42095,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921687",
     "student_id": "252921687",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Bhosale",
     "email": "gaurav.bhosale687@campusiq.edu",
     "phone_number": "+91 92639 56488",
@@ -42180,7 +42180,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921688",
     "student_id": "252921688",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Pandey",
     "email": "vihaan.pandey688@campusiq.edu",
     "phone_number": "+91 94437 96632",
@@ -42265,7 +42265,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921689",
     "student_id": "252921689",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Sharma",
     "email": "rohan.sharma689@campusiq.edu",
     "phone_number": "+91 98708 14485",
@@ -42350,7 +42350,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921690",
     "student_id": "252921690",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Gaikwad",
     "email": "aarav.gaikwad690@campusiq.edu",
     "phone_number": "+91 98802 71536",
@@ -42435,7 +42435,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921691",
     "student_id": "252921691",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Gaikwad",
     "email": "aditi.gaikwad691@campusiq.edu",
     "phone_number": "+91 96384 70574",
@@ -42520,7 +42520,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921692",
     "student_id": "252921692",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Sharma",
     "email": "siddharth.sharma692@campusiq.edu",
     "phone_number": "+91 98877 73418",
@@ -42605,7 +42605,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921693",
     "student_id": "252921693",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Salunkhe",
     "email": "neha.salunkhe693@campusiq.edu",
     "phone_number": "+91 95306 18272",
@@ -42690,7 +42690,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921694",
     "student_id": "252921694",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Pawar",
     "email": "vivaan.pawar694@campusiq.edu",
     "phone_number": "+91 96798 78888",
@@ -42775,7 +42775,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921695",
     "student_id": "252921695",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Chavan",
     "email": "aadhya.chavan695@campusiq.edu",
     "phone_number": "+91 98807 71342",
@@ -42860,7 +42860,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921696",
     "student_id": "252921696",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Shinde",
     "email": "arjun.shinde696@campusiq.edu",
     "phone_number": "+91 95525 28407",
@@ -42945,7 +42945,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921697",
     "student_id": "252921697",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Shah",
     "email": "arjun.shah697@campusiq.edu",
     "phone_number": "+91 96593 45665",
@@ -43030,7 +43030,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921698",
     "student_id": "252921698",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Kale",
     "email": "kavya.kale698@campusiq.edu",
     "phone_number": "+91 95519 42986",
@@ -43115,7 +43115,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921699",
     "student_id": "252921699",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Deshmukh",
     "email": "aarohi.deshmukh699@campusiq.edu",
     "phone_number": "+91 92615 85448",
@@ -43200,7 +43200,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921700",
     "student_id": "252921700",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Chavan",
     "email": "shreya.chavan700@campusiq.edu",
     "phone_number": "+91 91464 69850",
@@ -43285,7 +43285,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921701",
     "student_id": "252921701",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Mane",
     "email": "anvi.mane701@campusiq.edu",
     "phone_number": "+91 94728 51488",
@@ -43370,7 +43370,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921702",
     "student_id": "252921702",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Gaikwad",
     "email": "chiara.gaikwad702@campusiq.edu",
     "phone_number": "+91 99818 33318",
@@ -43455,7 +43455,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921703",
     "student_id": "252921703",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Mishra",
     "email": "ishaan.mishra703@campusiq.edu",
     "phone_number": "+91 95485 13454",
@@ -43540,7 +43540,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921704",
     "student_id": "252921704",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Dubey",
     "email": "sanya.dubey704@campusiq.edu",
     "phone_number": "+91 96963 44544",
@@ -43625,7 +43625,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921705",
     "student_id": "252921705",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Shinde",
     "email": "swati.shinde705@campusiq.edu",
     "phone_number": "+91 98623 45275",
@@ -43710,7 +43710,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921706",
     "student_id": "252921706",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Chavan",
     "email": "saanvi.chavan706@campusiq.edu",
     "phone_number": "+91 93184 61936",
@@ -43795,7 +43795,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921707",
     "student_id": "252921707",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Gupta",
     "email": "vivaan.gupta707@campusiq.edu",
     "phone_number": "+91 99109 25663",
@@ -43880,7 +43880,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921708",
     "student_id": "252921708",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Tiwari",
     "email": "harsh.tiwari708@campusiq.edu",
     "phone_number": "+91 92540 78664",
@@ -43965,7 +43965,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921709",
     "student_id": "252921709",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Jadhav",
     "email": "aarohi.jadhav709@campusiq.edu",
     "phone_number": "+91 93898 67763",
@@ -44050,7 +44050,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921710",
     "student_id": "252921710",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Mishra",
     "email": "sakshi.mishra710@campusiq.edu",
     "phone_number": "+91 99978 60966",
@@ -44135,7 +44135,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921711",
     "student_id": "252921711",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Wagh",
     "email": "riya.wagh711@campusiq.edu",
     "phone_number": "+91 99715 78376",
@@ -44220,7 +44220,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921712",
     "student_id": "252921712",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Pawar",
     "email": "aditya.pawar712@campusiq.edu",
     "phone_number": "+91 92461 50254",
@@ -44305,7 +44305,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921713",
     "student_id": "252921713",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Shah",
     "email": "atharva.shah713@campusiq.edu",
     "phone_number": "+91 94630 51983",
@@ -44390,7 +44390,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921714",
     "student_id": "252921714",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Mishra",
     "email": "anvi.mishra714@campusiq.edu",
     "phone_number": "+91 95230 65422",
@@ -44475,7 +44475,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921715",
     "student_id": "252921715",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Deshmukh",
     "email": "ayaan.deshmukh715@campusiq.edu",
     "phone_number": "+91 93603 74033",
@@ -44560,7 +44560,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921716",
     "student_id": "252921716",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Patil",
     "email": "atharva.patil716@campusiq.edu",
     "phone_number": "+91 92104 41686",
@@ -44645,7 +44645,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921717",
     "student_id": "252921717",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Patil",
     "email": "ananya.patil717@campusiq.edu",
     "phone_number": "+91 94690 34112",
@@ -44730,7 +44730,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921718",
     "student_id": "252921718",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Shah",
     "email": "ishaan.shah718@campusiq.edu",
     "phone_number": "+91 92700 99694",
@@ -44815,7 +44815,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921719",
     "student_id": "252921719",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Kulkarni",
     "email": "deepika.kulkarni719@campusiq.edu",
     "phone_number": "+91 98441 80314",
@@ -44900,7 +44900,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921720",
     "student_id": "252921720",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Yadav",
     "email": "sameer.yadav720@campusiq.edu",
     "phone_number": "+91 98410 68181",
@@ -44985,7 +44985,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921721",
     "student_id": "252921721",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Pawar",
     "email": "advik.pawar721@campusiq.edu",
     "phone_number": "+91 96532 82311",
@@ -45070,7 +45070,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921722",
     "student_id": "252921722",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Shah",
     "email": "prisha.shah722@campusiq.edu",
     "phone_number": "+91 91578 98629",
@@ -45155,7 +45155,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921723",
     "student_id": "252921723",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Dubey",
     "email": "reyansh.dubey723@campusiq.edu",
     "phone_number": "+91 93618 29925",
@@ -45240,7 +45240,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921724",
     "student_id": "252921724",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Jadhav",
     "email": "swati.jadhav724@campusiq.edu",
     "phone_number": "+91 98224 86662",
@@ -45325,7 +45325,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921725",
     "student_id": "252921725",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Wagh",
     "email": "deepika.wagh725@campusiq.edu",
     "phone_number": "+91 97844 32159",
@@ -45410,7 +45410,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921726",
     "student_id": "252921726",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Pandey",
     "email": "sakshi.pandey726@campusiq.edu",
     "phone_number": "+91 91174 85189",
@@ -45495,7 +45495,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921727",
     "student_id": "252921727",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Dubey",
     "email": "sai.dubey727@campusiq.edu",
     "phone_number": "+91 96220 76688",
@@ -45580,7 +45580,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921728",
     "student_id": "252921728",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Gupta",
     "email": "sameer.gupta728@campusiq.edu",
     "phone_number": "+91 96421 97154",
@@ -45665,7 +45665,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921729",
     "student_id": "252921729",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Mishra",
     "email": "sneha.mishra729@campusiq.edu",
     "phone_number": "+91 92003 68001",
@@ -45750,7 +45750,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921730",
     "student_id": "252921730",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Shah",
     "email": "isha.shah730@campusiq.edu",
     "phone_number": "+91 95123 46890",
@@ -45835,7 +45835,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921731",
     "student_id": "252921731",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Mane",
     "email": "siddharth.mane731@campusiq.edu",
     "phone_number": "+91 94117 39899",
@@ -45920,7 +45920,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921732",
     "student_id": "252921732",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Mishra",
     "email": "swati.mishra732@campusiq.edu",
     "phone_number": "+91 93830 29796",
@@ -46005,7 +46005,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921733",
     "student_id": "252921733",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Patil",
     "email": "reyansh.patil733@campusiq.edu",
     "phone_number": "+91 96296 72482",
@@ -46090,7 +46090,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921734",
     "student_id": "252921734",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Jadhav",
     "email": "harsh.jadhav734@campusiq.edu",
     "phone_number": "+91 97832 42258",
@@ -46175,7 +46175,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921735",
     "student_id": "252921735",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Salunkhe",
     "email": "siddharth.salunkhe735@campusiq.edu",
     "phone_number": "+91 92566 60350",
@@ -46260,7 +46260,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921736",
     "student_id": "252921736",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Dubey",
     "email": "ishaan.dubey736@campusiq.edu",
     "phone_number": "+91 95468 51947",
@@ -46345,7 +46345,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921737",
     "student_id": "252921737",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Tiwari",
     "email": "isha.tiwari737@campusiq.edu",
     "phone_number": "+91 97904 20316",
@@ -46430,7 +46430,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921738",
     "student_id": "252921738",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Kulkarni",
     "email": "karan.kulkarni738@campusiq.edu",
     "phone_number": "+91 96165 59155",
@@ -46515,7 +46515,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921739",
     "student_id": "252921739",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Jadhav",
     "email": "karan.jadhav739@campusiq.edu",
     "phone_number": "+91 96540 20637",
@@ -46600,7 +46600,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921740",
     "student_id": "252921740",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Kulkarni",
     "email": "advaith.kulkarni740@campusiq.edu",
     "phone_number": "+91 93255 75612",
@@ -46685,7 +46685,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921741",
     "student_id": "252921741",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Mane",
     "email": "ishaan.mane741@campusiq.edu",
     "phone_number": "+91 91120 92271",
@@ -46770,7 +46770,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921742",
     "student_id": "252921742",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Pawar",
     "email": "nikita.pawar742@campusiq.edu",
     "phone_number": "+91 94279 84738",
@@ -46855,7 +46855,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921743",
     "student_id": "252921743",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Tiwari",
     "email": "aarohi.tiwari743@campusiq.edu",
     "phone_number": "+91 93707 74445",
@@ -46940,7 +46940,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921744",
     "student_id": "252921744",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Gupta",
     "email": "gaurav.gupta744@campusiq.edu",
     "phone_number": "+91 91366 48989",
@@ -47025,7 +47025,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921745",
     "student_id": "252921745",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Verma",
     "email": "vivaan.verma745@campusiq.edu",
     "phone_number": "+91 99149 66687",
@@ -47110,7 +47110,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921746",
     "student_id": "252921746",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Sawant",
     "email": "tanvi.sawant746@campusiq.edu",
     "phone_number": "+91 94793 16198",
@@ -47195,7 +47195,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921747",
     "student_id": "252921747",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Patil",
     "email": "manish.patil747@campusiq.edu",
     "phone_number": "+91 95148 28040",
@@ -47280,7 +47280,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921748",
     "student_id": "252921748",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Deshmukh",
     "email": "aadhya.deshmukh748@campusiq.edu",
     "phone_number": "+91 91066 43386",
@@ -47365,7 +47365,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921749",
     "student_id": "252921749",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Dubey",
     "email": "deepika.dubey749@campusiq.edu",
     "phone_number": "+91 99265 24129",
@@ -47450,7 +47450,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921750",
     "student_id": "252921750",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Singh",
     "email": "aarav.singh750@campusiq.edu",
     "phone_number": "+91 95918 54979",
@@ -47535,7 +47535,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921751",
     "student_id": "252921751",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Tiwari",
     "email": "saanvi.tiwari751@campusiq.edu",
     "phone_number": "+91 92422 72242",
@@ -47620,7 +47620,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921752",
     "student_id": "252921752",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Kadam",
     "email": "atharva.kadam752@campusiq.edu",
     "phone_number": "+91 95501 84062",
@@ -47705,7 +47705,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921753",
     "student_id": "252921753",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Gupta",
     "email": "meera.gupta753@campusiq.edu",
     "phone_number": "+91 93893 59377",
@@ -47790,7 +47790,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921754",
     "student_id": "252921754",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Kale",
     "email": "aditya.kale754@campusiq.edu",
     "phone_number": "+91 98148 83044",
@@ -47875,7 +47875,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921755",
     "student_id": "252921755",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Mishra",
     "email": "shruti.mishra755@campusiq.edu",
     "phone_number": "+91 94039 86299",
@@ -47960,7 +47960,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921756",
     "student_id": "252921756",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Sawant",
     "email": "diya.sawant756@campusiq.edu",
     "phone_number": "+91 98843 38065",
@@ -48045,7 +48045,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921757",
     "student_id": "252921757",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Tiwari",
     "email": "siddharth.tiwari757@campusiq.edu",
     "phone_number": "+91 97465 13626",
@@ -48130,7 +48130,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921758",
     "student_id": "252921758",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Jadhav",
     "email": "aditya.jadhav758@campusiq.edu",
     "phone_number": "+91 95544 61546",
@@ -48215,7 +48215,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921759",
     "student_id": "252921759",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith More",
     "email": "advaith.more759@campusiq.edu",
     "phone_number": "+91 96311 41380",
@@ -48300,7 +48300,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921760",
     "student_id": "252921760",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Deshmukh",
     "email": "atharva.deshmukh760@campusiq.edu",
     "phone_number": "+91 95775 93701",
@@ -48385,7 +48385,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921761",
     "student_id": "252921761",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Agarwal",
     "email": "kabir.agarwal761@campusiq.edu",
     "phone_number": "+91 99110 69606",
@@ -48470,7 +48470,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921762",
     "student_id": "252921762",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Mane",
     "email": "chiara.mane762@campusiq.edu",
     "phone_number": "+91 95397 26701",
@@ -48555,7 +48555,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921763",
     "student_id": "252921763",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Bhosale",
     "email": "swati.bhosale763@campusiq.edu",
     "phone_number": "+91 94328 81003",
@@ -48640,7 +48640,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921764",
     "student_id": "252921764",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Pawar",
     "email": "harsh.pawar764@campusiq.edu",
     "phone_number": "+91 94804 23155",
@@ -48725,7 +48725,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921765",
     "student_id": "252921765",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Mishra",
     "email": "tanvi.mishra765@campusiq.edu",
     "phone_number": "+91 97187 32070",
@@ -48810,7 +48810,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921766",
     "student_id": "252921766",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Chavan",
     "email": "sai.chavan766@campusiq.edu",
     "phone_number": "+91 95176 55643",
@@ -48895,7 +48895,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921767",
     "student_id": "252921767",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Joshi",
     "email": "shreya.joshi767@campusiq.edu",
     "phone_number": "+91 94753 63669",
@@ -48980,7 +48980,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921768",
     "student_id": "252921768",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Yadav",
     "email": "karan.yadav768@campusiq.edu",
     "phone_number": "+91 93931 30017",
@@ -49065,7 +49065,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921769",
     "student_id": "252921769",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Joshi",
     "email": "sameer.joshi769@campusiq.edu",
     "phone_number": "+91 92800 42534",
@@ -49150,7 +49150,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921770",
     "student_id": "252921770",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Salunkhe",
     "email": "shaurya.salunkhe770@campusiq.edu",
     "phone_number": "+91 99187 26546",
@@ -49235,7 +49235,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921771",
     "student_id": "252921771",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Shah",
     "email": "advaith.shah771@campusiq.edu",
     "phone_number": "+91 98193 43150",
@@ -49320,7 +49320,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921772",
     "student_id": "252921772",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Agarwal",
     "email": "aditya.agarwal772@campusiq.edu",
     "phone_number": "+91 98855 18880",
@@ -49405,7 +49405,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921773",
     "student_id": "252921773",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Tiwari",
     "email": "harsh.tiwari773@campusiq.edu",
     "phone_number": "+91 98987 66807",
@@ -49490,7 +49490,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921774",
     "student_id": "252921774",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Pawar",
     "email": "krishna.pawar774@campusiq.edu",
     "phone_number": "+91 97854 84618",
@@ -49575,7 +49575,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921775",
     "student_id": "252921775",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika More",
     "email": "deepika.more775@campusiq.edu",
     "phone_number": "+91 97096 71463",
@@ -49660,7 +49660,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921776",
     "student_id": "252921776",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Deshmukh",
     "email": "kabir.deshmukh776@campusiq.edu",
     "phone_number": "+91 93424 82746",
@@ -49745,7 +49745,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921777",
     "student_id": "252921777",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Sharma",
     "email": "diya.sharma777@campusiq.edu",
     "phone_number": "+91 96468 58546",
@@ -49830,7 +49830,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921778",
     "student_id": "252921778",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Agarwal",
     "email": "sai.agarwal778@campusiq.edu",
     "phone_number": "+91 93488 16731",
@@ -49915,7 +49915,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921779",
     "student_id": "252921779",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Deshmukh",
     "email": "saanvi.deshmukh779@campusiq.edu",
     "phone_number": "+91 95379 87774",
@@ -50000,7 +50000,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921780",
     "student_id": "252921780",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Gaikwad",
     "email": "om.gaikwad780@campusiq.edu",
     "phone_number": "+91 97571 64784",
@@ -50085,7 +50085,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921781",
     "student_id": "252921781",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Chavan",
     "email": "diya.chavan781@campusiq.edu",
     "phone_number": "+91 97715 26071",
@@ -50170,7 +50170,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921782",
     "student_id": "252921782",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati More",
     "email": "swati.more782@campusiq.edu",
     "phone_number": "+91 97919 96298",
@@ -50255,7 +50255,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921783",
     "student_id": "252921783",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya More",
     "email": "sanya.more783@campusiq.edu",
     "phone_number": "+91 97111 54194",
@@ -50340,7 +50340,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921784",
     "student_id": "252921784",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Patil",
     "email": "shruti.patil784@campusiq.edu",
     "phone_number": "+91 98774 64689",
@@ -50425,7 +50425,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921785",
     "student_id": "252921785",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Dubey",
     "email": "arjun.dubey785@campusiq.edu",
     "phone_number": "+91 95483 80157",
@@ -50510,7 +50510,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921786",
     "student_id": "252921786",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Shinde",
     "email": "isha.shinde786@campusiq.edu",
     "phone_number": "+91 98862 12711",
@@ -50595,7 +50595,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921787",
     "student_id": "252921787",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Tiwari",
     "email": "ayaan.tiwari787@campusiq.edu",
     "phone_number": "+91 98393 54240",
@@ -50680,7 +50680,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921788",
     "student_id": "252921788",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Tiwari",
     "email": "sakshi.tiwari788@campusiq.edu",
     "phone_number": "+91 96757 13904",
@@ -50765,7 +50765,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921789",
     "student_id": "252921789",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Verma",
     "email": "deepika.verma789@campusiq.edu",
     "phone_number": "+91 91596 69363",
@@ -50850,7 +50850,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921790",
     "student_id": "252921790",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha More",
     "email": "prisha.more790@campusiq.edu",
     "phone_number": "+91 95031 50902",
@@ -50935,7 +50935,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921791",
     "student_id": "252921791",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Salunkhe",
     "email": "sakshi.salunkhe791@campusiq.edu",
     "phone_number": "+91 92640 57517",
@@ -51020,7 +51020,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921792",
     "student_id": "252921792",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Chavan",
     "email": "gayatri.chavan792@campusiq.edu",
     "phone_number": "+91 92523 96231",
@@ -51105,7 +51105,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921793",
     "student_id": "252921793",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Singh",
     "email": "sneha.singh793@campusiq.edu",
     "phone_number": "+91 93075 32199",
@@ -51190,7 +51190,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921794",
     "student_id": "252921794",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Pandey",
     "email": "aaryav.pandey794@campusiq.edu",
     "phone_number": "+91 93042 65079",
@@ -51275,7 +51275,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921795",
     "student_id": "252921795",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Deshmukh",
     "email": "dhruv.deshmukh795@campusiq.edu",
     "phone_number": "+91 91046 95439",
@@ -51360,7 +51360,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921796",
     "student_id": "252921796",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Mehta",
     "email": "aditi.mehta796@campusiq.edu",
     "phone_number": "+91 94977 74213",
@@ -51445,7 +51445,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921797",
     "student_id": "252921797",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Kadam",
     "email": "advaith.kadam797@campusiq.edu",
     "phone_number": "+91 94291 46125",
@@ -51530,7 +51530,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921798",
     "student_id": "252921798",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Kale",
     "email": "rudra.kale798@campusiq.edu",
     "phone_number": "+91 95002 97614",
@@ -51615,7 +51615,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921799",
     "student_id": "252921799",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Kale",
     "email": "meera.kale799@campusiq.edu",
     "phone_number": "+91 94268 92424",
@@ -51700,7 +51700,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921800",
     "student_id": "252921800",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Verma",
     "email": "nikita.verma800@campusiq.edu",
     "phone_number": "+91 94358 71221",
@@ -51785,7 +51785,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921801",
     "student_id": "252921801",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Pandey",
     "email": "aaryav.pandey801@campusiq.edu",
     "phone_number": "+91 92946 22256",
@@ -51870,7 +51870,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921802",
     "student_id": "252921802",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Jadhav",
     "email": "tanvi.jadhav802@campusiq.edu",
     "phone_number": "+91 96847 69291",
@@ -51955,7 +51955,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921803",
     "student_id": "252921803",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Agarwal",
     "email": "sneha.agarwal803@campusiq.edu",
     "phone_number": "+91 94345 58056",
@@ -52040,7 +52040,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921804",
     "student_id": "252921804",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Joshi",
     "email": "swati.joshi804@campusiq.edu",
     "phone_number": "+91 95360 78191",
@@ -52125,7 +52125,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921805",
     "student_id": "252921805",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Mehta",
     "email": "sai.mehta805@campusiq.edu",
     "phone_number": "+91 92889 26617",
@@ -52210,7 +52210,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921806",
     "student_id": "252921806",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir More",
     "email": "kabir.more806@campusiq.edu",
     "phone_number": "+91 99993 27849",
@@ -52295,7 +52295,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921807",
     "student_id": "252921807",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Mishra",
     "email": "kavya.mishra807@campusiq.edu",
     "phone_number": "+91 91396 13977",
@@ -52380,7 +52380,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921808",
     "student_id": "252921808",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Choudhary",
     "email": "pari.choudhary808@campusiq.edu",
     "phone_number": "+91 93423 88688",
@@ -52465,7 +52465,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921809",
     "student_id": "252921809",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Yadav",
     "email": "karan.yadav809@campusiq.edu",
     "phone_number": "+91 99452 46055",
@@ -52550,7 +52550,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921810",
     "student_id": "252921810",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Pandey",
     "email": "divya.pandey810@campusiq.edu",
     "phone_number": "+91 98537 91014",
@@ -52635,7 +52635,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921811",
     "student_id": "252921811",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Sawant",
     "email": "diya.sawant811@campusiq.edu",
     "phone_number": "+91 95079 77589",
@@ -52720,7 +52720,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921812",
     "student_id": "252921812",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Mehta",
     "email": "sneha.mehta812@campusiq.edu",
     "phone_number": "+91 99656 66477",
@@ -52805,7 +52805,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921813",
     "student_id": "252921813",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Bhosale",
     "email": "diya.bhosale813@campusiq.edu",
     "phone_number": "+91 96041 63895",
@@ -52890,7 +52890,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921814",
     "student_id": "252921814",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Gaikwad",
     "email": "divya.gaikwad814@campusiq.edu",
     "phone_number": "+91 94912 36822",
@@ -52975,7 +52975,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921815",
     "student_id": "252921815",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Sawant",
     "email": "advik.sawant815@campusiq.edu",
     "phone_number": "+91 94551 27656",
@@ -53060,7 +53060,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921816",
     "student_id": "252921816",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Chavan",
     "email": "kavya.chavan816@campusiq.edu",
     "phone_number": "+91 92835 82055",
@@ -53145,7 +53145,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921817",
     "student_id": "252921817",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Patil",
     "email": "aarohi.patil817@campusiq.edu",
     "phone_number": "+91 93018 78938",
@@ -53230,7 +53230,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921818",
     "student_id": "252921818",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Singh",
     "email": "aditya.singh818@campusiq.edu",
     "phone_number": "+91 95816 27046",
@@ -53315,7 +53315,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921819",
     "student_id": "252921819",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Bhosale",
     "email": "karan.bhosale819@campusiq.edu",
     "phone_number": "+91 97518 89616",
@@ -53400,7 +53400,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921820",
     "student_id": "252921820",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Gupta",
     "email": "chiara.gupta820@campusiq.edu",
     "phone_number": "+91 93336 91419",
@@ -53485,7 +53485,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921821",
     "student_id": "252921821",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Verma",
     "email": "ayaan.verma821@campusiq.edu",
     "phone_number": "+91 92678 97428",
@@ -53570,7 +53570,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921822",
     "student_id": "252921822",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Yadav",
     "email": "aarohi.yadav822@campusiq.edu",
     "phone_number": "+91 98474 21751",
@@ -53655,7 +53655,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921823",
     "student_id": "252921823",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Chavan",
     "email": "vihaan.chavan823@campusiq.edu",
     "phone_number": "+91 91376 83126",
@@ -53740,7 +53740,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921824",
     "student_id": "252921824",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Jadhav",
     "email": "deepika.jadhav824@campusiq.edu",
     "phone_number": "+91 97676 96977",
@@ -53825,7 +53825,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921825",
     "student_id": "252921825",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Dubey",
     "email": "diya.dubey825@campusiq.edu",
     "phone_number": "+91 97978 22878",
@@ -53910,7 +53910,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921826",
     "student_id": "252921826",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Sharma",
     "email": "advaith.sharma826@campusiq.edu",
     "phone_number": "+91 91106 97518",
@@ -53995,7 +53995,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921827",
     "student_id": "252921827",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Pandey",
     "email": "prisha.pandey827@campusiq.edu",
     "phone_number": "+91 92198 52125",
@@ -54080,7 +54080,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921828",
     "student_id": "252921828",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Mehta",
     "email": "neha.mehta828@campusiq.edu",
     "phone_number": "+91 97744 98000",
@@ -54165,7 +54165,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921829",
     "student_id": "252921829",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Jadhav",
     "email": "siddharth.jadhav829@campusiq.edu",
     "phone_number": "+91 93805 36557",
@@ -54250,7 +54250,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921830",
     "student_id": "252921830",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Bhosale",
     "email": "nikhil.bhosale830@campusiq.edu",
     "phone_number": "+91 92986 34954",
@@ -54335,7 +54335,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921831",
     "student_id": "252921831",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Bhosale",
     "email": "reyansh.bhosale831@campusiq.edu",
     "phone_number": "+91 98707 80016",
@@ -54420,7 +54420,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921832",
     "student_id": "252921832",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Avani Pandey",
     "email": "avani.pandey832@campusiq.edu",
     "phone_number": "+91 98175 40653",
@@ -54505,7 +54505,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921833",
     "student_id": "252921833",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Shinde",
     "email": "saanvi.shinde833@campusiq.edu",
     "phone_number": "+91 97636 77931",
@@ -54590,7 +54590,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921834",
     "student_id": "252921834",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Wagh",
     "email": "aniket.wagh834@campusiq.edu",
     "phone_number": "+91 93463 19550",
@@ -54675,7 +54675,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921835",
     "student_id": "252921835",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Chavan",
     "email": "pari.chavan835@campusiq.edu",
     "phone_number": "+91 95108 76500",
@@ -54760,7 +54760,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921836",
     "student_id": "252921836",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Mishra",
     "email": "kavya.mishra836@campusiq.edu",
     "phone_number": "+91 94059 13436",
@@ -54845,7 +54845,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921837",
     "student_id": "252921837",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari More",
     "email": "pari.more837@campusiq.edu",
     "phone_number": "+91 99591 10085",
@@ -54930,7 +54930,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921838",
     "student_id": "252921838",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Salunkhe",
     "email": "sakshi.salunkhe838@campusiq.edu",
     "phone_number": "+91 97441 70383",
@@ -55015,7 +55015,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921839",
     "student_id": "252921839",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Joshi",
     "email": "siddharth.joshi839@campusiq.edu",
     "phone_number": "+91 99733 54287",
@@ -55100,7 +55100,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921840",
     "student_id": "252921840",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Mehta",
     "email": "varun.mehta840@campusiq.edu",
     "phone_number": "+91 96314 12048",
@@ -55185,7 +55185,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921841",
     "student_id": "252921841",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Choudhary",
     "email": "sai.choudhary841@campusiq.edu",
     "phone_number": "+91 96967 37549",
@@ -55270,7 +55270,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921842",
     "student_id": "252921842",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Kulkarni",
     "email": "divya.kulkarni842@campusiq.edu",
     "phone_number": "+91 92787 47156",
@@ -55355,7 +55355,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921843",
     "student_id": "252921843",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Tiwari",
     "email": "meera.tiwari843@campusiq.edu",
     "phone_number": "+91 98014 64536",
@@ -55440,7 +55440,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921844",
     "student_id": "252921844",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Kulkarni",
     "email": "ananya.kulkarni844@campusiq.edu",
     "phone_number": "+91 95989 90528",
@@ -55525,7 +55525,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921845",
     "student_id": "252921845",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav More",
     "email": "aarav.more845@campusiq.edu",
     "phone_number": "+91 96569 72983",
@@ -55610,7 +55610,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921846",
     "student_id": "252921846",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Jadhav",
     "email": "krishna.jadhav846@campusiq.edu",
     "phone_number": "+91 99442 31981",
@@ -55695,7 +55695,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921847",
     "student_id": "252921847",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Mane",
     "email": "sanya.mane847@campusiq.edu",
     "phone_number": "+91 98588 55220",
@@ -55780,7 +55780,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921848",
     "student_id": "252921848",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Kulkarni",
     "email": "siddharth.kulkarni848@campusiq.edu",
     "phone_number": "+91 92478 76968",
@@ -55865,7 +55865,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921849",
     "student_id": "252921849",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Kulkarni",
     "email": "atharva.kulkarni849@campusiq.edu",
     "phone_number": "+91 94507 63993",
@@ -55950,7 +55950,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921850",
     "student_id": "252921850",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Kadam",
     "email": "isha.kadam850@campusiq.edu",
     "phone_number": "+91 99078 38687",
@@ -56035,7 +56035,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921851",
     "student_id": "252921851",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Kadam",
     "email": "aarohi.kadam851@campusiq.edu",
     "phone_number": "+91 99634 75234",
@@ -56120,7 +56120,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921852",
     "student_id": "252921852",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Mishra",
     "email": "meera.mishra852@campusiq.edu",
     "phone_number": "+91 98628 77977",
@@ -56205,7 +56205,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921853",
     "student_id": "252921853",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Joshi",
     "email": "nikita.joshi853@campusiq.edu",
     "phone_number": "+91 94441 84778",
@@ -56290,7 +56290,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921854",
     "student_id": "252921854",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Deshmukh",
     "email": "aarohi.deshmukh854@campusiq.edu",
     "phone_number": "+91 93378 62142",
@@ -56375,7 +56375,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921855",
     "student_id": "252921855",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Salunkhe",
     "email": "sakshi.salunkhe855@campusiq.edu",
     "phone_number": "+91 98170 42594",
@@ -56460,7 +56460,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921856",
     "student_id": "252921856",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Salunkhe",
     "email": "prisha.salunkhe856@campusiq.edu",
     "phone_number": "+91 93303 54191",
@@ -56545,7 +56545,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921857",
     "student_id": "252921857",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Tiwari",
     "email": "krishna.tiwari857@campusiq.edu",
     "phone_number": "+91 99135 12239",
@@ -56630,7 +56630,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921858",
     "student_id": "252921858",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Joshi",
     "email": "anvi.joshi858@campusiq.edu",
     "phone_number": "+91 98853 40252",
@@ -56715,7 +56715,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921859",
     "student_id": "252921859",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Shinde",
     "email": "aarav.shinde859@campusiq.edu",
     "phone_number": "+91 95676 14244",
@@ -56800,7 +56800,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921860",
     "student_id": "252921860",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Deshmukh",
     "email": "aarav.deshmukh860@campusiq.edu",
     "phone_number": "+91 91722 82737",
@@ -56885,7 +56885,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921861",
     "student_id": "252921861",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Yadav",
     "email": "nikita.yadav861@campusiq.edu",
     "phone_number": "+91 92772 54920",
@@ -56970,7 +56970,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921862",
     "student_id": "252921862",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Chavan",
     "email": "riya.chavan862@campusiq.edu",
     "phone_number": "+91 93977 55735",
@@ -57055,7 +57055,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921863",
     "student_id": "252921863",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Jadhav",
     "email": "sai.jadhav863@campusiq.edu",
     "phone_number": "+91 92049 78762",
@@ -57140,7 +57140,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921864",
     "student_id": "252921864",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Kale",
     "email": "isha.kale864@campusiq.edu",
     "phone_number": "+91 94865 81287",
@@ -57225,7 +57225,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921865",
     "student_id": "252921865",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Shinde",
     "email": "prisha.shinde865@campusiq.edu",
     "phone_number": "+91 92066 36039",
@@ -57310,7 +57310,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921866",
     "student_id": "252921866",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Singh",
     "email": "pooja.singh866@campusiq.edu",
     "phone_number": "+91 99444 97783",
@@ -57395,7 +57395,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921867",
     "student_id": "252921867",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Mishra",
     "email": "shaurya.mishra867@campusiq.edu",
     "phone_number": "+91 91449 92683",
@@ -57480,7 +57480,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921868",
     "student_id": "252921868",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Mane",
     "email": "om.mane868@campusiq.edu",
     "phone_number": "+91 93264 31065",
@@ -57565,7 +57565,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921869",
     "student_id": "252921869",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Choudhary",
     "email": "rashmi.choudhary869@campusiq.edu",
     "phone_number": "+91 93946 34761",
@@ -57650,7 +57650,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921870",
     "student_id": "252921870",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Deshmukh",
     "email": "sanya.deshmukh870@campusiq.edu",
     "phone_number": "+91 95237 21591",
@@ -57735,7 +57735,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921871",
     "student_id": "252921871",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Choudhary",
     "email": "rudra.choudhary871@campusiq.edu",
     "phone_number": "+91 97165 60296",
@@ -57820,7 +57820,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921872",
     "student_id": "252921872",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Wagh",
     "email": "ananya.wagh872@campusiq.edu",
     "phone_number": "+91 94637 44854",
@@ -57905,7 +57905,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921873",
     "student_id": "252921873",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Pandey",
     "email": "neha.pandey873@campusiq.edu",
     "phone_number": "+91 93674 36813",
@@ -57990,7 +57990,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921874",
     "student_id": "252921874",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish More",
     "email": "manish.more874@campusiq.edu",
     "phone_number": "+91 91517 35329",
@@ -58075,7 +58075,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921875",
     "student_id": "252921875",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Dubey",
     "email": "reyansh.dubey875@campusiq.edu",
     "phone_number": "+91 94710 52788",
@@ -58160,7 +58160,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921876",
     "student_id": "252921876",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Mishra",
     "email": "aarohi.mishra876@campusiq.edu",
     "phone_number": "+91 93958 17679",
@@ -58245,7 +58245,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921877",
     "student_id": "252921877",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Pandey",
     "email": "karan.pandey877@campusiq.edu",
     "phone_number": "+91 91914 59674",
@@ -58330,7 +58330,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921878",
     "student_id": "252921878",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Choudhary",
     "email": "aarav.choudhary878@campusiq.edu",
     "phone_number": "+91 96091 51254",
@@ -58415,7 +58415,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921879",
     "student_id": "252921879",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Tiwari",
     "email": "atharva.tiwari879@campusiq.edu",
     "phone_number": "+91 97860 54106",
@@ -58500,7 +58500,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921880",
     "student_id": "252921880",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Patil",
     "email": "anvi.patil880@campusiq.edu",
     "phone_number": "+91 97392 13637",
@@ -58585,7 +58585,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921881",
     "student_id": "252921881",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Shah",
     "email": "aarohi.shah881@campusiq.edu",
     "phone_number": "+91 96871 68207",
@@ -58670,7 +58670,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921882",
     "student_id": "252921882",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Tiwari",
     "email": "nikita.tiwari882@campusiq.edu",
     "phone_number": "+91 99721 16303",
@@ -58755,7 +58755,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921883",
     "student_id": "252921883",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Mehta",
     "email": "ishaan.mehta883@campusiq.edu",
     "phone_number": "+91 94224 20053",
@@ -58840,7 +58840,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921884",
     "student_id": "252921884",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Singh",
     "email": "nikhil.singh884@campusiq.edu",
     "phone_number": "+91 91206 95859",
@@ -58925,7 +58925,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921885",
     "student_id": "252921885",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Patil",
     "email": "ananya.patil885@campusiq.edu",
     "phone_number": "+91 97493 67742",
@@ -59010,7 +59010,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921886",
     "student_id": "252921886",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Mishra",
     "email": "isha.mishra886@campusiq.edu",
     "phone_number": "+91 96251 41578",
@@ -59095,7 +59095,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921887",
     "student_id": "252921887",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Mishra",
     "email": "harsh.mishra887@campusiq.edu",
     "phone_number": "+91 93253 43265",
@@ -59180,7 +59180,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921888",
     "student_id": "252921888",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Sharma",
     "email": "saanvi.sharma888@campusiq.edu",
     "phone_number": "+91 97420 30593",
@@ -59265,7 +59265,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921889",
     "student_id": "252921889",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Pandey",
     "email": "prisha.pandey889@campusiq.edu",
     "phone_number": "+91 98878 60624",
@@ -59350,7 +59350,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921890",
     "student_id": "252921890",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik More",
     "email": "advik.more890@campusiq.edu",
     "phone_number": "+91 96068 63564",
@@ -59435,7 +59435,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921891",
     "student_id": "252921891",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Deepika Mishra",
     "email": "deepika.mishra891@campusiq.edu",
     "phone_number": "+91 97388 65323",
@@ -59520,7 +59520,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921892",
     "student_id": "252921892",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Chavan",
     "email": "manish.chavan892@campusiq.edu",
     "phone_number": "+91 99982 36516",
@@ -59605,7 +59605,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921893",
     "student_id": "252921893",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Mehta",
     "email": "sameer.mehta893@campusiq.edu",
     "phone_number": "+91 92270 84625",
@@ -59690,7 +59690,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921894",
     "student_id": "252921894",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Deshmukh",
     "email": "siddharth.deshmukh894@campusiq.edu",
     "phone_number": "+91 98545 73787",
@@ -59775,7 +59775,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921895",
     "student_id": "252921895",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Kale",
     "email": "karan.kale895@campusiq.edu",
     "phone_number": "+91 93160 23793",
@@ -59860,7 +59860,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921896",
     "student_id": "252921896",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Shah",
     "email": "sanya.shah896@campusiq.edu",
     "phone_number": "+91 96606 63740",
@@ -59945,7 +59945,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921897",
     "student_id": "252921897",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Mane",
     "email": "sakshi.mane897@campusiq.edu",
     "phone_number": "+91 97113 10818",
@@ -60030,7 +60030,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921898",
     "student_id": "252921898",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Dubey",
     "email": "nikita.dubey898@campusiq.edu",
     "phone_number": "+91 98218 16978",
@@ -60115,7 +60115,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921899",
     "student_id": "252921899",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Mane",
     "email": "myra.mane899@campusiq.edu",
     "phone_number": "+91 94495 64018",
@@ -60200,7 +60200,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921900",
     "student_id": "252921900",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advaith Mishra",
     "email": "advaith.mishra900@campusiq.edu",
     "phone_number": "+91 94001 19007",
@@ -60285,7 +60285,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921901",
     "student_id": "252921901",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Kale",
     "email": "sanya.kale901@campusiq.edu",
     "phone_number": "+91 95908 81033",
@@ -60370,7 +60370,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921902",
     "student_id": "252921902",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Pawar",
     "email": "shaurya.pawar902@campusiq.edu",
     "phone_number": "+91 93994 11275",
@@ -60455,7 +60455,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921903",
     "student_id": "252921903",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Mishra",
     "email": "harsh.mishra903@campusiq.edu",
     "phone_number": "+91 97374 17075",
@@ -60540,7 +60540,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921904",
     "student_id": "252921904",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Tiwari",
     "email": "gaurav.tiwari904@campusiq.edu",
     "phone_number": "+91 91831 20346",
@@ -60625,7 +60625,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921905",
     "student_id": "252921905",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Sharma",
     "email": "isha.sharma905@campusiq.edu",
     "phone_number": "+91 94778 97349",
@@ -60710,7 +60710,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921906",
     "student_id": "252921906",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Agarwal",
     "email": "anvi.agarwal906@campusiq.edu",
     "phone_number": "+91 92536 39016",
@@ -60795,7 +60795,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921907",
     "student_id": "252921907",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Agarwal",
     "email": "shreya.agarwal907@campusiq.edu",
     "phone_number": "+91 99970 17705",
@@ -60880,7 +60880,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921908",
     "student_id": "252921908",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Jadhav",
     "email": "prisha.jadhav908@campusiq.edu",
     "phone_number": "+91 91181 19552",
@@ -60965,7 +60965,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921909",
     "student_id": "252921909",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Choudhary",
     "email": "gaurav.choudhary909@campusiq.edu",
     "phone_number": "+91 91760 56683",
@@ -61050,7 +61050,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921910",
     "student_id": "252921910",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Wagh",
     "email": "gayatri.wagh910@campusiq.edu",
     "phone_number": "+91 99897 69132",
@@ -61135,7 +61135,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921911",
     "student_id": "252921911",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Pandey",
     "email": "tanvi.pandey911@campusiq.edu",
     "phone_number": "+91 93065 10143",
@@ -61220,7 +61220,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921912",
     "student_id": "252921912",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Salunkhe",
     "email": "ayaan.salunkhe912@campusiq.edu",
     "phone_number": "+91 98152 37713",
@@ -61305,7 +61305,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921913",
     "student_id": "252921913",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Salunkhe",
     "email": "ishaan.salunkhe913@campusiq.edu",
     "phone_number": "+91 98857 32593",
@@ -61390,7 +61390,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921914",
     "student_id": "252921914",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Kale",
     "email": "sai.kale914@campusiq.edu",
     "phone_number": "+91 95566 73868",
@@ -61475,7 +61475,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921915",
     "student_id": "252921915",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Kulkarni",
     "email": "krishna.kulkarni915@campusiq.edu",
     "phone_number": "+91 98191 75277",
@@ -61560,7 +61560,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921916",
     "student_id": "252921916",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Bhosale",
     "email": "nikhil.bhosale916@campusiq.edu",
     "phone_number": "+91 92572 90098",
@@ -61645,7 +61645,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921917",
     "student_id": "252921917",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Pandey",
     "email": "arjun.pandey917@campusiq.edu",
     "phone_number": "+91 97342 61364",
@@ -61730,7 +61730,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921918",
     "student_id": "252921918",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Bhosale",
     "email": "meera.bhosale918@campusiq.edu",
     "phone_number": "+91 96931 57404",
@@ -61815,7 +61815,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921919",
     "student_id": "252921919",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Bhosale",
     "email": "shaurya.bhosale919@campusiq.edu",
     "phone_number": "+91 93206 66864",
@@ -61900,7 +61900,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921920",
     "student_id": "252921920",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Yadav",
     "email": "aaryav.yadav920@campusiq.edu",
     "phone_number": "+91 96097 21093",
@@ -61985,7 +61985,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921921",
     "student_id": "252921921",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Choudhary",
     "email": "sanya.choudhary921@campusiq.edu",
     "phone_number": "+91 96993 97616",
@@ -62070,7 +62070,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921922",
     "student_id": "252921922",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Bhosale",
     "email": "dhruv.bhosale922@campusiq.edu",
     "phone_number": "+91 97335 87941",
@@ -62155,7 +62155,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921923",
     "student_id": "252921923",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Mehta",
     "email": "om.mehta923@campusiq.edu",
     "phone_number": "+91 98318 33818",
@@ -62240,7 +62240,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921924",
     "student_id": "252921924",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Shah",
     "email": "siddharth.shah924@campusiq.edu",
     "phone_number": "+91 96061 37982",
@@ -62325,7 +62325,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921925",
     "student_id": "252921925",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Pawar",
     "email": "shaurya.pawar925@campusiq.edu",
     "phone_number": "+91 96943 96237",
@@ -62410,7 +62410,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921926",
     "student_id": "252921926",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Wagh",
     "email": "krishna.wagh926@campusiq.edu",
     "phone_number": "+91 98044 62468",
@@ -62495,7 +62495,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921927",
     "student_id": "252921927",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Kadam",
     "email": "siddharth.kadam927@campusiq.edu",
     "phone_number": "+91 94192 25717",
@@ -62580,7 +62580,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921928",
     "student_id": "252921928",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Wagh",
     "email": "atharva.wagh928@campusiq.edu",
     "phone_number": "+91 98940 42260",
@@ -62665,7 +62665,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921929",
     "student_id": "252921929",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Jadhav",
     "email": "ananya.jadhav929@campusiq.edu",
     "phone_number": "+91 91569 71543",
@@ -62750,7 +62750,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921930",
     "student_id": "252921930",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Mishra",
     "email": "chiara.mishra930@campusiq.edu",
     "phone_number": "+91 93996 21749",
@@ -62835,7 +62835,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921931",
     "student_id": "252921931",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Tiwari",
     "email": "reyansh.tiwari931@campusiq.edu",
     "phone_number": "+91 95784 43260",
@@ -62920,7 +62920,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921932",
     "student_id": "252921932",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Deshmukh",
     "email": "isha.deshmukh932@campusiq.edu",
     "phone_number": "+91 99709 17264",
@@ -63005,7 +63005,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921933",
     "student_id": "252921933",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Sawant",
     "email": "sneha.sawant933@campusiq.edu",
     "phone_number": "+91 96986 60609",
@@ -63090,7 +63090,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921934",
     "student_id": "252921934",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Wagh",
     "email": "pranav.wagh934@campusiq.edu",
     "phone_number": "+91 96259 69095",
@@ -63175,7 +63175,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921935",
     "student_id": "252921935",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Bhosale",
     "email": "anvi.bhosale935@campusiq.edu",
     "phone_number": "+91 98581 79727",
@@ -63260,7 +63260,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921936",
     "student_id": "252921936",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Gupta",
     "email": "diya.gupta936@campusiq.edu",
     "phone_number": "+91 99924 65096",
@@ -63345,7 +63345,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921937",
     "student_id": "252921937",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Tiwari",
     "email": "vivaan.tiwari937@campusiq.edu",
     "phone_number": "+91 96719 73738",
@@ -63430,7 +63430,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921938",
     "student_id": "252921938",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Bhosale",
     "email": "advik.bhosale938@campusiq.edu",
     "phone_number": "+91 96694 65919",
@@ -63515,7 +63515,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921939",
     "student_id": "252921939",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Wagh",
     "email": "krishna.wagh939@campusiq.edu",
     "phone_number": "+91 97228 39194",
@@ -63600,7 +63600,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921940",
     "student_id": "252921940",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Mishra",
     "email": "gaurav.mishra940@campusiq.edu",
     "phone_number": "+91 98120 42507",
@@ -63685,7 +63685,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921941",
     "student_id": "252921941",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Shah",
     "email": "riya.shah941@campusiq.edu",
     "phone_number": "+91 95417 63728",
@@ -63770,7 +63770,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921942",
     "student_id": "252921942",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Singh",
     "email": "vihaan.singh942@campusiq.edu",
     "phone_number": "+91 93839 25092",
@@ -63855,7 +63855,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921943",
     "student_id": "252921943",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Kulkarni",
     "email": "arjun.kulkarni943@campusiq.edu",
     "phone_number": "+91 94660 84261",
@@ -63940,7 +63940,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921944",
     "student_id": "252921944",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Kale",
     "email": "arjun.kale944@campusiq.edu",
     "phone_number": "+91 96906 82423",
@@ -64025,7 +64025,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921945",
     "student_id": "252921945",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Chavan",
     "email": "kabir.chavan945@campusiq.edu",
     "phone_number": "+91 94406 95986",
@@ -64110,7 +64110,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921946",
     "student_id": "252921946",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Patil",
     "email": "rudra.patil946@campusiq.edu",
     "phone_number": "+91 98631 44536",
@@ -64195,7 +64195,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921947",
     "student_id": "252921947",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Kulkarni",
     "email": "aarav.kulkarni947@campusiq.edu",
     "phone_number": "+91 91266 27621",
@@ -64280,7 +64280,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921948",
     "student_id": "252921948",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Pandey",
     "email": "diya.pandey948@campusiq.edu",
     "phone_number": "+91 96691 51312",
@@ -64365,7 +64365,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921949",
     "student_id": "252921949",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Agarwal",
     "email": "meera.agarwal949@campusiq.edu",
     "phone_number": "+91 91268 21910",
@@ -64450,7 +64450,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921950",
     "student_id": "252921950",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Dubey",
     "email": "anvi.dubey950@campusiq.edu",
     "phone_number": "+91 93996 44564",
@@ -64535,7 +64535,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921951",
     "student_id": "252921951",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Wagh",
     "email": "harsh.wagh951@campusiq.edu",
     "phone_number": "+91 92250 34419",
@@ -64620,7 +64620,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921952",
     "student_id": "252921952",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Shinde",
     "email": "sakshi.shinde952@campusiq.edu",
     "phone_number": "+91 93474 56205",
@@ -64705,7 +64705,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921953",
     "student_id": "252921953",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Bhosale",
     "email": "ayaan.bhosale953@campusiq.edu",
     "phone_number": "+91 93886 59398",
@@ -64790,7 +64790,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921954",
     "student_id": "252921954",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Sharma",
     "email": "shaurya.sharma954@campusiq.edu",
     "phone_number": "+91 97130 90458",
@@ -64875,7 +64875,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921955",
     "student_id": "252921955",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vivaan Chavan",
     "email": "vivaan.chavan955@campusiq.edu",
     "phone_number": "+91 92319 62345",
@@ -64960,7 +64960,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921956",
     "student_id": "252921956",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Dubey",
     "email": "sneha.dubey956@campusiq.edu",
     "phone_number": "+91 93525 94640",
@@ -65045,7 +65045,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921957",
     "student_id": "252921957",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Shinde",
     "email": "divya.shinde957@campusiq.edu",
     "phone_number": "+91 93572 18419",
@@ -65130,7 +65130,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921958",
     "student_id": "252921958",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Kale",
     "email": "siddharth.kale958@campusiq.edu",
     "phone_number": "+91 99802 17666",
@@ -65215,7 +65215,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921959",
     "student_id": "252921959",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Kulkarni",
     "email": "sneha.kulkarni959@campusiq.edu",
     "phone_number": "+91 94566 48822",
@@ -65300,7 +65300,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921960",
     "student_id": "252921960",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Mehta",
     "email": "tanvi.mehta960@campusiq.edu",
     "phone_number": "+91 92833 21802",
@@ -65385,7 +65385,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921961",
     "student_id": "252921961",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Pawar",
     "email": "sakshi.pawar961@campusiq.edu",
     "phone_number": "+91 93642 80679",
@@ -65470,7 +65470,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921962",
     "student_id": "252921962",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Joshi",
     "email": "manish.joshi962@campusiq.edu",
     "phone_number": "+91 98493 67166",
@@ -65555,7 +65555,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921963",
     "student_id": "252921963",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Deshmukh",
     "email": "kavya.deshmukh963@campusiq.edu",
     "phone_number": "+91 91013 19749",
@@ -65640,7 +65640,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921964",
     "student_id": "252921964",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Tiwari",
     "email": "manish.tiwari964@campusiq.edu",
     "phone_number": "+91 97065 86284",
@@ -65725,7 +65725,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921965",
     "student_id": "252921965",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Avani Sharma",
     "email": "avani.sharma965@campusiq.edu",
     "phone_number": "+91 93468 61221",
@@ -65810,7 +65810,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921966",
     "student_id": "252921966",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Mehta",
     "email": "myra.mehta966@campusiq.edu",
     "phone_number": "+91 91368 68333",
@@ -65895,7 +65895,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921967",
     "student_id": "252921967",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Dubey",
     "email": "advik.dubey967@campusiq.edu",
     "phone_number": "+91 99258 49618",
@@ -65980,7 +65980,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921968",
     "student_id": "252921968",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Choudhary",
     "email": "ayaan.choudhary968@campusiq.edu",
     "phone_number": "+91 91514 31499",
@@ -66065,7 +66065,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921969",
     "student_id": "252921969",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Mane",
     "email": "pari.mane969@campusiq.edu",
     "phone_number": "+91 94882 91114",
@@ -66150,7 +66150,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921970",
     "student_id": "252921970",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Sharma",
     "email": "pranav.sharma970@campusiq.edu",
     "phone_number": "+91 96856 60777",
@@ -66235,7 +66235,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921971",
     "student_id": "252921971",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Agarwal",
     "email": "dhruv.agarwal971@campusiq.edu",
     "phone_number": "+91 95843 49716",
@@ -66320,7 +66320,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921972",
     "student_id": "252921972",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Tiwari",
     "email": "manish.tiwari972@campusiq.edu",
     "phone_number": "+91 93920 34148",
@@ -66405,7 +66405,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921973",
     "student_id": "252921973",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Choudhary",
     "email": "divya.choudhary973@campusiq.edu",
     "phone_number": "+91 94797 80041",
@@ -66490,7 +66490,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921974",
     "student_id": "252921974",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Sawant",
     "email": "sameer.sawant974@campusiq.edu",
     "phone_number": "+91 93573 65784",
@@ -66575,7 +66575,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921975",
     "student_id": "252921975",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Verma",
     "email": "arjun.verma975@campusiq.edu",
     "phone_number": "+91 96504 16845",
@@ -66660,7 +66660,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921976",
     "student_id": "252921976",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Wagh",
     "email": "meera.wagh976@campusiq.edu",
     "phone_number": "+91 98527 36140",
@@ -66745,7 +66745,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921977",
     "student_id": "252921977",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Dubey",
     "email": "atharva.dubey977@campusiq.edu",
     "phone_number": "+91 92119 56219",
@@ -66830,7 +66830,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921978",
     "student_id": "252921978",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Chavan",
     "email": "nikhil.chavan978@campusiq.edu",
     "phone_number": "+91 98837 34640",
@@ -66915,7 +66915,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921979",
     "student_id": "252921979",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Sharma",
     "email": "shruti.sharma979@campusiq.edu",
     "phone_number": "+91 91605 24701",
@@ -67000,7 +67000,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921980",
     "student_id": "252921980",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Pandey",
     "email": "om.pandey980@campusiq.edu",
     "phone_number": "+91 98500 86393",
@@ -67085,7 +67085,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921981",
     "student_id": "252921981",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Mehta",
     "email": "shreya.mehta981@campusiq.edu",
     "phone_number": "+91 98403 20741",
@@ -67170,7 +67170,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921982",
     "student_id": "252921982",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Mane",
     "email": "divya.mane982@campusiq.edu",
     "phone_number": "+91 92869 20736",
@@ -67255,7 +67255,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921983",
     "student_id": "252921983",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Dubey",
     "email": "swati.dubey983@campusiq.edu",
     "phone_number": "+91 97122 21721",
@@ -67340,7 +67340,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921984",
     "student_id": "252921984",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Mehta",
     "email": "isha.mehta984@campusiq.edu",
     "phone_number": "+91 96163 55817",
@@ -67425,7 +67425,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921985",
     "student_id": "252921985",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh Patil",
     "email": "harsh.patil985@campusiq.edu",
     "phone_number": "+91 94555 55702",
@@ -67510,7 +67510,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921986",
     "student_id": "252921986",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Jadhav",
     "email": "nikhil.jadhav986@campusiq.edu",
     "phone_number": "+91 92895 23272",
@@ -67595,7 +67595,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921987",
     "student_id": "252921987",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Kale",
     "email": "kabir.kale987@campusiq.edu",
     "phone_number": "+91 92125 99516",
@@ -67680,7 +67680,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921988",
     "student_id": "252921988",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Chavan",
     "email": "pranav.chavan988@campusiq.edu",
     "phone_number": "+91 93200 76730",
@@ -67765,7 +67765,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921989",
     "student_id": "252921989",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Kadam",
     "email": "ananya.kadam989@campusiq.edu",
     "phone_number": "+91 95417 51930",
@@ -67850,7 +67850,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921990",
     "student_id": "252921990",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Choudhary",
     "email": "kavya.choudhary990@campusiq.edu",
     "phone_number": "+91 91575 36620",
@@ -67935,7 +67935,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921991",
     "student_id": "252921991",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Agarwal",
     "email": "anvi.agarwal991@campusiq.edu",
     "phone_number": "+91 92846 55758",
@@ -68020,7 +68020,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921992",
     "student_id": "252921992",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Sharma",
     "email": "krishna.sharma992@campusiq.edu",
     "phone_number": "+91 95399 46634",
@@ -68105,7 +68105,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921993",
     "student_id": "252921993",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Sharma",
     "email": "sameer.sharma993@campusiq.edu",
     "phone_number": "+91 98776 29794",
@@ -68190,7 +68190,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921994",
     "student_id": "252921994",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Deshmukh",
     "email": "manish.deshmukh994@campusiq.edu",
     "phone_number": "+91 97250 38195",
@@ -68275,7 +68275,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921995",
     "student_id": "252921995",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Sharma",
     "email": "siddharth.sharma995@campusiq.edu",
     "phone_number": "+91 91981 22554",
@@ -68360,7 +68360,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921996",
     "student_id": "252921996",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Joshi",
     "email": "ishaan.joshi996@campusiq.edu",
     "phone_number": "+91 92965 13270",
@@ -68445,7 +68445,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921997",
     "student_id": "252921997",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Agarwal",
     "email": "shruti.agarwal997@campusiq.edu",
     "phone_number": "+91 93158 34073",
@@ -68530,7 +68530,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921998",
     "student_id": "252921998",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil More",
     "email": "nikhil.more998@campusiq.edu",
     "phone_number": "+91 92546 39445",
@@ -68615,7 +68615,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252921999",
     "student_id": "252921999",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Patil",
     "email": "rashmi.patil999@campusiq.edu",
     "phone_number": "+91 93797 66343",
@@ -68700,7 +68700,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922000",
     "student_id": "252922000",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Mane",
     "email": "aditi.mane000@campusiq.edu",
     "phone_number": "+91 92451 83997",
@@ -68785,7 +68785,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922001",
     "student_id": "252922001",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Shinde",
     "email": "ayaan.shinde001@campusiq.edu",
     "phone_number": "+91 99647 63768",
@@ -68870,7 +68870,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922002",
     "student_id": "252922002",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Gaikwad",
     "email": "shruti.gaikwad002@campusiq.edu",
     "phone_number": "+91 97607 69432",
@@ -68955,7 +68955,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922003",
     "student_id": "252922003",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Wagh",
     "email": "kavya.wagh003@campusiq.edu",
     "phone_number": "+91 98533 90973",
@@ -69040,7 +69040,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922004",
     "student_id": "252922004",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai More",
     "email": "sai.more004@campusiq.edu",
     "phone_number": "+91 92514 96789",
@@ -69125,7 +69125,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922005",
     "student_id": "252922005",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Pandey",
     "email": "riya.pandey005@campusiq.edu",
     "phone_number": "+91 95102 47143",
@@ -69210,7 +69210,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922006",
     "student_id": "252922006",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Jadhav",
     "email": "aadhya.jadhav006@campusiq.edu",
     "phone_number": "+91 99205 19178",
@@ -69295,7 +69295,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922007",
     "student_id": "252922007",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Mishra",
     "email": "ayaan.mishra007@campusiq.edu",
     "phone_number": "+91 97859 19102",
@@ -69380,7 +69380,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922008",
     "student_id": "252922008",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Yadav",
     "email": "gayatri.yadav008@campusiq.edu",
     "phone_number": "+91 93879 36280",
@@ -69465,7 +69465,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922009",
     "student_id": "252922009",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Gupta",
     "email": "om.gupta009@campusiq.edu",
     "phone_number": "+91 93911 28917",
@@ -69550,7 +69550,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922010",
     "student_id": "252922010",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Mane",
     "email": "gaurav.mane010@campusiq.edu",
     "phone_number": "+91 93770 31388",
@@ -69635,7 +69635,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922011",
     "student_id": "252922011",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Mehta",
     "email": "gaurav.mehta011@campusiq.edu",
     "phone_number": "+91 99942 67933",
@@ -69720,7 +69720,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922012",
     "student_id": "252922012",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Pawar",
     "email": "meera.pawar012@campusiq.edu",
     "phone_number": "+91 96039 17031",
@@ -69805,7 +69805,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922013",
     "student_id": "252922013",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Deshmukh",
     "email": "kavya.deshmukh013@campusiq.edu",
     "phone_number": "+91 92656 97894",
@@ -69890,7 +69890,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922014",
     "student_id": "252922014",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Tiwari",
     "email": "nikita.tiwari014@campusiq.edu",
     "phone_number": "+91 91299 55523",
@@ -69975,7 +69975,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922015",
     "student_id": "252922015",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Mehta",
     "email": "isha.mehta015@campusiq.edu",
     "phone_number": "+91 99277 60469",
@@ -70060,7 +70060,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922016",
     "student_id": "252922016",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Gupta",
     "email": "neha.gupta016@campusiq.edu",
     "phone_number": "+91 97798 15975",
@@ -70145,7 +70145,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922017",
     "student_id": "252922017",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Harsh More",
     "email": "harsh.more017@campusiq.edu",
     "phone_number": "+91 94661 54262",
@@ -70230,7 +70230,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922018",
     "student_id": "252922018",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Sawant",
     "email": "anvi.sawant018@campusiq.edu",
     "phone_number": "+91 93533 27010",
@@ -70315,7 +70315,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922019",
     "student_id": "252922019",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Avani Yadav",
     "email": "avani.yadav019@campusiq.edu",
     "phone_number": "+91 99995 58016",
@@ -70400,7 +70400,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922020",
     "student_id": "252922020",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Mane",
     "email": "varun.mane020@campusiq.edu",
     "phone_number": "+91 96773 69754",
@@ -70485,7 +70485,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922021",
     "student_id": "252922021",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Pawar",
     "email": "aarav.pawar021@campusiq.edu",
     "phone_number": "+91 94237 57707",
@@ -70570,7 +70570,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922022",
     "student_id": "252922022",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Chavan",
     "email": "pooja.chavan022@campusiq.edu",
     "phone_number": "+91 92222 12027",
@@ -70655,7 +70655,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922023",
     "student_id": "252922023",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Agarwal",
     "email": "dhruv.agarwal023@campusiq.edu",
     "phone_number": "+91 99170 65130",
@@ -70740,7 +70740,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922024",
     "student_id": "252922024",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Sawant",
     "email": "riya.sawant024@campusiq.edu",
     "phone_number": "+91 99301 22905",
@@ -70825,7 +70825,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922025",
     "student_id": "252922025",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Sharma",
     "email": "reyansh.sharma025@campusiq.edu",
     "phone_number": "+91 98547 36682",
@@ -70910,7 +70910,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922026",
     "student_id": "252922026",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Singh",
     "email": "siddharth.singh026@campusiq.edu",
     "phone_number": "+91 98520 98043",
@@ -70995,7 +70995,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922027",
     "student_id": "252922027",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Mehta",
     "email": "arjun.mehta027@campusiq.edu",
     "phone_number": "+91 94383 54336",
@@ -71080,7 +71080,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922028",
     "student_id": "252922028",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Shinde",
     "email": "kavya.shinde028@campusiq.edu",
     "phone_number": "+91 95255 10789",
@@ -71165,7 +71165,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922029",
     "student_id": "252922029",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Pandey",
     "email": "ananya.pandey029@campusiq.edu",
     "phone_number": "+91 98591 75511",
@@ -71250,7 +71250,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922030",
     "student_id": "252922030",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Tiwari",
     "email": "reyansh.tiwari030@campusiq.edu",
     "phone_number": "+91 92228 70920",
@@ -71335,7 +71335,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922031",
     "student_id": "252922031",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Pawar",
     "email": "aarav.pawar031@campusiq.edu",
     "phone_number": "+91 93935 34534",
@@ -71420,7 +71420,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922032",
     "student_id": "252922032",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Kadam",
     "email": "advik.kadam032@campusiq.edu",
     "phone_number": "+91 91644 54883",
@@ -71505,7 +71505,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922033",
     "student_id": "252922033",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Tiwari",
     "email": "aniket.tiwari033@campusiq.edu",
     "phone_number": "+91 96326 44093",
@@ -71590,7 +71590,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922034",
     "student_id": "252922034",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Wagh",
     "email": "kavya.wagh034@campusiq.edu",
     "phone_number": "+91 98032 17798",
@@ -71675,7 +71675,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922035",
     "student_id": "252922035",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Jadhav",
     "email": "saanvi.jadhav035@campusiq.edu",
     "phone_number": "+91 97763 12844",
@@ -71760,7 +71760,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922036",
     "student_id": "252922036",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Pawar",
     "email": "aaryav.pawar036@campusiq.edu",
     "phone_number": "+91 93839 10859",
@@ -71845,7 +71845,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922037",
     "student_id": "252922037",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Tiwari",
     "email": "neha.tiwari037@campusiq.edu",
     "phone_number": "+91 95023 35263",
@@ -71930,7 +71930,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922038",
     "student_id": "252922038",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikita Pandey",
     "email": "nikita.pandey038@campusiq.edu",
     "phone_number": "+91 93193 17397",
@@ -72015,7 +72015,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922039",
     "student_id": "252922039",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Singh",
     "email": "arjun.singh039@campusiq.edu",
     "phone_number": "+91 94753 23090",
@@ -72100,7 +72100,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922040",
     "student_id": "252922040",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Mehta",
     "email": "siddharth.mehta040@campusiq.edu",
     "phone_number": "+91 93251 45452",
@@ -72185,7 +72185,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922041",
     "student_id": "252922041",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Krishna Jadhav",
     "email": "krishna.jadhav041@campusiq.edu",
     "phone_number": "+91 95117 27208",
@@ -72270,7 +72270,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922042",
     "student_id": "252922042",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Wagh",
     "email": "myra.wagh042@campusiq.edu",
     "phone_number": "+91 98045 56437",
@@ -72355,7 +72355,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922043",
     "student_id": "252922043",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Joshi",
     "email": "shruti.joshi043@campusiq.edu",
     "phone_number": "+91 91294 76573",
@@ -72440,7 +72440,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922044",
     "student_id": "252922044",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditi Agarwal",
     "email": "aditi.agarwal044@campusiq.edu",
     "phone_number": "+91 97647 32020",
@@ -72525,7 +72525,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922045",
     "student_id": "252922045",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Choudhary",
     "email": "shaurya.choudhary045@campusiq.edu",
     "phone_number": "+91 98264 15211",
@@ -72610,7 +72610,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922046",
     "student_id": "252922046",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Kulkarni",
     "email": "atharva.kulkarni046@campusiq.edu",
     "phone_number": "+91 93626 49043",
@@ -72695,7 +72695,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922047",
     "student_id": "252922047",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Singh",
     "email": "pranav.singh047@campusiq.edu",
     "phone_number": "+91 99613 56397",
@@ -72780,7 +72780,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922048",
     "student_id": "252922048",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Kulkarni",
     "email": "om.kulkarni048@campusiq.edu",
     "phone_number": "+91 94277 22994",
@@ -72865,7 +72865,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922049",
     "student_id": "252922049",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya More",
     "email": "diya.more049@campusiq.edu",
     "phone_number": "+91 96573 23118",
@@ -72950,7 +72950,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922050",
     "student_id": "252922050",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Dubey",
     "email": "rohan.dubey050@campusiq.edu",
     "phone_number": "+91 94217 75664",
@@ -73035,7 +73035,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922051",
     "student_id": "252922051",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Sharma",
     "email": "aarav.sharma051@campusiq.edu",
     "phone_number": "+91 96552 39771",
@@ -73120,7 +73120,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922052",
     "student_id": "252922052",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Chavan",
     "email": "prisha.chavan052@campusiq.edu",
     "phone_number": "+91 92537 48482",
@@ -73205,7 +73205,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922053",
     "student_id": "252922053",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Shah",
     "email": "meera.shah053@campusiq.edu",
     "phone_number": "+91 92100 58200",
@@ -73290,7 +73290,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922054",
     "student_id": "252922054",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Shah",
     "email": "neha.shah054@campusiq.edu",
     "phone_number": "+91 98018 14360",
@@ -73375,7 +73375,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922055",
     "student_id": "252922055",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Mehta",
     "email": "gayatri.mehta055@campusiq.edu",
     "phone_number": "+91 98788 85318",
@@ -73460,7 +73460,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922056",
     "student_id": "252922056",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha More",
     "email": "prisha.more056@campusiq.edu",
     "phone_number": "+91 91358 97915",
@@ -73545,7 +73545,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922057",
     "student_id": "252922057",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Agarwal",
     "email": "riya.agarwal057@campusiq.edu",
     "phone_number": "+91 91242 72202",
@@ -73630,7 +73630,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922058",
     "student_id": "252922058",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Choudhary",
     "email": "swati.choudhary058@campusiq.edu",
     "phone_number": "+91 96045 90051",
@@ -73715,7 +73715,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922059",
     "student_id": "252922059",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Mane",
     "email": "swati.mane059@campusiq.edu",
     "phone_number": "+91 98195 34884",
@@ -73800,7 +73800,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922060",
     "student_id": "252922060",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Gupta",
     "email": "gayatri.gupta060@campusiq.edu",
     "phone_number": "+91 99645 86008",
@@ -73885,7 +73885,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922061",
     "student_id": "252922061",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Salunkhe",
     "email": "aditya.salunkhe061@campusiq.edu",
     "phone_number": "+91 92074 69540",
@@ -73970,7 +73970,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922062",
     "student_id": "252922062",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Sharma",
     "email": "pari.sharma062@campusiq.edu",
     "phone_number": "+91 97930 87638",
@@ -74055,7 +74055,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922063",
     "student_id": "252922063",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav More",
     "email": "pranav.more063@campusiq.edu",
     "phone_number": "+91 97250 92603",
@@ -74140,7 +74140,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922064",
     "student_id": "252922064",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Kale",
     "email": "shreya.kale064@campusiq.edu",
     "phone_number": "+91 98394 63093",
@@ -74225,7 +74225,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922065",
     "student_id": "252922065",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Kale",
     "email": "kavya.kale065@campusiq.edu",
     "phone_number": "+91 91266 41859",
@@ -74310,7 +74310,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922066",
     "student_id": "252922066",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Pandey",
     "email": "sameer.pandey066@campusiq.edu",
     "phone_number": "+91 99666 63444",
@@ -74395,7 +74395,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922067",
     "student_id": "252922067",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Wagh",
     "email": "riya.wagh067@campusiq.edu",
     "phone_number": "+91 97687 33189",
@@ -74480,7 +74480,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922068",
     "student_id": "252922068",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Shinde",
     "email": "ayaan.shinde068@campusiq.edu",
     "phone_number": "+91 95174 78837",
@@ -74565,7 +74565,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922069",
     "student_id": "252922069",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Choudhary",
     "email": "ishaan.choudhary069@campusiq.edu",
     "phone_number": "+91 92103 49971",
@@ -74650,7 +74650,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922070",
     "student_id": "252922070",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sanya Gupta",
     "email": "sanya.gupta070@campusiq.edu",
     "phone_number": "+91 93479 17289",
@@ -74735,7 +74735,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922071",
     "student_id": "252922071",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Shinde",
     "email": "karan.shinde071@campusiq.edu",
     "phone_number": "+91 91045 68794",
@@ -74820,7 +74820,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922072",
     "student_id": "252922072",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Mehta",
     "email": "siddharth.mehta072@campusiq.edu",
     "phone_number": "+91 97630 22705",
@@ -74905,7 +74905,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922073",
     "student_id": "252922073",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Gaikwad",
     "email": "meera.gaikwad073@campusiq.edu",
     "phone_number": "+91 96087 46052",
@@ -74990,7 +74990,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922074",
     "student_id": "252922074",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Gupta",
     "email": "diya.gupta074@campusiq.edu",
     "phone_number": "+91 91558 83054",
@@ -75075,7 +75075,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922075",
     "student_id": "252922075",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Kadam",
     "email": "rashmi.kadam075@campusiq.edu",
     "phone_number": "+91 95269 45553",
@@ -75160,7 +75160,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922076",
     "student_id": "252922076",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Pandey",
     "email": "aaryav.pandey076@campusiq.edu",
     "phone_number": "+91 99944 29609",
@@ -75245,7 +75245,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922077",
     "student_id": "252922077",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi More",
     "email": "tanvi.more077@campusiq.edu",
     "phone_number": "+91 92483 60087",
@@ -75330,7 +75330,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922078",
     "student_id": "252922078",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Avani Singh",
     "email": "avani.singh078@campusiq.edu",
     "phone_number": "+91 92924 88575",
@@ -75415,7 +75415,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922079",
     "student_id": "252922079",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Gupta",
     "email": "aarohi.gupta079@campusiq.edu",
     "phone_number": "+91 97607 14239",
@@ -75500,7 +75500,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922080",
     "student_id": "252922080",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Patil",
     "email": "neha.patil080@campusiq.edu",
     "phone_number": "+91 95739 61170",
@@ -75585,7 +75585,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922081",
     "student_id": "252922081",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Gaikwad",
     "email": "pari.gaikwad081@campusiq.edu",
     "phone_number": "+91 91269 27005",
@@ -75670,7 +75670,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922082",
     "student_id": "252922082",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Pandey",
     "email": "aarav.pandey082@campusiq.edu",
     "phone_number": "+91 99929 87039",
@@ -75755,7 +75755,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922083",
     "student_id": "252922083",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Wagh",
     "email": "ayaan.wagh083@campusiq.edu",
     "phone_number": "+91 94058 61435",
@@ -75840,7 +75840,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922084",
     "student_id": "252922084",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Singh",
     "email": "ayaan.singh084@campusiq.edu",
     "phone_number": "+91 99978 88019",
@@ -75925,7 +75925,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922085",
     "student_id": "252922085",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Deshmukh",
     "email": "gaurav.deshmukh085@campusiq.edu",
     "phone_number": "+91 97881 28289",
@@ -76010,7 +76010,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922086",
     "student_id": "252922086",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Patil",
     "email": "prisha.patil086@campusiq.edu",
     "phone_number": "+91 97933 75149",
@@ -76095,7 +76095,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922087",
     "student_id": "252922087",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Agarwal",
     "email": "tanvi.agarwal087@campusiq.edu",
     "phone_number": "+91 98660 86483",
@@ -76180,7 +76180,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922088",
     "student_id": "252922088",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aniket Mane",
     "email": "aniket.mane088@campusiq.edu",
     "phone_number": "+91 91113 59054",
@@ -76265,7 +76265,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922089",
     "student_id": "252922089",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Dubey",
     "email": "pranav.dubey089@campusiq.edu",
     "phone_number": "+91 93183 37568",
@@ -76350,7 +76350,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922090",
     "student_id": "252922090",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Kulkarni",
     "email": "isha.kulkarni090@campusiq.edu",
     "phone_number": "+91 91765 27912",
@@ -76435,7 +76435,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922091",
     "student_id": "252922091",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya More",
     "email": "diya.more091@campusiq.edu",
     "phone_number": "+91 96260 21023",
@@ -76520,7 +76520,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922092",
     "student_id": "252922092",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Tiwari",
     "email": "sneha.tiwari092@campusiq.edu",
     "phone_number": "+91 93466 26814",
@@ -76605,7 +76605,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922093",
     "student_id": "252922093",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Gaikwad",
     "email": "shruti.gaikwad093@campusiq.edu",
     "phone_number": "+91 93216 92598",
@@ -76690,7 +76690,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922094",
     "student_id": "252922094",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Choudhary",
     "email": "aarav.choudhary094@campusiq.edu",
     "phone_number": "+91 91655 42127",
@@ -76775,7 +76775,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922095",
     "student_id": "252922095",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Pandey",
     "email": "rashmi.pandey095@campusiq.edu",
     "phone_number": "+91 92267 43775",
@@ -76860,7 +76860,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922096",
     "student_id": "252922096",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Joshi",
     "email": "reyansh.joshi096@campusiq.edu",
     "phone_number": "+91 99979 86771",
@@ -76945,7 +76945,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922097",
     "student_id": "252922097",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Sawant",
     "email": "om.sawant097@campusiq.edu",
     "phone_number": "+91 95918 32626",
@@ -77030,7 +77030,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922098",
     "student_id": "252922098",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Bhosale",
     "email": "karan.bhosale098@campusiq.edu",
     "phone_number": "+91 96012 71281",
@@ -77115,7 +77115,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922099",
     "student_id": "252922099",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Vihaan Wagh",
     "email": "vihaan.wagh099@campusiq.edu",
     "phone_number": "+91 93305 64680",
@@ -77200,7 +77200,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922100",
     "student_id": "252922100",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Kadam",
     "email": "aadhya.kadam100@campusiq.edu",
     "phone_number": "+91 96530 78291",
@@ -77285,7 +77285,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922101",
     "student_id": "252922101",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Agarwal",
     "email": "gaurav.agarwal101@campusiq.edu",
     "phone_number": "+91 99755 65810",
@@ -77370,7 +77370,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922102",
     "student_id": "252922102",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rohan Yadav",
     "email": "rohan.yadav102@campusiq.edu",
     "phone_number": "+91 91794 80851",
@@ -77455,7 +77455,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922103",
     "student_id": "252922103",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Pandey",
     "email": "varun.pandey103@campusiq.edu",
     "phone_number": "+91 95428 79026",
@@ -77540,7 +77540,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922104",
     "student_id": "252922104",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Gupta",
     "email": "ishaan.gupta104@campusiq.edu",
     "phone_number": "+91 91725 40574",
@@ -77625,7 +77625,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922105",
     "student_id": "252922105",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ayaan Mishra",
     "email": "ayaan.mishra105@campusiq.edu",
     "phone_number": "+91 96058 18741",
@@ -77710,7 +77710,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922106",
     "student_id": "252922106",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Jadhav",
     "email": "isha.jadhav106@campusiq.edu",
     "phone_number": "+91 99988 59380",
@@ -77795,7 +77795,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922107",
     "student_id": "252922107",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Kulkarni",
     "email": "kavya.kulkarni107@campusiq.edu",
     "phone_number": "+91 97250 57423",
@@ -77880,7 +77880,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922108",
     "student_id": "252922108",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Dhruv Mehta",
     "email": "dhruv.mehta108@campusiq.edu",
     "phone_number": "+91 99882 92272",
@@ -77965,7 +77965,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922109",
     "student_id": "252922109",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Verma",
     "email": "aarohi.verma109@campusiq.edu",
     "phone_number": "+91 95956 58443",
@@ -78050,7 +78050,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922110",
     "student_id": "252922110",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Sharma",
     "email": "aarohi.sharma110@campusiq.edu",
     "phone_number": "+91 96467 21562",
@@ -78135,7 +78135,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922111",
     "student_id": "252922111",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Kulkarni",
     "email": "kavya.kulkarni111@campusiq.edu",
     "phone_number": "+91 93358 60806",
@@ -78220,7 +78220,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922112",
     "student_id": "252922112",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Dubey",
     "email": "aarav.dubey112@campusiq.edu",
     "phone_number": "+91 98976 67967",
@@ -78305,7 +78305,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922113",
     "student_id": "252922113",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Mane",
     "email": "ananya.mane113@campusiq.edu",
     "phone_number": "+91 94428 23719",
@@ -78390,7 +78390,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922114",
     "student_id": "252922114",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Verma",
     "email": "pari.verma114@campusiq.edu",
     "phone_number": "+91 93328 40424",
@@ -78475,7 +78475,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922115",
     "student_id": "252922115",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi More",
     "email": "anvi.more115@campusiq.edu",
     "phone_number": "+91 98860 38656",
@@ -78560,7 +78560,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922116",
     "student_id": "252922116",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Agarwal",
     "email": "karan.agarwal116@campusiq.edu",
     "phone_number": "+91 95985 94218",
@@ -78645,7 +78645,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922117",
     "student_id": "252922117",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Deshmukh",
     "email": "sneha.deshmukh117@campusiq.edu",
     "phone_number": "+91 96658 92862",
@@ -78730,7 +78730,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922118",
     "student_id": "252922118",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Choudhary",
     "email": "om.choudhary118@campusiq.edu",
     "phone_number": "+91 95480 97509",
@@ -78815,7 +78815,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922119",
     "student_id": "252922119",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Prisha Jadhav",
     "email": "prisha.jadhav119@campusiq.edu",
     "phone_number": "+91 91484 85384",
@@ -78900,7 +78900,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922120",
     "student_id": "252922120",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Divya Choudhary",
     "email": "divya.choudhary120@campusiq.edu",
     "phone_number": "+91 93097 27516",
@@ -78985,7 +78985,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922121",
     "student_id": "252922121",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rudra Sharma",
     "email": "rudra.sharma121@campusiq.edu",
     "phone_number": "+91 93690 37694",
@@ -79070,7 +79070,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922122",
     "student_id": "252922122",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Anvi Gupta",
     "email": "anvi.gupta122@campusiq.edu",
     "phone_number": "+91 96486 56663",
@@ -79155,7 +79155,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922123",
     "student_id": "252922123",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Chiara Bhosale",
     "email": "chiara.bhosale123@campusiq.edu",
     "phone_number": "+91 98882 28439",
@@ -79240,7 +79240,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922124",
     "student_id": "252922124",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Kadam",
     "email": "aadhya.kadam124@campusiq.edu",
     "phone_number": "+91 96190 38004",
@@ -79325,7 +79325,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922125",
     "student_id": "252922125",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Patil",
     "email": "sai.patil125@campusiq.edu",
     "phone_number": "+91 95098 39994",
@@ -79410,7 +79410,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922126",
     "student_id": "252922126",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Mehta",
     "email": "ishaan.mehta126@campusiq.edu",
     "phone_number": "+91 98009 85784",
@@ -79495,7 +79495,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922127",
     "student_id": "252922127",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Kulkarni",
     "email": "shruti.kulkarni127@campusiq.edu",
     "phone_number": "+91 91447 62915",
@@ -79580,7 +79580,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922128",
     "student_id": "252922128",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Verma",
     "email": "atharva.verma128@campusiq.edu",
     "phone_number": "+91 97102 59516",
@@ -79665,7 +79665,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922129",
     "student_id": "252922129",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Mehta",
     "email": "rashmi.mehta129@campusiq.edu",
     "phone_number": "+91 97745 99033",
@@ -79750,7 +79750,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922130",
     "student_id": "252922130",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Gupta",
     "email": "diya.gupta130@campusiq.edu",
     "phone_number": "+91 94973 46271",
@@ -79835,7 +79835,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922131",
     "student_id": "252922131",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Verma",
     "email": "ananya.verma131@campusiq.edu",
     "phone_number": "+91 97824 64590",
@@ -79920,7 +79920,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922132",
     "student_id": "252922132",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Riya Mane",
     "email": "riya.mane132@campusiq.edu",
     "phone_number": "+91 96555 42747",
@@ -80005,7 +80005,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922133",
     "student_id": "252922133",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Shinde",
     "email": "manish.shinde133@campusiq.edu",
     "phone_number": "+91 91428 64127",
@@ -80090,7 +80090,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922134",
     "student_id": "252922134",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Verma",
     "email": "varun.verma134@campusiq.edu",
     "phone_number": "+91 98725 31764",
@@ -80175,7 +80175,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922135",
     "student_id": "252922135",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Gupta",
     "email": "siddharth.gupta135@campusiq.edu",
     "phone_number": "+91 95554 28894",
@@ -80260,7 +80260,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922136",
     "student_id": "252922136",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Agarwal",
     "email": "tanvi.agarwal136@campusiq.edu",
     "phone_number": "+91 97279 48290",
@@ -80345,7 +80345,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922137",
     "student_id": "252922137",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aditya Tiwari",
     "email": "aditya.tiwari137@campusiq.edu",
     "phone_number": "+91 92332 35518",
@@ -80430,7 +80430,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922138",
     "student_id": "252922138",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Gaikwad",
     "email": "aarav.gaikwad138@campusiq.edu",
     "phone_number": "+91 92360 13265",
@@ -80515,7 +80515,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922139",
     "student_id": "252922139",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Shah",
     "email": "kabir.shah139@campusiq.edu",
     "phone_number": "+91 93554 17853",
@@ -80600,7 +80600,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922140",
     "student_id": "252922140",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Reyansh Wagh",
     "email": "reyansh.wagh140@campusiq.edu",
     "phone_number": "+91 96069 12126",
@@ -80685,7 +80685,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922141",
     "student_id": "252922141",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Varun Gaikwad",
     "email": "varun.gaikwad141@campusiq.edu",
     "phone_number": "+91 98023 34578",
@@ -80770,7 +80770,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922142",
     "student_id": "252922142",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Pandey",
     "email": "gaurav.pandey142@campusiq.edu",
     "phone_number": "+91 98099 96755",
@@ -80855,7 +80855,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922143",
     "student_id": "252922143",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Gaikwad",
     "email": "aarohi.gaikwad143@campusiq.edu",
     "phone_number": "+91 99301 84738",
@@ -80940,7 +80940,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922144",
     "student_id": "252922144",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Neha Gupta",
     "email": "neha.gupta144@campusiq.edu",
     "phone_number": "+91 96924 63096",
@@ -81025,7 +81025,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922145",
     "student_id": "252922145",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarav Gupta",
     "email": "aarav.gupta145@campusiq.edu",
     "phone_number": "+91 97747 63631",
@@ -81110,7 +81110,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922146",
     "student_id": "252922146",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pari Kale",
     "email": "pari.kale146@campusiq.edu",
     "phone_number": "+91 98717 52826",
@@ -81195,7 +81195,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922147",
     "student_id": "252922147",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Kadam",
     "email": "kavya.kadam147@campusiq.edu",
     "phone_number": "+91 93385 31591",
@@ -81280,7 +81280,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922148",
     "student_id": "252922148",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Mehta",
     "email": "shreya.mehta148@campusiq.edu",
     "phone_number": "+91 96397 41796",
@@ -81365,7 +81365,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922149",
     "student_id": "252922149",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Agarwal",
     "email": "saanvi.agarwal149@campusiq.edu",
     "phone_number": "+91 91408 98301",
@@ -81450,7 +81450,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922150",
     "student_id": "252922150",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Singh",
     "email": "om.singh150@campusiq.edu",
     "phone_number": "+91 91341 81399",
@@ -81535,7 +81535,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922151",
     "student_id": "252922151",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Kadam",
     "email": "karan.kadam151@campusiq.edu",
     "phone_number": "+91 91708 20878",
@@ -81620,7 +81620,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922152",
     "student_id": "252922152",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Rashmi Sawant",
     "email": "rashmi.sawant152@campusiq.edu",
     "phone_number": "+91 93954 52350",
@@ -81705,7 +81705,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922153",
     "student_id": "252922153",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Kadam",
     "email": "siddharth.kadam153@campusiq.edu",
     "phone_number": "+91 95616 86671",
@@ -81790,7 +81790,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922154",
     "student_id": "252922154",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Siddharth Gupta",
     "email": "siddharth.gupta154@campusiq.edu",
     "phone_number": "+91 99811 28258",
@@ -81875,7 +81875,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922155",
     "student_id": "252922155",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Joshi",
     "email": "myra.joshi155@campusiq.edu",
     "phone_number": "+91 97653 60128",
@@ -81960,7 +81960,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922156",
     "student_id": "252922156",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aaryav Gupta",
     "email": "aaryav.gupta156@campusiq.edu",
     "phone_number": "+91 94989 37740",
@@ -82045,7 +82045,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922157",
     "student_id": "252922157",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Gaikwad",
     "email": "aarohi.gaikwad157@campusiq.edu",
     "phone_number": "+91 91040 68916",
@@ -82130,7 +82130,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922158",
     "student_id": "252922158",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Deshmukh",
     "email": "pooja.deshmukh158@campusiq.edu",
     "phone_number": "+91 95844 56234",
@@ -82215,7 +82215,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922159",
     "student_id": "252922159",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Arjun Dubey",
     "email": "arjun.dubey159@campusiq.edu",
     "phone_number": "+91 91980 30431",
@@ -82300,7 +82300,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922160",
     "student_id": "252922160",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aadhya Yadav",
     "email": "aadhya.yadav160@campusiq.edu",
     "phone_number": "+91 95660 94819",
@@ -82385,7 +82385,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922161",
     "student_id": "252922161",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Mishra",
     "email": "aarohi.mishra161@campusiq.edu",
     "phone_number": "+91 99228 59820",
@@ -82470,7 +82470,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922162",
     "student_id": "252922162",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Swati Bhosale",
     "email": "swati.bhosale162@campusiq.edu",
     "phone_number": "+91 96785 31452",
@@ -82555,7 +82555,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922163",
     "student_id": "252922163",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gaurav Kale",
     "email": "gaurav.kale163@campusiq.edu",
     "phone_number": "+91 99666 67840",
@@ -82640,7 +82640,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922164",
     "student_id": "252922164",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Kulkarni",
     "email": "kavya.kulkarni164@campusiq.edu",
     "phone_number": "+91 98328 64773",
@@ -82725,7 +82725,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922165",
     "student_id": "252922165",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Kadam",
     "email": "saanvi.kadam165@campusiq.edu",
     "phone_number": "+91 91102 47601",
@@ -82810,7 +82810,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922166",
     "student_id": "252922166",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Wagh",
     "email": "sakshi.wagh166@campusiq.edu",
     "phone_number": "+91 95419 51504",
@@ -82895,7 +82895,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922167",
     "student_id": "252922167",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Agarwal",
     "email": "ananya.agarwal167@campusiq.edu",
     "phone_number": "+91 95397 26580",
@@ -82980,7 +82980,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922168",
     "student_id": "252922168",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kabir Pandey",
     "email": "kabir.pandey168@campusiq.edu",
     "phone_number": "+91 95686 66998",
@@ -83065,7 +83065,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922169",
     "student_id": "252922169",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shruti Shah",
     "email": "shruti.shah169@campusiq.edu",
     "phone_number": "+91 99693 94185",
@@ -83150,7 +83150,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922170",
     "student_id": "252922170",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Isha Deshmukh",
     "email": "isha.deshmukh170@campusiq.edu",
     "phone_number": "+91 95496 77508",
@@ -83235,7 +83235,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922171",
     "student_id": "252922171",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Gayatri Kadam",
     "email": "gayatri.kadam171@campusiq.edu",
     "phone_number": "+91 92682 63057",
@@ -83320,7 +83320,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922172",
     "student_id": "252922172",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Mehta",
     "email": "diya.mehta172@campusiq.edu",
     "phone_number": "+91 91682 52054",
@@ -83405,7 +83405,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922173",
     "student_id": "252922173",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ishaan Deshmukh",
     "email": "ishaan.deshmukh173@campusiq.edu",
     "phone_number": "+91 98669 73173",
@@ -83490,7 +83490,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922174",
     "student_id": "252922174",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Yadav",
     "email": "meera.yadav174@campusiq.edu",
     "phone_number": "+91 92003 31575",
@@ -83575,7 +83575,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922175",
     "student_id": "252922175",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shreya Yadav",
     "email": "shreya.yadav175@campusiq.edu",
     "phone_number": "+91 92899 25842",
@@ -83660,7 +83660,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922176",
     "student_id": "252922176",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Yadav",
     "email": "nikhil.yadav176@campusiq.edu",
     "phone_number": "+91 98920 96797",
@@ -83745,7 +83745,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922177",
     "student_id": "252922177",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Kavya Kale",
     "email": "kavya.kale177@campusiq.edu",
     "phone_number": "+91 91263 12289",
@@ -83830,7 +83830,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922178",
     "student_id": "252922178",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Diya Mishra",
     "email": "diya.mishra178@campusiq.edu",
     "phone_number": "+91 94985 65225",
@@ -83915,7 +83915,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922179",
     "student_id": "252922179",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Aarohi Kadam",
     "email": "aarohi.kadam179@campusiq.edu",
     "phone_number": "+91 94330 38921",
@@ -84000,7 +84000,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922180",
     "student_id": "252922180",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sai Sawant",
     "email": "sai.sawant180@campusiq.edu",
     "phone_number": "+91 93272 96166",
@@ -84085,7 +84085,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922181",
     "student_id": "252922181",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Bhosale",
     "email": "pooja.bhosale181@campusiq.edu",
     "phone_number": "+91 91286 51894",
@@ -84170,7 +84170,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922182",
     "student_id": "252922182",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Myra Verma",
     "email": "myra.verma182@campusiq.edu",
     "phone_number": "+91 99623 88012",
@@ -84255,7 +84255,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922183",
     "student_id": "252922183",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Manish Patil",
     "email": "manish.patil183@campusiq.edu",
     "phone_number": "+91 94972 64720",
@@ -84340,7 +84340,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922184",
     "student_id": "252922184",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pranav Mishra",
     "email": "pranav.mishra184@campusiq.edu",
     "phone_number": "+91 95006 11096",
@@ -84425,7 +84425,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922185",
     "student_id": "252922185",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Tanvi Mehta",
     "email": "tanvi.mehta185@campusiq.edu",
     "phone_number": "+91 92610 76727",
@@ -84510,7 +84510,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922186",
     "student_id": "252922186",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Ananya Sharma",
     "email": "ananya.sharma186@campusiq.edu",
     "phone_number": "+91 94190 68660",
@@ -84595,7 +84595,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922187",
     "student_id": "252922187",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Advik Agarwal",
     "email": "advik.agarwal187@campusiq.edu",
     "phone_number": "+91 97051 79756",
@@ -84680,7 +84680,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922188",
     "student_id": "252922188",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Om Salunkhe",
     "email": "om.salunkhe188@campusiq.edu",
     "phone_number": "+91 98021 15161",
@@ -84765,7 +84765,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922189",
     "student_id": "252922189",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sneha Shah",
     "email": "sneha.shah189@campusiq.edu",
     "phone_number": "+91 93456 54550",
@@ -84850,7 +84850,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922190",
     "student_id": "252922190",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Saanvi Gupta",
     "email": "saanvi.gupta190@campusiq.edu",
     "phone_number": "+91 94204 12596",
@@ -84935,7 +84935,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922191",
     "student_id": "252922191",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Karan Shah",
     "email": "karan.shah191@campusiq.edu",
     "phone_number": "+91 97684 98904",
@@ -85020,7 +85020,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922192",
     "student_id": "252922192",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Pooja Mehta",
     "email": "pooja.mehta192@campusiq.edu",
     "phone_number": "+91 95385 76411",
@@ -85105,7 +85105,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922193",
     "student_id": "252922193",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sakshi Salunkhe",
     "email": "sakshi.salunkhe193@campusiq.edu",
     "phone_number": "+91 95763 41942",
@@ -85190,7 +85190,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922194",
     "student_id": "252922194",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Sameer Joshi",
     "email": "sameer.joshi194@campusiq.edu",
     "phone_number": "+91 91134 16702",
@@ -85275,7 +85275,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922195",
     "student_id": "252922195",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Nikhil Deshmukh",
     "email": "nikhil.deshmukh195@campusiq.edu",
     "phone_number": "+91 96805 15039",
@@ -85360,7 +85360,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922196",
     "student_id": "252922196",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Meera Yadav",
     "email": "meera.yadav196@campusiq.edu",
     "phone_number": "+91 92647 24637",
@@ -85445,7 +85445,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922197",
     "student_id": "252922197",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Avani Jadhav",
     "email": "avani.jadhav197@campusiq.edu",
     "phone_number": "+91 96710 48345",
@@ -85530,7 +85530,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922198",
     "student_id": "252922198",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Mane",
     "email": "atharva.mane198@campusiq.edu",
     "phone_number": "+91 92763 64490",
@@ -85615,7 +85615,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922199",
     "student_id": "252922199",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Shaurya Sharma",
     "email": "shaurya.sharma199@campusiq.edu",
     "phone_number": "+91 91970 65560",
@@ -85700,7 +85700,7 @@ const CAMPUSIQ_STUDENTS = [
   {
     "id": "stu_252922200",
     "student_id": "252922200",
-    "password": "2026",
+    "password": "student123",
     "full_name": "Atharva Tiwari",
     "email": "atharva.tiwari200@campusiq.edu",
     "phone_number": "+91 94527 46752",

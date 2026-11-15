@@ -180,192 +180,40 @@ body {
 }
 
 /* ==========================================================================
-   PRECISION HIGH-CONTRAST DUAL-MODE THEME SYSTEM
-   Guarantees 100% visible typography, crystal-clear keywords, and deep contrast
-   in BOTH Light Mode and Dark Mode. Zero blank or disappearing keywords.
-   ========================================================================== */
-
-/* LIGHT MODE ENHANCEMENTS (Active when html does not have .dark) */
-html:not(.dark) body {
-  background-color: #F1F5F9 !important;
-  color: #0F172A !important;
-}
-
-html:not(.dark) .portal-card,
-html:not(.dark) .timetable-row {
-  background-color: #FFFFFF !important;
-  border-color: #CBD5E1 !important;
-  color: #0F172A !important;
-}
-
-html:not(.dark) main h1:not(.dark-enclave *):not(.smart-id-card *),
-html:not(.dark) main h2:not(.dark-enclave *):not(.smart-id-card *),
-html:not(.dark) main h3:not(.dark-enclave *):not(.smart-id-card *),
-html:not(.dark) main h4:not(.dark-enclave *):not(.smart-id-card *) {
-  color: #0F172A !important;
-}
-
-html:not(.dark) label:not(.dark-enclave *):not(#login-gate-screen *):not(#admin-login-gate *) {
-  color: #0F172A !important;
-  font-weight: 700 !important;
-}
-
-/* Light Mode Slate Text Boost (Prevents Low-Contrast Washed-out Text) */
-html:not(.dark) .text-slate-900,
-html:not(.dark) .text-slate-800 {
-  color: #0F172A !important;
-}
-
-html:not(.dark) .text-slate-700,
-html:not(.dark) .text-slate-600 {
-  color: #1E293B !important;
-}
-
-html:not(.dark) .text-slate-500 {
-  color: #334155 !important;
-}
-
-html:not(.dark) .text-slate-400 {
-  color: #475569 !important;
-}
-
-html:not(.dark) .portal-card .text-slate-300,
-html:not(.dark) .bg-white .text-slate-300,
-html:not(.dark) .bg-slate-50 .text-slate-300,
-html:not(.dark) .bg-slate-100 .text-slate-300 {
-  color: #334155 !important;
-}
-
-/* Light Mode Table Formatting */
-html:not(.dark) table th:not(.dark-enclave *) {
-  background-color: #F1F5F9 !important;
-  color: #0F172A !important;
-  border-color: #CBD5E1 !important;
-  font-weight: 800 !important;
-}
-
-html:not(.dark) table td:not(.dark-enclave *) {
-  color: #0F172A !important;
-  border-color: #E2E8F0 !important;
-}
-
-html:not(.dark) table tr:hover td:not(.dark-enclave *) {
-  background-color: #F8FAFC !important;
-}
-
-/* Light Mode Inputs & Selects */
-html:not(.dark) input:not([type="checkbox"]):not([type="radio"]):not(.dark-enclave *):not(#login-gate-screen *):not(#admin-login-gate *),
-html:not(.dark) select:not(.dark-enclave *):not(#login-gate-screen *):not(#admin-login-gate *),
-html:not(.dark) textarea:not(.dark-enclave *):not(#login-gate-screen *):not(#admin-login-gate *) {
-  background-color: #FFFFFF !important;
-  color: #0F172A !important;
-  border-color: #94A3B8 !important;
-  font-weight: 600 !important;
-}
-
-html:not(.dark) input::placeholder,
-html:not(.dark) textarea::placeholder {
-  color: #64748B !important;
-}
-
-/* ==========================================================================
-   BADGE & KEYWORD PILL SYSTEM (Crystal Clear & Readable in Both Modes)
-   ========================================================================== */
-.badge-exam {
-  background-color: #FEE2E2 !important;
-  color: #991B1B !important;
-  border: 1px solid #FCA5A5 !important;
-  font-weight: 700 !important;
-}
-html.dark .badge-exam {
-  background-color: rgba(153, 27, 27, 0.45) !important;
-  color: #FCA5A5 !important;
-  border: 1px solid #7F1D1D !important;
-}
-
-.badge-circular {
-  background-color: #EFF6FF !important;
-  color: #1E40AF !important;
-  border: 1px solid #BFDBFE !important;
-  font-weight: 700 !important;
-}
-html.dark .badge-circular {
-  background-color: rgba(30, 64, 175, 0.45) !important;
-  color: #93C5FD !important;
-  border: 1px solid #1E3A8A !important;
-}
-
-.badge-academic {
-  background-color: #ECFDF5 !important;
-  color: #065F46 !important;
-  border: 1px solid #A7F3D0 !important;
-  font-weight: 700 !important;
-}
-html.dark .badge-academic {
-  background-color: rgba(6, 95, 70, 0.45) !important;
-  color: #6EE7B7 !important;
-  border: 1px solid #064E3B !important;
-}
-
-.badge-event {
-  background-color: #F3E8FF !important;
-  color: #6B21A8 !important;
-  border: 1px solid #DDD6FE !important;
-  font-weight: 700 !important;
-}
-html.dark .badge-event {
-  background-color: rgba(107, 33, 168, 0.45) !important;
-  color: #D8B4FE !important;
-  border: 1px solid #581C87 !important;
-}
-
-.badge-urgent, .badge-critical {
-  background-color: #FEF2F2 !important;
-  color: #B91C1C !important;
-  border: 1.5px solid #F87171 !important;
-  font-weight: 800 !important;
-}
-html.dark .badge-urgent, html.dark .badge-critical {
-  background-color: rgba(185, 28, 28, 0.5) !important;
-  color: #FCA5A5 !important;
-  border: 1.5px solid #991B1B !important;
-}
-
-/* ==========================================================================
    DARK THEME HARMONIZATION (Applied when <html class="dark">)
    Smoothly flips backgrounds to deep obsidian and dark text to crisp white,
    WITHOUT overriding specific badge colors (amber, emerald, red, blue).
    ========================================================================== */
 html.dark body {
-  background-color: #070D19 !important;
-  color: #F8FAFC !important;
+  background-color: #070D19;
+  color: #F8FAFC;
 }
 
 html.dark header {
-  background-color: #081225 !important;
-  border-color: #1E293B !important;
+  background-color: #081225;
+  border-color: #1E293B;
 }
 
 html.dark .bg-white {
-  background-color: #0F172A !important;
-  border-color: #1E293B !important;
+  background-color: #0F172A;
+  border-color: #1E293B;
 }
 
 html.dark .portal-card,
 html.dark .timetable-row {
-  background-color: #0F172A !important;
-  border-color: #1E293B !important;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) !important;
+  background-color: #0F172A;
+  border-color: #1E293B;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
 html.dark .timetable-row.active-now {
-  background-color: #0F2042 !important;
-  border-color: #2563EB !important;
+  background-color: #0F2042;
+  border-color: #2563EB;
 }
 
 html.dark .portal-card-header {
-  background-color: #0F172A !important;
-  border-color: #1E293B !important;
+  background-color: #0F172A;
+  border-color: #1E293B;
 }
 
 /* Headings in Dark Mode */
@@ -373,32 +221,32 @@ html.dark main h1,
 html.dark main h2,
 html.dark main h3,
 html.dark main h4 {
-  color: #FFFFFF !important;
+  color: #FFFFFF;
 }
 
 html.dark label {
-  color: #CBD5E1 !important;
+  color: #CBD5E1;
 }
 
 /* Slate Text in Dark Mode (High Contrast, No Blank Keywords) */
 html.dark .text-slate-900 {
-  color: #F8FAFC !important;
+  color: #F8FAFC;
 }
 
 html.dark .text-slate-800 {
-  color: #F1F5F9 !important;
+  color: #F1F5F9;
 }
 
 html.dark .text-slate-700 {
-  color: #E2E8F0 !important;
+  color: #E2E8F0;
 }
 
 html.dark .text-slate-600 {
-  color: #CBD5E1 !important;
+  color: #CBD5E1;
 }
 
 html.dark .text-slate-500 {
-  color: #94A3B8 !important;
+  color: #94A3B8;
 }
 
 /* Card Surface Backgrounds in Dark Mode */

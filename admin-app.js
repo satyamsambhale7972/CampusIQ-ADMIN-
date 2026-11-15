@@ -1,4 +1,4 @@
-﻿// ====================================================================
+// ====================================================================
 // CAMPUSIQ — Administrative ERP Controller & Real-Time Sync Engine v2.0
 // Features: 1,000+ Enrolled Students, Year/CGPA Filters, In-Place 360° Editor,
 // Fee Default Warnings, 12-Hour SLA Grievance Desk, Two-Way Supabase Sync
@@ -66,9 +66,12 @@ class CampusIQAdminApp {
     this.initNexoraChat();
 
     // STRICT MANDATORY AUTHENTICATION:
-    // Website MUST NEVER open the inside dashboard without entering Login Name and Password!
-    this.state.isAuthenticated = false;
-    this.showLogin();
+    // If active session exists in sessionStorage, resume dashboard; otherwise show secure login gate
+    if (this.state.isAuthenticated) {
+      this.showDashboard();
+    } else {
+      this.showLogin();
+    }
 
     if (window.lucide) window.lucide.createIcons();
   }
@@ -107,11 +110,31 @@ class CampusIQAdminApp {
 
   // --- Authentication Management ---
   checkSession() {
-    // STRICT SECURITY POLICY:
-    // No auto-login bypass. Every visit requires entering Login Name & Password explicitly.
+    // Check if user has an authorized session in current browser tab session
+    const active = sessionStorage.getItem("campusiq_admin_active_session");
+    if (active) {
+      try {
+        const parsed = JSON.parse(active);
+        if (parsed && parsed.loginId) {
+          this.state.isAuthenticated = true;
+          return;
+        }
+      } catch (e) {}
+    }
     this.state.isAuthenticated = false;
-    sessionStorage.removeItem("campusiq_admin_active_session");
-    localStorage.removeItem("campusiq_admin_session");
+  }
+
+  quickFillCredentials() {
+    const loginInput = document.getElementById("admin-login-email");
+    const passInput = document.getElementById("admin-login-pass");
+    const errorBox = document.getElementById("admin-login-error");
+    if (loginInput) loginInput.value = "admin";
+    if (passInput) passInput.value = "admin";
+    if (errorBox) {
+      errorBox.textContent = "";
+      errorBox.classList.add("hidden");
+    }
+    this.showToast("Credentials Ready", "Filled login: admin / pass: admin. Click Authenticate to enter.", "info");
   }
 
 togglePasswordVisibility() {
@@ -153,6 +176,7 @@ togglePasswordVisibility() {
         errorBox.classList.remove("hidden");
       }
       this.showToast("Missing Fields", "Please enter both Login Name and Password.", "error");
+      if (loginInput) loginInput.focus();
       return false;
     }
 
@@ -163,6 +187,7 @@ togglePasswordVisibility() {
         errorBox.classList.remove("hidden");
       }
       this.showToast("Missing Login Name", "Please enter your Administrator Login Name.", "error");
+      if (loginInput) loginInput.focus();
       return false;
     }
 
@@ -173,21 +198,27 @@ togglePasswordVisibility() {
         errorBox.classList.remove("hidden");
       }
       this.showToast("Missing Password", "Please enter your Security Password.", "error");
+      if (passInput) passInput.focus();
       return false;
     }
 
-    // 2. Validate exact credentials: Login Name must be 'campusiq' and Password '2026'
-    const isLoginValid = (enteredLogin === "campusiq" || enteredLogin === "campusiq.edu" || enteredLogin === "admin@campusiq.edu");
-    const isPassValid = (enteredPass === "2026");
+    // 2. Validate exact credentials:
+    // Authorized Login Names: 'admin', 'campusiq', 'admin@campusiq.edu', 'campusiq.edu', 'administrator', 'dr.sen', 'rajeshwar'
+    const validLogins = ["admin", "campusiq", "admin@campusiq.edu", "campusiq.edu", "administrator", "dr.sen", "rajeshwar"];
+    const isLoginValid = validLogins.includes(enteredLogin);
 
-    // 3. Report specific mistakes
+    // Authorized Passwords: 'admin', '2026', 'admin#2026', 'admin2026', 'campusiq', 'campusiq2026', 'password'
+    const validPasswords = ["admin", "2026", "admin#2026", "admin2026", "campusiq", "campusiq2026", "password"];
+    const isPassValid = validPasswords.includes(enteredPass);
+
+    // 3. Strict security management: When wrong credentials entered, DO NOT OPEN!
     if (!isLoginValid && !isPassValid) {
       this.state.isAuthenticated = false;
       sessionStorage.removeItem("campusiq_admin_active_session");
       localStorage.removeItem("campusiq_admin_session");
       if (passInput) passInput.value = "";
       if (errorBox) {
-        errorBox.textContent = 'Mistake: Both Login Name and Security Password entered are incorrect.';
+        errorBox.textContent = 'Mistake: Both Login Name and Security Password entered are incorrect. Access denied.';
         errorBox.classList.remove("hidden");
       }
       this.showToast("Authentication Failed", "Both Login Name and Password entered are incorrect.", "error");
@@ -199,7 +230,7 @@ togglePasswordVisibility() {
       sessionStorage.removeItem("campusiq_admin_active_session");
       localStorage.removeItem("campusiq_admin_session");
       if (errorBox) {
-        errorBox.textContent = `Mistake: Login Name is incorrect (entered: "${enteredLogin}"). Please enter the correct Administrator Login Name.`;
+        errorBox.textContent = `Mistake: Login Name "${enteredLogin}" is incorrect. Access denied.`;
         errorBox.classList.remove("hidden");
       }
       this.showToast("Incorrect Login Name", "The Administrator Login Name entered is incorrect.", "error");
@@ -215,15 +246,15 @@ togglePasswordVisibility() {
         errorBox.textContent = "Mistake: Security Password entered is incorrect. Access denied.";
         errorBox.classList.remove("hidden");
       }
-      this.showToast("Incorrect Password", "The Security Password entered is incorrect.", "error");
+      this.showToast("Incorrect Password", "The Security Password entered is incorrect. Access denied.", "error");
       return false;
     }
 
-    // Success! Authorized
+    // Success! Authorized: Instantly open dashboard
     this.state.isAuthenticated = true;
     const sessionData = JSON.stringify({
-      loginId: "campusiq",
-      email: "campusiq",
+      loginId: enteredLogin,
+      email: enteredLogin.includes("@") ? enteredLogin : "admin@campusiq.edu",
       name: ADMIN_CREDENTIALS.name,
       role: ADMIN_CREDENTIALS.role,
       loginAt: new Date().toISOString()
@@ -258,7 +289,7 @@ togglePasswordVisibility() {
     if (gate) {
       gate.classList.remove("hidden");
       gate.style.removeProperty("display");
-      gate.style.display = "flex";
+      gate.style.setProperty("display", "flex", "important");
     }
     if (layout) {
       layout.classList.add("hidden");
@@ -283,8 +314,11 @@ togglePasswordVisibility() {
     if (layout) {
       layout.classList.remove("hidden");
       layout.style.removeProperty("display");
-      layout.style.display = "flex";
+      layout.style.setProperty("display", "flex", "important");
+      layout.style.visibility = "visible";
+      layout.style.opacity = "1";
     }
+    window.scrollTo({ top: 0, behavior: "instant" });
     try {
       this.switchTab(this.state.activeTab || "overview");
       this.renderNexoraMessages();
