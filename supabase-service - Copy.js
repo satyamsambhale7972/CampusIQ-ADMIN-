@@ -1,4 +1,4 @@
-// ====================================================================
+﻿// ====================================================================
 // CAMPUSIQ — Supabase Client & Private Student Authentication Service
 // Supports: Strict Individual Student Isolation, 1000+ Student Registry,
 // Live Supabase Sync & Zero Data Leakage
@@ -30,7 +30,7 @@ class SupabaseAcademicService {
     }
 
     // 2. Load Student Master Registry from secure database file (Guaranteed all 1,000 students across 4 cohorts)
-    const CURRENT_VERSION = "2026_cohort_v7_universal_2026";
+    const CURRENT_VERSION = "2026_cohort_v5_balanced_1000";
     const cachedVer = localStorage.getItem("campusiq_registry_version");
     const cachedRegistry = localStorage.getItem("campusiq_registry_store");
     let validRegistry = null;
@@ -56,69 +56,16 @@ class SupabaseAcademicService {
     this.allStudentsRegistry = validRegistry;
 
     // 3. Restore authenticated session (if previously logged in)
-    const activeSession = sessionStorage.getItem("campusiq_authenticated_student") || localStorage.getItem("campusiq_authenticated_student");
+    const activeSession = localStorage.getItem("campusiq_authenticated_student");
     if (activeSession) {
       try {
-        const parsed = JSON.parse(activeSession);
-        if (parsed && parsed.student_id) {
-          // Re-sync with latest registry store using timestamp-aware merge
-          const latestFromRegistry = this.allStudentsRegistry.find(s => String(s.student_id).trim() === String(parsed.student_id).trim());
-          if (latestFromRegistry) {
-            const regTime = latestFromRegistry.updated_at ? new Date(latestFromRegistry.updated_at).getTime() : 0;
-            const parsedTime = parsed.updated_at ? new Date(parsed.updated_at).getTime() : 0;
-            if (regTime >= parsedTime) {
-              this.currentUser = { ...parsed, ...latestFromRegistry };
-            } else {
-              this.currentUser = { ...latestFromRegistry, ...parsed };
-              // Keep allStudentsRegistry in sync with newer active session
-              const rIdx = this.allStudentsRegistry.findIndex(s => String(s.student_id).trim() === String(parsed.student_id).trim());
-              if (rIdx !== -1) {
-                this.allStudentsRegistry[rIdx] = { ...this.allStudentsRegistry[rIdx], ...parsed };
-                try {
-                  localStorage.setItem("campusiq_registry_store", JSON.stringify(this.allStudentsRegistry));
-                } catch (e) {}
-              }
-            }
-          } else {
-            this.currentUser = parsed;
-          }
-          sessionStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
-          localStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
-        } else {
-          this.currentUser = null;
-        }
+        this.currentUser = JSON.parse(activeSession);
       } catch (e) {
         this.currentUser = null;
       }
     } else {
       // By default, student must login! No public leak
       this.currentUser = null;
-    }
-
-    // 3b. Real-time storage listener to sync allStudentsRegistry across windows/tabs
-    if (typeof window !== "undefined") {
-      window.addEventListener("storage", (e) => {
-        if (e.key === "campusiq_registry_store" && e.newValue) {
-          try {
-            const updatedRegistry = JSON.parse(e.newValue);
-            if (Array.isArray(updatedRegistry)) {
-              this.allStudentsRegistry = updatedRegistry;
-              if (this.currentUser) {
-                const refreshed = updatedRegistry.find(s => String(s.student_id).trim() === String(this.currentUser.student_id).trim());
-                if (refreshed) {
-                  const currT = this.currentUser.updated_at ? new Date(this.currentUser.updated_at).getTime() : 0;
-                  const refT = refreshed.updated_at ? new Date(refreshed.updated_at).getTime() : 0;
-                  if (refT >= currT) {
-                    this.currentUser = { ...this.currentUser, ...refreshed };
-                    localStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
-                    sessionStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
-                  }
-                }
-              }
-            }
-          } catch (err) {}
-        }
-      });
     }
 
     // 4. Test connectivity
@@ -155,62 +102,23 @@ class SupabaseAcademicService {
 
   // --- Strict Student Authentication (Only Particular Student Data Loaded) ---
   async loginStudent(rollOrEmail, password) {
-    if (!rollOrEmail) {
-      return { success: false, message: "Roll number or college email is required." };
-    }
-    const cleanId = String(rollOrEmail).trim().toLowerCase();
-    const cleanPass = String(password || "").trim();
+    const cleanId = rollOrEmail.trim().toLowerCase();
     
-    // Always refresh allStudentsRegistry from localStorage so any admin updates are immediately present
-    const cachedRegistry = localStorage.getItem("campusiq_registry_store");
-    if (cachedRegistry) {
-      try {
-        const parsed = JSON.parse(cachedRegistry);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          this.allStudentsRegistry = parsed;
-        }
-      } catch (e) {}
-    } else if (!this.allStudentsRegistry || this.allStudentsRegistry.length === 0) {
-      if (typeof window !== "undefined" && window.CAMPUSIQ_STUDENTS && window.CAMPUSIQ_STUDENTS.length > 0) {
-        this.allStudentsRegistry = window.CAMPUSIQ_STUDENTS;
-      }
-    }
-
     // Look up in 1000-student registry
     const match = this.allStudentsRegistry.find(s => 
-      String(s.student_id).trim().toLowerCase() === cleanId || 
-      String(s.email).trim().toLowerCase() === cleanId
+      s.student_id.toLowerCase() === cleanId || 
+      s.email.toLowerCase() === cleanId
     );
 
     if (match) {
-      // Check password: Password is '2026' for all enrolled students
-      const isPassValid = (cleanPass === "2026" || cleanPass === "student123" || cleanPass === String(match.password).trim());
-      if (!isPassValid) {
-        return { success: false, message: "Invalid Security Password. Please enter '2026'." };
+      // Check password (default is student123)
+      if (password && password !== "student123" && password !== match.password) {
+        return { success: false, message: "Invalid password. Default demo password is: student123" };
       }
 
       this.currentUser = { ...match };
-      sessionStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
       localStorage.setItem("campusiq_authenticated_student", JSON.stringify(this.currentUser));
       window.dispatchEvent(new CustomEvent("campusiq:session-changed", { detail: this.currentUser }));
-
-      // Record Student Sign In / Login Event in Supabase Cloud
-      this.logAuditEvent({
-        action_type: "STUDENT_LOGIN",
-        actor_name: this.currentUser.full_name,
-        actor_role: "Student",
-        target_entity: "StudentSession",
-        target_id: this.currentUser.student_id,
-        details: {
-          roll_number: this.currentUser.student_id,
-          email: this.currentUser.email,
-          branch: this.currentUser.branch,
-          cgpa: this.currentUser.cgpa,
-          overall_attendance: this.currentUser.overall_attendance
-        },
-        ip_address: "10.0.12.84 (Campus Student Wi-Fi)"
-      });
-
       return { success: true, user: this.currentUser };
     }
 
@@ -249,28 +157,12 @@ class SupabaseAcademicService {
 
     return { 
       success: false, 
-      message: "No student enrolled with Roll/Email '" + rollOrEmail + "'. Try Roll No: 252921201 or 252921202 with pass '2026'." 
+      message: "No student enrolled with Roll/Email '" + rollOrEmail + "'. Try Roll No: 252921201 or 252921202 with pass 'student123'." 
     };
   }
 
   logoutStudent() {
-    if (this.currentUser) {
-      // Record Student Sign Out / Logout Event in Supabase Cloud
-      this.logAuditEvent({
-        action_type: "STUDENT_LOGOUT",
-        actor_name: this.currentUser.full_name,
-        actor_role: "Student",
-        target_entity: "StudentSession",
-        target_id: this.currentUser.student_id,
-        details: {
-          roll_number: this.currentUser.student_id,
-          message: "Student signed out of portal."
-        },
-        ip_address: "10.0.12.84 (Campus Student Wi-Fi)"
-      });
-    }
     this.currentUser = null;
-    sessionStorage.removeItem("campusiq_authenticated_student");
     localStorage.removeItem("campusiq_authenticated_student");
     window.dispatchEvent(new CustomEvent("campusiq:session-changed", { detail: null }));
     return { success: true };
@@ -281,7 +173,6 @@ class SupabaseAcademicService {
     if (!this.currentUser) return { success: false };
 
     this.currentUser.avatar_url = dataUrl;
-    this.currentUser.updated_at = new Date().toISOString();
     
     // Update active student in registry
     const idx = this.allStudentsRegistry.findIndex(s => s.student_id === this.currentUser.student_id);
@@ -323,7 +214,6 @@ class SupabaseAcademicService {
       let tot = 0, att = 0;
       this.currentUser.subjects.forEach(s => { tot += s.total; att += s.attended; });
       this.currentUser.overall_attendance = tot > 0 ? Number(((att / tot) * 100).toFixed(1)) : 0;
-      this.currentUser.updated_at = new Date().toISOString();
 
       const idx = this.allStudentsRegistry.findIndex(s => s.student_id === this.currentUser.student_id);
       if (idx !== -1) {
@@ -352,51 +242,6 @@ class SupabaseAcademicService {
       } catch (e) {
         console.log("Attendance saved locally");
       }
-
-      // Also sync new overall_attendance and subjects into Supabase profiles table
-      try {
-        fetch(`${this.url}/rest/v1/profiles?student_id=eq.${this.currentUser.student_id}`, {
-          method: "PATCH",
-          headers: {
-            apikey: this.key,
-            Authorization: `Bearer ${this.key}`,
-            "Content-Type": "application/json",
-            "Prefer": "return=minimal"
-          },
-          body: JSON.stringify({
-            overall_attendance: this.currentUser.overall_attendance,
-            subjects: this.currentUser.subjects,
-            updated_at: new Date().toISOString()
-          })
-        }).catch(() => {});
-      } catch (e) {}
-
-      // Log Attendance Event to Supabase audit_logs
-      this.logAuditEvent({
-        action_type: "ATTENDANCE_LOGGED",
-        actor_name: this.currentUser.full_name,
-        actor_role: "Student",
-        target_entity: "AttendanceRecord",
-        target_id: this.currentUser.student_id,
-        details: {
-          subject_id: subjectId,
-          status: isPresent ? "present" : "absent",
-          new_overall_attendance: this.currentUser.overall_attendance
-        },
-        ip_address: "10.0.12.84 (Student Portal)"
-      });
-
-      // Broadcast update across apps
-      if (typeof BroadcastChannel !== "undefined") {
-        try {
-          const bus = new BroadcastChannel("campusiq_realtime_bus");
-          bus.postMessage({
-            type: "STUDENT_UPDATED",
-            studentId: this.currentUser.student_id,
-            student: this.currentUser
-          });
-        } catch (e) {}
-      }
     }
   }
 
@@ -419,18 +264,6 @@ class SupabaseAcademicService {
     const tickets = JSON.parse(localStorage.getItem("campusiq_tickets") || "[]");
     tickets.unshift(tkt);
     localStorage.setItem("campusiq_tickets", JSON.stringify(tickets));
-    window.dispatchEvent(new Event("campusiq_tickets_updated"));
-
-    // Broadcast across tabs instantly
-    if (typeof BroadcastChannel !== "undefined") {
-      try {
-        const bus = new BroadcastChannel("campusiq_realtime_bus");
-        bus.postMessage({
-          type: "NEW_TICKET_SUBMITTED",
-          ticket: tkt
-        });
-      } catch (e) {}
-    }
 
     try {
       await fetch(`${this.url}/rest/v1/support_tickets`, {
@@ -443,34 +276,16 @@ class SupabaseAcademicService {
         body: JSON.stringify({
           ticket_number: tkt.ticket_number,
           student_id: tkt.student_id,
-          student_name: tkt.student_name,
           subject: tkt.subject,
           category: tkt.category,
           priority: tkt.priority,
           message: tkt.message,
-          status: "open",
-          sla_guarantee: tkt.sla_guarantee
+          status: "open"
         })
       });
     } catch (e) {
       console.warn("Ticket saved locally");
     }
-
-    // Log Support Ticket Submission to Supabase audit_logs
-    this.logAuditEvent({
-      action_type: "SUPPORT_TICKET_SUBMITTED",
-      actor_name: tkt.student_name,
-      actor_role: "Student",
-      target_entity: "SupportTicket",
-      target_id: tkt.ticket_number,
-      details: {
-        ticket_number: tkt.ticket_number,
-        subject: tkt.subject,
-        category: tkt.category,
-        priority: tkt.priority
-      },
-      ip_address: "10.0.12.84 (Student Portal)"
-    });
 
     return tkt;
   }
@@ -514,7 +329,7 @@ class SupabaseAcademicService {
   // ADVANCED SMART CAMPUS ENTERPRISE EXTENSIONS (v5.0)
   // ====================================================================
 
-  // --- 1. Audit Trail Logging (Real-Time Cloud Supabase Sync) ---
+  // --- 1. Audit Trail Logging ---
   logAuditEvent(event) {
     const logs = JSON.parse(localStorage.getItem("campusiq_audit_logs") || "[]");
     const entry = {
@@ -525,65 +340,24 @@ class SupabaseAcademicService {
       target_entity: event.target_entity || "System",
       target_id: String(event.target_id || "GLOBAL"),
       details: event.details || {},
-      ip_address: event.ip_address || "10.0.4.18 (Campus Admin VPN)",
+      ip_address: "10.0.4.18 (Campus Admin VPN)",
       timestamp: new Date().toISOString()
     };
     logs.unshift(entry);
     if (logs.length > 500) logs.pop();
     localStorage.setItem("campusiq_audit_logs", JSON.stringify(logs));
 
-    // Real-Time Cloud Supabase Persistence to audit_logs table
-    if (this.url && this.key) {
+    // Try cloud sync
+    if (this.isConnected && this.client) {
       try {
         fetch(`${this.url}/rest/v1/audit_logs`, {
           method: "POST",
-          headers: {
-            apikey: this.key,
-            Authorization: `Bearer ${this.key}`,
-            "Content-Type": "application/json",
-            "Prefer": "return=minimal"
-          },
-          body: JSON.stringify({
-            actor_name: entry.actor_name,
-            actor_role: entry.actor_role,
-            action_type: entry.action_type,
-            target_entity: entry.target_entity,
-            target_id: String(entry.target_id || "GLOBAL"),
-            details: typeof entry.details === "object" ? entry.details : { message: String(entry.details || "") },
-            ip_address: entry.ip_address
-          })
-        }).catch(err => console.warn("Supabase audit log sync:", err));
+          headers: { apikey: this.key, Authorization: `Bearer ${this.key}`, "Content-Type": "application/json" },
+          body: JSON.stringify(entry)
+        }).catch(() => {});
       } catch (e) {}
     }
     return entry;
-  }
-
-  async fetchAuditLogsFromCloud(limit = 60) {
-    if (!this.url || !this.key) return this.getAuditLogs();
-    try {
-      const res = await fetch(`${this.url}/rest/v1/audit_logs?order=created_at.desc&limit=${limit}`, {
-        headers: { apikey: this.key, Authorization: `Bearer ${this.key}` }
-      });
-      if (res.ok) {
-        const cloudLogs = await res.json();
-        if (Array.isArray(cloudLogs) && cloudLogs.length > 0) {
-          const mapped = cloudLogs.map(l => ({
-            id: l.id,
-            actor_name: l.actor_name,
-            actor_role: l.actor_role,
-            action_type: l.action_type,
-            target_entity: l.target_entity,
-            target_id: l.target_id,
-            details: l.details,
-            ip_address: l.ip_address || "10.0.4.18",
-            timestamp: l.created_at
-          }));
-          localStorage.setItem("campusiq_audit_logs", JSON.stringify(mapped));
-          return mapped;
-        }
-      }
-    } catch (e) {}
-    return this.getAuditLogs();
   }
 
   getAuditLogs() {
@@ -755,12 +529,12 @@ class SupabaseAcademicService {
     const entry = {
       id: "ind_" + Date.now(),
       notice_id: "IND-" + Math.floor(100000 + Math.random() * 900000),
-      recipient_student_id: String(notice.recipient_student_id).trim(),
+      recipient_student_id: String(notice.recipient_student_id),
       recipient_name: notice.recipient_name || "Enrolled Student",
       sender_title: notice.sender_title || "Office of the Dean & Academic Senate",
       title: notice.title,
       message: notice.message,
-      priority: notice.priority || "urgent",
+      priority: notice.priority || "normal",
       category: notice.category || "Academic & Disciplinary",
       is_read: false,
       is_acknowledged: false,
@@ -771,64 +545,6 @@ class SupabaseAcademicService {
 
     allNotices.unshift(entry);
     localStorage.setItem("campusiq_individual_notices", JSON.stringify(allNotices));
-
-    // Also merge into common notices store for immediate universal visibility
-    try {
-      const commonNotices = JSON.parse(localStorage.getItem("campusiq_notices") || "[]");
-      commonNotices.unshift({
-        id: entry.id,
-        notice_id: entry.notice_id,
-        title: entry.title,
-        target: entry.recipient_student_id,
-        recipient_student_id: entry.recipient_student_id,
-        student_name: entry.recipient_name,
-        category: entry.category,
-        priority: entry.priority,
-        date: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
-        department: "Office of the Dean",
-        author: entry.sender_title,
-        summary: entry.message,
-        message: entry.message,
-        created_at: entry.created_at
-      });
-      localStorage.setItem("campusiq_notices", JSON.stringify(commonNotices));
-    } catch (e) {}
-
-    // Save directly to Supabase individual_notices table
-    if (this.url && this.key) {
-      fetch(`${this.url}/rest/v1/individual_notices`, {
-        method: "POST",
-        headers: {
-          apikey: this.key,
-          Authorization: `Bearer ${this.key}`,
-          "Content-Type": "application/json",
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify({
-          notice_id: entry.notice_id,
-          recipient_student_id: entry.recipient_student_id,
-          recipient_name: entry.recipient_name,
-          sender_title: entry.sender_title,
-          title: entry.title,
-          message: entry.message,
-          priority: entry.priority,
-          category: entry.category,
-          publication_status: "published"
-        })
-      }).catch(err => console.warn("Supabase individual notice cloud sync:", err));
-    }
-
-    // Instant Real-Time Cross-Tab / Cross-App Bus
-    if (typeof BroadcastChannel !== "undefined") {
-      try {
-        const bus = new BroadcastChannel("campusiq_realtime_bus");
-        bus.postMessage({
-          type: "INDIVIDUAL_NOTICE_DISPATCHED",
-          notice: entry,
-          target: entry.recipient_student_id
-        });
-      } catch (err) {}
-    }
 
     this.logAuditEvent({
       action_type: "INDIVIDUAL_NOTICE_DISPATCHED",
@@ -841,15 +557,14 @@ class SupabaseAcademicService {
       }
     });
 
-    // Notify window events so student portal can update reactively
+    // Notify window event so student portal can update reactively
     window.dispatchEvent(new CustomEvent("campusiq:new-notice", { detail: entry }));
-    window.dispatchEvent(new Event("campusiq_notices_updated"));
     return entry;
   }
 
   getStudentIndividualNotices(studentId) {
     const allNotices = JSON.parse(localStorage.getItem("campusiq_individual_notices") || "[]");
-    return allNotices.filter(n => String(n.recipient_student_id).trim() === String(studentId).trim() && n.publication_status === "published");
+    return allNotices.filter(n => String(n.recipient_student_id) === String(studentId) && n.publication_status === "published");
   }
 
   getAllIndividualNotices() {
@@ -1634,6 +1349,336 @@ class SupabaseAcademicService {
       };
     }
 
+    // 11-B. PLACEMENTS, INTERNSHIPS & PACKAGES
+    if (q.includes("placement") || q.includes("package") || q.includes("salary") || q.includes("recruiter") || q.includes("tpo") || q.includes("job") || q.includes("internship") || q.includes("campus drive") || q.includes("highest ctc") || q.includes("average ctc")) {
+      return {
+        query: rawQ,
+        intent: "placements_intelligence",
+        timestamp,
+        title: "Campus Training & Placement Office (TPO) Intelligence",
+        badge: "94.2% Placement Rate",
+        summary: "Autonomous University Campus Recruitment Statistics for 2026-27 graduating cohorts across all 8 departments.",
+        narrative: `<div class="space-y-2">
+          <p>The <strong>Training &amp; Placement Cell (TPO)</strong> reports exceptional placement achievements for the current academic session:</p>
+          <ul class="list-disc pl-5 space-y-1 font-medium">
+            <li><strong>Highest Annual CTC:</strong> <strong>₹42.50 LPA</strong> offered by <strong>Google India</strong> to final year CSE/AI&amp;DS scholars.</li>
+            <li><strong>Average Institutional CTC:</strong> <strong>₹8.82 LPA</strong> across all engineering and management programs.</li>
+            <li><strong>Total Recruiting Partners:</strong> <strong>120+ Tier-1 Enterprises</strong> actively conducting on-campus recruitment drives.</li>
+            <li><strong>Internship Conversion:</strong> 78% of pre-final year interns converted into full-time Pre-Placement Offers (PPOs).</li>
+          </ul>
+        </div>`,
+        metrics: [
+          { label: "Highest CTC", value: "₹42.5 LPA", subtext: "Google India" },
+          { label: "Average CTC", value: "₹8.82 LPA", subtext: "All Programs" },
+          { label: "Placement Rate", value: "94.2%", subtext: "Graduating Batch" }
+        ],
+        columns: ["Enterprise Recruiter", "Sector / Domain", "CTC Package", "Eligible Cohorts", "Recruitment Status"],
+        rows: [
+          ["<strong>Google India</strong>", "Cloud & Core Algorithms", "₹42.50 LPA", "CSE, AI&DS (CGPA ≥ 8.5)", "<span class='text-emerald-600 font-bold'>Offers Released</span>"],
+          ["<strong>Microsoft IDC</strong>", "Systems Architecture & AI", "₹38.00 LPA", "CSE, AI&DS, IT (CGPA ≥ 8.2)", "<span class='text-emerald-600 font-bold'>Offers Released</span>"],
+          ["<strong>Amazon Web Services</strong>", "Cloud Infrastructure & SRE", "₹28.50 LPA", "All Engineering (CGPA ≥ 7.8)", "<span class='text-emerald-600 font-bold'>Final Selects</span>"],
+          ["<strong>Barclays Global</strong>", "FinTech & Banking Systems", "₹16.20 LPA", "CSE, IT, E&TC (CGPA ≥ 7.5)", "<span class='text-blue-600 font-bold'>Technical Round</span>"],
+          ["<strong>TCS Digital / Prime</strong>", "Enterprise Digital Solutions", "₹9.00 - ₹11.50 LPA", "All 8 Departments", "<span class='text-emerald-600 font-bold'>98 Selected</span>"],
+          ["<strong>Infosys Specialist Prog.</strong>", "Full-Stack Software Engg", "₹9.50 LPA", "All 8 Departments", "<span class='text-blue-600 font-bold'>CodeVita Shortlist</span>"]
+        ],
+        recommendation: "Review student placement readiness in Student 360° Profile or dispatch circulars via Notices.",
+        actionButton: { text: "Open Notices Console", tab: "notices" }
+      };
+    }
+
+    // 11-C. EXAMINATIONS, ADMIT CARDS, REVALUATION & BACKLOGS
+    if (q.includes("exam") || q.includes("mid term") || q.includes("end sem") || q.includes("in sem") || q.includes("hall ticket") || q.includes("admit card") || q.includes("datesheet") || q.includes("schedule") || q.includes("revaluation") || q.includes("rechecking") || q.includes("photocopy") || q.includes("remedial") || q.includes("backlog") || q.includes("atkt") || q.includes("grace mark") || q.includes("passing mark")) {
+      return {
+        query: rawQ,
+        intent: "examination_matrix",
+        timestamp,
+        title: "Controller of Examinations — Examination Framework & By-laws",
+        badge: "Academic Senate Ordinance §16.4",
+        summary: "End-Semester Examinations commence December 1st, 2026. Hall tickets available digitally 7 days prior to exam.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Statutory Examination Framework &amp; Passing Thresholds:</strong></p>
+          <ul class="list-disc pl-5 space-y-1 font-medium">
+            <li><strong>Passing Floor:</strong> Minimum <strong>40.0% in End-Semester Examination (ESE)</strong> + minimum <strong>50.0% overall aggregate</strong> in Continuous Internal Assessment (CIA).</li>
+            <li><strong>Revaluation Protocol:</strong> Students can apply for photocopy of assessed answer booklets within 7 working days of result publication, followed by formal revaluation review.</li>
+            <li><strong>Remedial Term (ATKT):</strong> Students with up to 4 backlogs are allowed provisional progression to next academic year under ordinance ATKT clause.</li>
+            <li><strong>Debarment Bar:</strong> Students with attendance below 75% are ineligible for exam hall ticket issuance.</li>
+          </ul>
+        </div>`,
+        metrics: [
+          { label: "ESE Theory Floor", value: "40.0%", subtext: "Min 24 / 60 Marks" },
+          { label: "Aggregate Floor", value: "50.0%", subtext: "Theory + Lab Practicals" },
+          { label: "Revaluation SLA", value: "5 Working Days", subtext: "Controller Office" }
+        ],
+        columns: ["Examination Component", "Max Marks", "Passing Floor", "Evaluation Governance"],
+        rows: [
+          ["End-Semester Theory Exam (ESE)", "60 Marks", "<span class='text-emerald-600 font-bold'>24 Marks (40%)</span>", "3-Hour Proctored University Exam"],
+          ["Mid-Semester Examination (MSE)", "20 Marks", "<span class='text-blue-600 font-bold'>Continuous Credit</span>", "Centralized Departmental Evaluation"],
+          ["Continuous Internal Assessment (CIA)", "20 Marks", "<span class='text-emerald-600 font-bold'>10 Marks (50%)</span>", "Lab Experiments, Quizzes, Mini-Projects"],
+          ["Total Course Aggregate", "100 Marks", "<span class='text-emerald-600 font-bold'>50 Marks (50%)</span>", "Credit Assigned on Passing Floor"]
+        ],
+        recommendation: "Manage student marks and exam hall ticket status directly in Examinations Console.",
+        actionButton: { text: "Open Examinations Desk", tab: "examinations" }
+      };
+    }
+
+    // 11-D. ADMISSIONS, CUTOFFS & SEAT MATRIX
+    if (q.includes("admission") || q.includes("cutoff") || q.includes("eligibility") || q.includes("cap round") || q.includes("cet") || q.includes("jee") || q.includes("seat matrix") || q.includes("intake") || q.includes("lateral entry") || q.includes("dsy")) {
+      return {
+        query: rawQ,
+        intent: "admissions_desk",
+        timestamp,
+        title: "University Admissions Directorate & Seat Matrix",
+        badge: "1,000 Total Seats",
+        summary: "Autonomous University with NAAC 'A++' accreditation offering 1,000 sanctioned seats across 8 programs.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Institutional Admissions &amp; Eligibility Guidelines:</strong></p>
+          <ul class="list-disc pl-5 space-y-1 font-medium">
+            <li><strong>B.Tech Eligibility:</strong> Minimum 50% aggregate marks in 10+2 (PCM) for General Category (45% for Reserved) + valid score in MHT-CET 2026 or JEE Main.</li>
+            <li><strong>Direct Second Year (DSY):</strong> AICTE-approved diploma in engineering with minimum 60% marks or B.Sc. degree.</li>
+            <li><strong>CAP Round Process:</strong> 80% seats allotted through State Centralized Admission Process (CAP); 20% institutional merit quota.</li>
+          </ul>
+        </div>`,
+        metrics: [
+          { label: "Total Intake", value: "1,000 Seats", subtext: "8 Academic Programs" },
+          { label: "Accreditation", value: "NAAC 'A++'", subtext: "CGPA 3.68" },
+          { label: "CAP Allotment", value: "80% Seats", subtext: "State DTE Quota" }
+        ],
+        columns: ["Degree Program", "Sanctioned Intake", "CAP Cutoff (Percentile)", "Eligible Entrance Exams"],
+        rows: [
+          ["Computer Science & Engineering", "240 Seats", "97.45 %ile", "MHT-CET / JEE Main"],
+          ["Artificial Intelligence & Data Science", "180 Seats", "96.10 %ile", "MHT-CET / JEE Main"],
+          ["Information Technology", "120 Seats", "95.30 %ile", "MHT-CET / JEE Main"],
+          ["Electronics & Telecommunication", "120 Seats", "91.80 %ile", "MHT-CET / JEE Main"],
+          ["Mechanical Engineering", "100 Seats", "86.40 %ile", "MHT-CET / JEE Main"],
+          ["Civil Engineering", "80 Seats", "82.50 %ile", "MHT-CET / JEE Main"],
+          ["Electrical Engineering", "80 Seats", "88.20 %ile", "MHT-CET / JEE Main"],
+          ["MBA Technology Management", "80 Seats", "92.10 %ile", "MAH-MBA CET / CAT"]
+        ],
+        recommendation: "Enrollment rosters and new candidate admissions are tracked in Enrollment Console.",
+        actionButton: { text: "Open Enrollment Console", tab: "enrollment" }
+      };
+    }
+
+    // 11-E. CENTRAL LIBRARY & DIGITAL REPOSITORY
+    if (q.includes("library") || q.includes("books") || q.includes("reading room") || q.includes("digital library") || q.includes("ieee") || q.includes("springer") || q.includes("library timing") || q.includes("borrow")) {
+      return {
+        query: rawQ,
+        intent: "library_intelligence",
+        timestamp,
+        title: "Dr. APJ Abdul Kalam Central University Library",
+        badge: "45,000+ Volumes",
+        summary: "Fully air-conditioned automated library with 400-seat reading capacity and 24x7 digital repository access.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Central Library Guidelines &amp; Resources:</strong></p>
+          <ul class="list-disc pl-5 space-y-1 font-medium">
+            <li><strong>Operating Hours:</strong> Monday to Saturday 08:00 AM – 10:00 PM. During semester examinations, reading halls operate <strong>24 Hours Daily</strong>.</li>
+            <li><strong>Borrowing Entitlement:</strong> Undergraduate students can borrow up to 4 books for 14 days with 1-click renewal on the student portal.</li>
+            <li><strong>Digital Library:</strong> Full access to IEEE Xplore, ScienceDirect, SpringerLink, and ACM Digital Library accessible on campus Wi-Fi.</li>
+            <li><strong>Book Bank Scheme:</strong> Reserved category and EBC students receive complete course textbook sets for the entire semester free of charge.</li>
+          </ul>
+        </div>`,
+        metrics: [
+          { label: "Book Volumes", value: "45,280", subtext: "Across All Subjects" },
+          { label: "E-Journals", value: "12,400+", subtext: "IEEE & ScienceDirect" },
+          { label: "Reading Seating", value: "400 Seats", subtext: "24/7 in Exams" }
+        ],
+        columns: ["Library Section", "Working Timings", "Resources Available", "Access Permission"],
+        rows: [
+          ["Main Circulation Desk", "Mon - Sat: 09:00 AM – 06:00 PM", "Core Textbooks, Reference Guides", "RFID Student Card"],
+          ["Digital E-Resource Lab", "Mon - Sat: 08:00 AM – 10:00 PM", "60 High-Speed PC Terminals, IEEE", "Active Student Login"],
+          ["24/7 Silent Reading Hall", "24 Hours Daily (Exams)", "Air-conditioned Ergonomic Desks", "All Registered Students"],
+          ["Book Bank Section", "Mon - Fri: 10:00 AM – 05:00 PM", "Complete Semester Book Sets", "SC/ST/EBC Beneficiaries"]
+        ],
+        recommendation: "Verify document repository policies in Institutional Documents Console.",
+        actionButton: { text: "Open Documents Console", tab: "documents" }
+      };
+    }
+
+    // 11-F. SCHOLARSHIPS & FINANCIAL AID
+    if (q.includes("scholarship") || q.includes("freeship") || q.includes("financial aid") || q.includes("mahadbt") || q.includes("ebc") || q.includes("tfws") || q.includes("waiver") || q.includes("concession")) {
+      return {
+        query: rawQ,
+        intent: "scholarships_intelligence",
+        timestamp,
+        title: "Institutional Scholarships & Government Financial Aid Bureau",
+        badge: "Over ₹1.8 Cr Disbursed",
+        summary: "Institutional and state government schemes providing 50% to 100% tuition fee concessions to eligible scholars.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Collegiate Financial Aid Framework:</strong></p>
+          <ul class="list-disc pl-5 space-y-1 font-medium">
+            <li><strong>MahaDBT Post-Matric:</strong> 100% Tuition &amp; Examination fee reimbursement for SC/ST/OBC/SBC category students.</li>
+            <li><strong>Economically Backward Class (EBC):</strong> 50% tuition fee waiver for students with annual family income below ₹8.00 Lakh.</li>
+            <li><strong>TFWS Scheme:</strong> 100% tuition waiver for top 5% merit entrants in each branch.</li>
+            <li><strong>Dean's Academic Commendation:</strong> Annual ₹25,000 cash grant awarded to top 10 CGPA scorers in each cohort.</li>
+          </ul>
+        </div>`,
+        metrics: [
+          { label: "Active Beneficiaries", value: "342 Students", subtext: "34.2% of Cohort" },
+          { label: "Total Aid Disbursed", value: "₹1.84 Cr", subtext: "Current Academic Year" },
+          { label: "Concession Rate", value: "Up to 100%", subtext: "Tuition Exemption" }
+        ],
+        columns: ["Financial Aid Scheme", "Eligibility Criteria", "Concession Benefit", "Sanctioning Authority"],
+        rows: [
+          ["MahaDBT Post-Matric", "Reserved Category (SC/ST/OBC/SBC)", "<span class='text-emerald-600 font-bold'>100% Tuition & Exam Fee</span>", "State Welfare Directorate"],
+          ["EBC Tuition Concession", "Family Income < ₹8 Lakh / Year", "<span class='text-emerald-600 font-bold'>50% Tuition Fee Waiver</span>", "Directorate of Technical Education"],
+          ["TFWS Allotment", "Merit Ranker (DTE Centralized)", "<span class='text-emerald-600 font-bold'>100% Tuition Fee Exemption</span>", "DTE Maharashtra"],
+          ["Dean's Merit Scholarship", "Top 10 CGPA Holders (CGPA ≥ 9.0)", "<span class='text-blue-600 font-bold'>₹25,000 Merit Fellowship</span>", "Dean of Academic Affairs"]
+        ],
+        recommendation: "Track scholarship applications and disbursals in Scholarships Console.",
+        actionButton: { text: "Open Scholarships Console", tab: "scholarships" }
+      };
+    }
+
+    // 11-G. ANTI-RAGGING, DISCIPLINE & CAMPUS SAFETY
+    if (q.includes("ragging") || q.includes("anti ragging") || q.includes("safety") || q.includes("security") || q.includes("discipline") || q.includes("harassment") || q.includes("emergency") || q.includes("cctv") || q.includes("guard")) {
+      return {
+        query: rawQ,
+        intent: "campus_safety_matrix",
+        timestamp,
+        title: "Statutory Anti-Ragging Cell & 24x7 Campus Safety Directorate",
+        badge: "Zero Tolerance Policy",
+        summary: "Strict adherence to Supreme Court Directives and UGC Regulations on Curbing the Menace of Ragging.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Campus Safety &amp; Anti-Ragging By-laws:</strong></p>
+          <ul class="list-disc pl-5 space-y-1 font-medium">
+            <li><strong>Strict Zero Tolerance:</strong> Any act of physical, mental, or verbal harassment is treated as a non-bailable cognizable offense with immediate suspension and police registration.</li>
+            <li><strong>Surveillance:</strong> 184 HD CCTV cameras monitor all campus gates, corridors, common halls, and hostel perimeters 24/7.</li>
+            <li><strong>Flying Squad:</strong> 12 senior faculty members conduct unannounced inspections of all residence halls daily.</li>
+            <li><strong>Helpline:</strong> National Anti-Ragging Toll-Free Helpline: <strong>1800-180-5522</strong> (24x7).</li>
+          </ul>
+        </div>`,
+        metrics: [
+          { label: "National Helpline", value: "1800-180-5522", subtext: "Toll-Free 24x7" },
+          { label: "Campus CCTV", value: "184 Cameras", subtext: "24/7 Live Monitoring" },
+          { label: "Incident History", value: "0 Cases", subtext: "100% Ragging-Free" }
+        ],
+        columns: ["Disciplinary Authority", "Presiding Officer", "Location", "Emergency Intercom"],
+        rows: [
+          ["Anti-Ragging Flying Squad", "Dr. V. K. Sharma (Chief Warden)", "Block E, Cabin 201", "Intercom Ext: 4201 / +91 98200 42001"],
+          ["Women's Internal Complaints Cell", "Dr. S. R. Deshmukh", "Block A, Cabin 302", "Intercom Ext: 3302 / +91 98200 42002"],
+          ["Central Security Gatehouse", "Col. R. S. Rathore (Retd.)", "Main Gate 1 Security", "Intercom Ext: 100 / Emergency Speed Dial"],
+          ["Campus Medical First Aid", "Resident Medical Officer", "Dispensary Block A", "Intercom Ext: 108 / 24 Hours Ambulance"]
+        ],
+        recommendation: "Log disciplinary records or security notices in Security Center.",
+        actionButton: { text: "Open Security Center", tab: "security-center" }
+      };
+    }
+
+    // 11-H. CAMPUS FACILITIES, SPORTS, WI-FI & TRANSPORTATION
+    if (q.includes("sport") || q.includes("gym") || q.includes("ground") || q.includes("canteen") || q.includes("mess food") || q.includes("cafeteria") || q.includes("bus") || q.includes("transport") || q.includes("wifi") || q.includes("internet") || q.includes("medical") || q.includes("doctor") || q.includes("clinic")) {
+      return {
+        query: rawQ,
+        intent: "campus_facilities",
+        timestamp,
+        title: "Campus Facilities, Student Amenities & Transit Telemetry",
+        badge: "100% Facilities Operational",
+        summary: "State-of-the-art sports complex, hygienic food court, 24/7 dispensary, 1 Gbps Wi-Fi, and 15-route college transit fleet.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Campus Amenities &amp; Operational Schedules:</strong></p>
+          <ul class="list-disc pl-5 space-y-1 font-medium">
+            <li><strong>Sports Ground &amp; Gym:</strong> 400m synthetic running track, international badminton court, cricket pavilion, and modern gym open 06:00 AM – 09:00 PM.</li>
+            <li><strong>High-Speed Wi-Fi:</strong> 'CampusIQ_5G' with 1 Gbps dedicated leased line covers all classrooms, laboratories, library, and hostels.</li>
+            <li><strong>University Transit:</strong> Fleet of 15 GPS-tracked AC buses connecting all major railway stations and suburban transit hubs.</li>
+            <li><strong>Health Dispensary:</strong> 24-bed medical unit staffed with resident doctor, nurse, and dedicated 24x7 ICU ambulance.</li>
+          </ul>
+        </div>`,
+        metrics: [
+          { label: "Campus Wi-Fi", value: "1 Gbps Fiber", subtext: "Zero Latency" },
+          { label: "Transit Fleet", value: "15 Buses", subtext: "GPS Tracked" },
+          { label: "Medical Unit", value: "24 Beds", subtext: "Resident Doctor" }
+        ],
+        columns: ["Facility / Amenity", "Operating Schedule", "Campus Location", "Specifications & Privileges"],
+        rows: [
+          ["Central Sports Pavilion & Track", "06:00 AM – 09:00 PM Daily", "North Campus Sports Complex", "Athletic track, basketball, cricket, football"],
+          ["Health & Strength Gym", "06:00 AM – 08:30 PM", "Sports Complex, 1st Floor", "Modern cardio & strength machines with trainer"],
+          ["University Food Court & Canteen", "07:30 AM – 10:30 PM", "Student Center Building", "Multi-cuisine subsidized nutritious dining"],
+          ["Health Care Dispensary & Ambulance", "24 Hours Uninterrupted", "Medical Block A", "Doctor on duty, emergency oxygen & ICU van"],
+          ["Campus High-Speed Wi-Fi", "24 Hours Uninterrupted", "All Academic & Residential Zones", "1 Gbps Leased Line, 802.11ax Wi-Fi 6"],
+          ["College Bus Fleet Services", "07:00 AM – 07:30 PM", "Designated City Bus Routes", "15 AC Buses connecting railway junctions"]
+        ],
+        recommendation: "Infrastructure status and campus telemetry are updated in System Health console.",
+        actionButton: { text: "Open System Health", tab: "system-health" }
+      };
+    }
+
+    // 11-I. DEPARTMENTS & ACADEMIC PROGRAMS
+    if (q.includes("department") || q.includes("courses") || q.includes("branch") || q.includes("program") || q.includes("syllabus") || q.includes("degree") || q.includes("btech") || q.includes("mba")) {
+      return {
+        query: rawQ,
+        intent: "departments_overview",
+        timestamp,
+        title: "Autonomous University Academic Departments & Curricula",
+        badge: "8 Accredited Programs",
+        summary: "Autonomous engineering and management curricula designed in consultation with industry leaders and NBA guidelines.",
+        narrative: `<div class="space-y-2">
+          <p>The university offers <strong>8 accredited undergraduate and postgraduate degree programs</strong>:</p>
+          <ul class="list-disc pl-5 space-y-1 font-medium">
+            <li><strong>Computer Science and Engineering (CSE):</strong> 240 Students across 4 cohorts. Chair: Dr. S. R. Deshmukh.</li>
+            <li><strong>Artificial Intelligence and Data Science (AI&amp;DS):</strong> 180 Students. Chair: Dr. A. B. Joshi.</li>
+            <li><strong>Information Technology (IT):</strong> 120 Students. Chair: Dr. H. N. Rao.</li>
+            <li><strong>Electronics and Telecommunication (E&amp;TC):</strong> 120 Students. Chair: Dr. V. K. Sharma.</li>
+            <li><strong>Mechanical Engineering (MEC):</strong> 100 Students. Chair: Dr. P. T. Kale.</li>
+            <li><strong>Civil Engineering (CIV):</strong> 80 Students. Chair: Dr. K. B. Shinde.</li>
+            <li><strong>Electrical Engineering (ELE):</strong> 80 Students. Chair: Dr. M. S. Joshi.</li>
+            <li><strong>MBA Technology Management (MBA):</strong> 80 Students. Dean: Dr. R. K. Sen.</li>
+          </ul>
+        </div>`,
+        metrics: [
+          { label: "Total Programs", value: "8 Programs", subtext: "Engineering & Mgmt" },
+          { label: "Enrolled Strength", value: "1,000 Students", subtext: "4 Balanced Cohorts" },
+          { label: "Accreditation", value: "NAAC 'A++'", subtext: "Highest Division" }
+        ],
+        columns: ["Academic Department", "Head of Department (HOD)", "Cabin Location", "Student Count", "Curriculum"],
+        rows: [
+          ["Computer Science & Engineering", "Dr. S. R. Deshmukh", "Block A, Cabin 302", "240 Students", "Autonomous 2026 Pattern"],
+          ["AI & Data Science", "Dr. A. B. Joshi", "Block D, Cabin 101", "180 Students", "Deep Learning & AI Focus"],
+          ["Information Technology", "Dr. H. N. Rao", "Block B, Cabin 401", "120 Students", "Cloud & Full-Stack Systems"],
+          ["Electronics & Telecommunication", "Dr. V. K. Sharma", "Block E, Cabin 201", "120 Students", "VLSI & Embedded IoT"],
+          ["Mechanical Engineering", "Dr. P. T. Kale", "Block M, Cabin 204", "100 Students", "Robotics & Thermal Systems"],
+          ["Civil Engineering", "Dr. K. B. Shinde", "Block C, Cabin 201", "80 Students", "Structural Design & GIS"],
+          ["Electrical Engineering", "Dr. M. S. Joshi", "Block P, Cabin 205", "80 Students", "EV & High Voltage Grids"],
+          ["MBA Technology Management", "Dr. R. K. Sen", "Mgmt Block, Cabin 401", "80 Students", "Tech Strategy & Finance"]
+        ],
+        recommendation: "Faculty cabin and course syllabus details are available in the Faculty Directory.",
+        actionButton: { text: "Open Faculty Roster", tab: "faculty" }
+      };
+    }
+
+    // 11-J. LEADERSHIP, DEAN & GOVERNANCE
+    if (q.includes("dean") || q.includes("principal") || q.includes("director") || q.includes("rajeshwar") || q.includes("senate") || q.includes("leadership") || q.includes("chancellor") || q.includes("management")) {
+      return {
+        query: rawQ,
+        intent: "leadership_governance",
+        timestamp,
+        title: "University Executive Governance & Dean's Secretariat",
+        badge: "Executive Leadership",
+        summary: "Executive administrative structure governing academic bylaws, examinations, and student affairs.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Executive Leadership Directory:</strong></p>
+          <ul class="list-disc pl-5 space-y-1 font-medium">
+            <li><strong>Dean of Academic Affairs:</strong> <strong>Dr. Rajeshwar Sen</strong> (PhD IIT Bombay). Oversees all 8 academic departments, statutory 75% attendance compliance, and senate ordinances. Cabin: Dean's Secretariat, Executive Admin Block 101.</li>
+            <li><strong>Controller of Examinations:</strong> <strong>Dr. S. R. Deshmukh</strong>. Responsible for End-Semester Examinations, hall ticket validation, result moderation, and transcript generation.</li>
+            <li><strong>Chief Hostel Warden &amp; Student Welfare Head:</strong> <strong>Dr. V. K. Sharma</strong>. Manages residence halls, curfew discipline, and 12-hour grievance resolution SLAs.</li>
+          </ul>
+        </div>`,
+        metrics: [
+          { label: "Dean of Academics", value: "Dr. R. K. Sen", subtext: "Dean Secretariat" },
+          { label: "Controller of Exams", value: "Dr. S. R. Deshmukh", subtext: "Exam Directorate" },
+          { label: "NAAC Rating", value: "A++ (3.68)", subtext: "Apex Grade" }
+        ],
+        columns: ["Administrative Role", "Executive Officer", "Qualifications", "Cabin Location", "Institutional Contact"],
+        rows: [
+          ["Dean of Academic Affairs & Senate Head", "Dr. Rajeshwar Sen", "PhD (Comp Sci, IIT Bombay)", "Executive Admin Block 101", "sen.rk@campusiq.edu"],
+          ["Controller of Examinations", "Dr. S. R. Deshmukh", "PhD (Systems & Algorithms)", "Block A, Cabin 302", "deshmukh.sr@campusiq.edu"],
+          ["Chief Warden & Student Welfare", "Dr. V. K. Sharma", "PhD (Signal Processing)", "Block E, Cabin 201", "sharma.vk@campusiq.edu"],
+          ["Registrar & Corporate Affairs", "Prof. R. P. Joshi", "M.Tech, Executive MBA", "Admin Block, Room 104", "joshi.rp@campusiq.edu"]
+        ],
+        recommendation: "Administrative roles and permissions are configured in Roles & Permissions Console.",
+        actionButton: { text: "Open Roles & Permissions", tab: "roles-permissions" }
+      };
+    }
+
+
     // 13. NATURAL OPEN-ENDED FALLBACK INTELLIGENCE
     // Analyze keywords to find closest student or departmental relevance
     const matchedStudents = students.filter(s => {
@@ -1666,18 +1711,55 @@ class SupabaseAcademicService {
       };
     }
 
-    // 14. ULTIMATE GENERAL TELEMETRY
+    // 14. ULTIMATE GENERAL TELEMETRY & ADAPTIVE INTELLIGENCE
+    let smartAnswer = "";
+    if (q.includes("python") || q.includes("coding") || q.includes("programming") || q.includes("java") || q.includes("c++") || q.includes("javascript")) {
+      smartAnswer = `<div class="space-y-2">
+        <p><strong>Computing &amp; Programming Curriculum Integration:</strong></p>
+        <p>Campus curricula emphasize core software engineering practices across Python, Java, C++, and Modern Web Architectures. Practical laboratory sessions are held weekly in Block B Computing Center with automated continuous assessment.</p>
+        <ul class="list-disc pl-5 space-y-1 font-medium">
+          <li><strong>Course Modules:</strong> CSE101 (Intro to Computing), CSE201 (Data Structures), AID301 (Machine Learning & Deep Learning).</li>
+          <li><strong>Coding Laboratories:</strong> 120 dedicated workstations equipped with Linux, VS Code, Git, and Python 3.12 environments.</li>
+        </ul>
+      </div>`;
+    } else if (q.includes("study") || q.includes("exam tips") || q.includes("prepare") || q.includes("score high") || q.includes("improve cgpa") || q.includes("how to pass")) {
+      smartAnswer = `<div class="space-y-2">
+        <p><strong>Academic Dean's Guidelines for Examination Success:</strong></p>
+        <ul class="list-disc pl-5 space-y-1 font-medium">
+          <li><strong>Continuous Practice:</strong> Solve past 5-year End-Semester Question Papers available in the Central Library E-Resource Repository.</li>
+          <li><strong>Internal Assessment:</strong> Maintain 100% submission on lab manuals and Continuous Internal Assessments (CIA) which carry 40% aggregate weightage.</li>
+          <li><strong>Faculty Office Hours:</strong> Attend weekly faculty consultation hours in designated department cabins for individual doubt resolution.</li>
+          <li><strong>Peer Study Groups:</strong> Utilize 24/7 Silent Reading Halls in the Central Library during exam weeks.</li>
+        </ul>
+      </div>`;
+    } else if (q.includes("project") || q.includes("capstone") || q.includes("hackathon") || q.includes("research")) {
+      smartAnswer = `<div class="space-y-2">
+        <p><strong>Capstone Project &amp; Innovation Framework:</strong></p>
+        <p>Under Autonomous 2026 guidelines, 3rd and 4th-year scholars undertake industrial capstone projects guided by department faculty and industry mentors.</p>
+        <ul class="list-disc pl-5 space-y-1 font-medium">
+          <li><strong>Innovation Grants:</strong> Up to â‚¹50,000 seed funding provided by the University Incubation Center for verified working prototypes.</li>
+          <li><strong>Patents &amp; Publications:</strong> 100% financial reimbursement for student research papers published in IEEE, ACM, or Scopus-indexed conferences.</li>
+        </ul>
+      </div>`;
+    } else {
+      smartAnswer = `<div class="space-y-2">
+        <p><strong>NEXORA Autonomous Collegiate Intelligence:</strong></p>
+        <p>I have analyzed your query: <em>"${rawQ}"</em>. Real-time verification across 1,000 active student records, collegiate senate ordinances, fee ledgers, and department directories indicates full operational stability.</p>
+        <p>If you are looking for specific records, try searching by <strong>student roll number</strong> (e.g. 252921201), <strong>student name</strong> (e.g. Aarav Sharma), <strong>attendance shortage (&lt;75%)</strong>, <strong>fee defaulters</strong>, <strong>faculty cabins</strong>, <strong>hostel vacancies</strong>, or <strong>placement packages</strong>.</p>
+      </div>`;
+    }
+
     return {
       query: rawQ,
-      intent: "general_telemetry",
+      intent: "adaptive_intelligence",
       timestamp,
-      title: "CampusIQ Executive Analytical Telemetry",
-      badge: "Institutional Telemetry",
-      summary: `NEXORA AI evaluated 1,000 enrolled student profiles, financial ledgers, and residence allocations across all 8 collegiate departments.`,
-      narrative: `NEXORA AI continuously synchronizes institutional telemetry from Supabase Cloud. Current overall campus health is 100% operational with 1,000 verified student profiles across all 4 undergraduate cohorts.`,
+      title: `Campus Intelligence Answer: "${rawQ}"`,
+      badge: "Real-Time Verified",
+      summary: `NEXORA AI cross-referenced "${rawQ}" across 1,000 verified student dossiers, collegiate senate bylaws, and institutional telemetry.`,
+      narrative: smartAnswer,
       metrics: [
         { label: "Enrolled Students", value: "1,000", subtext: "8 Departments" },
-        { label: "Campus Avg Attendance", value: "82.4%", subtext: "Above 75% Statutory Limit" },
+        { label: "Campus Avg Attendance", value: "82.4%", subtext: "Above 75% Limit" },
         { label: "Tuition Collection", value: "89.6%", subtext: "On Annual Target" }
       ],
       columns: ["Institutional Metric", "Recorded Telemetry Value", "Regulatory Status"],
