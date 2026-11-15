@@ -1,4 +1,4 @@
-// ====================================================================
+﻿// ====================================================================
 // CAMPUSIQ — Administrative ERP Controller & Real-Time Sync Engine v2.0
 // Features: 1,000+ Enrolled Students, Year/CGPA Filters, In-Place 360° Editor,
 // Fee Default Warnings, 12-Hour SLA Grievance Desk, Two-Way Supabase Sync
@@ -110,24 +110,12 @@ class CampusIQAdminApp {
 
   // --- Authentication Management ---
   checkSession() {
-    // Check if user has an authorized session in current browser tab session
-    const active = sessionStorage.getItem("campusiq_admin_active_session");
-    if (active) {
-      try {
-        const parsed = JSON.parse(active);
-        if (parsed && parsed.loginId) {
-          this.state.isAuthenticated = true;
-          return;
-        }
-      } catch (e) {}
-    }
+    // Requirement 1: Fresh page load starts strictly unauthenticated with blank inputs!
     this.state.isAuthenticated = false;
   }
 
-this.showToast("Credentials Ready", "Filled login: admin / pass: admin. Click Authenticate to enter.", "info");
-  }
 
-togglePasswordVisibility() {
+  togglePasswordVisibility() {
     const passInput = document.getElementById("admin-login-pass");
     const icon = document.getElementById("toggle-password-icon");
     if (!passInput) return;
@@ -194,7 +182,7 @@ togglePasswordVisibility() {
 
     // 2. Strict validation: ONLY Login Name 'campusiq' and Password '2026' are accepted.
     // Anything else strictly shows wrong and will NOT open!
-    const isLoginValid = (enteredLogin === "campusiq" || enteredLogin === "campusiq.edu" || enteredLogin === "admin@campusiq.edu");
+    const isLoginValid = (enteredLogin === "campusiq");
     const isPassValid = (enteredPass === "2026");
 
     // 3. Strict security management: When wrong credentials entered, DO NOT OPEN!

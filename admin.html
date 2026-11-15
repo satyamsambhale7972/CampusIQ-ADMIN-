@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -28,18 +28,128 @@
   <script src="supabase-service.js"></script>
   
   <!-- Official College Theme CSS (With High-Contrast Light Mode Enhancements) -->
-    <!-- Auto-purge stale cache to ensure all 4 cohorts load fresh & enforce strict login -->
+  <!-- Fail-Safe Instant Authentication Controller -->
   <script>
     (function() {
       try {
+        sessionStorage.removeItem("campusiq_admin_active_session");
         var ver = localStorage.getItem("campusiq_registry_version");
         if (ver !== "2026_cohort_v5_balanced_1000") {
           localStorage.removeItem("campusiq_registry_store");
           localStorage.setItem("campusiq_registry_version", "2026_cohort_v5_balanced_1000");
         }
-        // Session check managed by AdminApp
       } catch(e) {}
     })();
+
+    function handleAdminLogin(e) {
+      if (e) {
+        if (typeof e.preventDefault === "function") e.preventDefault();
+        if (typeof e.stopPropagation === "function") e.stopPropagation();
+      }
+      var userEl = document.getElementById("admin-login-email");
+      var passEl = document.getElementById("admin-login-pass");
+      var errEl = document.getElementById("admin-login-error");
+      var gateEl = document.getElementById("admin-login-gate");
+      var layoutEl = document.getElementById("admin-portal-layout");
+
+      var user = userEl ? userEl.value.trim().toLowerCase() : "";
+      var pass = passEl ? passEl.value.trim() : "";
+
+      if (errEl) {
+        errEl.classList.add("hidden");
+        errEl.textContent = "";
+      }
+
+      if (!user && !pass) {
+        if (errEl) {
+          errEl.textContent = "Mistake: Both Login Name and Security Password are required. Please fill in both fields.";
+          errEl.classList.remove("hidden");
+        }
+        return false;
+      }
+      if (!user) {
+        if (errEl) {
+          errEl.textContent = "Mistake: Administrator Login Name is empty. Please enter your login name.";
+          errEl.classList.remove("hidden");
+        }
+        return false;
+      }
+      if (!pass) {
+        if (errEl) {
+          errEl.textContent = "Mistake: Security Password is empty. Please enter your password.";
+          errEl.classList.remove("hidden");
+        }
+        return false;
+      }
+
+      // Strict security: ONLY Login Name 'campusiq' and Password '2026'
+      var isUserValid = (user === "campusiq");
+      var isPassValid = (pass === "2026");
+
+      if (!isUserValid || !isPassValid) {
+        if (passEl) passEl.value = "";
+        if (errEl) {
+          errEl.textContent = "Mistake: Incorrect Administrator Login Name or Security Password. Access denied.";
+          errEl.classList.remove("hidden");
+        }
+        return false;
+      }
+
+      // Success: Instantly open dashboard interface inside admin portal!
+      if (gateEl) {
+        gateEl.style.setProperty("display", "none", "important");
+        gateEl.classList.add("hidden");
+      }
+      if (layoutEl) {
+        layoutEl.classList.remove("hidden");
+        layoutEl.style.removeProperty("display");
+        layoutEl.style.setProperty("display", "flex", "important");
+        layoutEl.style.visibility = "visible";
+        layoutEl.style.opacity = "1";
+      }
+
+      var sess = JSON.stringify({
+        loginId: "campusiq",
+        email: "admin@campusiq.edu",
+        name: "Dr. Rajeshwar Sen",
+        role: "Dean of Academic Affairs",
+        loginAt: new Date().toISOString()
+      });
+      try {
+        sessionStorage.setItem("campusiq_admin_active_session", sess);
+        localStorage.setItem("campusiq_admin_session", sess);
+      } catch(err) {}
+
+      if (window.AdminApp) {
+        window.AdminApp.state.isAuthenticated = true;
+        try {
+          window.AdminApp.showDashboard();
+        } catch(err) {
+          console.warn("[CampusIQ] Minor warning during showDashboard:", err);
+        }
+      }
+
+      if (window.lucide) {
+        try { window.lucide.createIcons(); } catch(e) {}
+      }
+      return true;
+    }
+
+    function toggleAdminPassword() {
+      var passInput = document.getElementById("admin-login-pass");
+      var icon = document.getElementById("toggle-password-icon");
+      if (!passInput) return;
+      if (passInput.type === "password") {
+        passInput.type = "text";
+        if (icon) icon.setAttribute("data-lucide", "eye-off");
+      } else {
+        passInput.type = "password";
+        if (icon) icon.setAttribute("data-lucide", "eye");
+      }
+      if (window.lucide) {
+        try { window.lucide.createIcons(); } catch(e) {}
+      }
+    }
   </script>
     <!-- Google Fonts: Cinzel & Plus Jakarta Sans / Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -103,7 +213,7 @@
         <div id="admin-login-error" class="hidden mb-4 p-3 rounded-xl bg-red-950/80 border border-red-500 text-red-200 text-xs font-semibold"></div>
 
         <!-- Login Form -->
-        <form onsubmit="event.preventDefault(); if(window.AdminApp) window.AdminApp.handleAdminLogin(event); return false;" class="space-y-4">
+        <form onsubmit="handleAdminLogin(event); return false;" class="space-y-4">
           <div>
             <label class="block text-xs font-bold text-amber-300 uppercase tracking-wider mb-1">Administrator Login Name *</label>
             <div class="relative">
@@ -115,7 +225,7 @@
                 autocomplete="off"
                 placeholder=""
                 class="w-full bg-[#0B132B] text-white placeholder-slate-500 text-xs sm:text-sm font-semibold rounded-xl pl-9 pr-4 py-3 border border-slate-600 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20"
-                onkeydown="if(event.key==='Enter'){event.preventDefault(); if(window.AdminApp) window.AdminApp.handleAdminLogin(event);}"
+                onkeydown="if(event.key==='Enter'){handleAdminLogin(event);}"
               >
               <i data-lucide="user-check" class="w-4 h-4 text-amber-400 absolute left-3 top-3.5"></i>
             </div>
@@ -132,14 +242,14 @@
                 autocomplete="new-password"
                 placeholder=""
                 class="w-full bg-[#0B132B] text-white placeholder-slate-500 text-xs sm:text-sm font-semibold rounded-xl pl-9 pr-11 py-3 border border-slate-600 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20"
-                onkeydown="if(event.key==='Enter'){event.preventDefault(); if(window.AdminApp) window.AdminApp.handleAdminLogin(event);}"
+                onkeydown="if(event.key==='Enter'){handleAdminLogin(event);}"
               >
               <i data-lucide="key-round" class="w-4 h-4 text-amber-400 absolute left-3 top-3.5"></i>
               <!-- Password Show / Hide Key Toggle Button -->
               <button 
                 type="button" 
                 id="btn-toggle-password"
-                onclick="window.AdminApp.togglePasswordVisibility()" 
+                onclick="toggleAdminPassword()" 
                 class="absolute right-3 top-3 p-1 text-slate-400 hover:text-amber-400 transition cursor-pointer" 
                 title="Show or hide password"
               >
@@ -148,7 +258,7 @@
             </div>
           </div>
 
-          <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30 cursor-pointer">
+          <button type="submit" onclick="handleAdminLogin(event)" class="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30 cursor-pointer">
             <i data-lucide="shield-check" class="w-4 h-4"></i>
             <span>Authenticate Administrative Session</span>
           </button>
