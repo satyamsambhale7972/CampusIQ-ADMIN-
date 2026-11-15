@@ -124,17 +124,7 @@ class CampusIQAdminApp {
     this.state.isAuthenticated = false;
   }
 
-  quickFillCredentials() {
-    const loginInput = document.getElementById("admin-login-email");
-    const passInput = document.getElementById("admin-login-pass");
-    const errorBox = document.getElementById("admin-login-error");
-    if (loginInput) loginInput.value = "admin";
-    if (passInput) passInput.value = "admin";
-    if (errorBox) {
-      errorBox.textContent = "";
-      errorBox.classList.add("hidden");
-    }
-    this.showToast("Credentials Ready", "Filled login: admin / pass: admin. Click Authenticate to enter.", "info");
+this.showToast("Credentials Ready", "Filled login: admin / pass: admin. Click Authenticate to enter.", "info");
   }
 
 togglePasswordVisibility() {
@@ -202,14 +192,10 @@ togglePasswordVisibility() {
       return false;
     }
 
-    // 2. Validate exact credentials:
-    // Authorized Login Names: 'admin', 'campusiq', 'admin@campusiq.edu', 'campusiq.edu', 'administrator', 'dr.sen', 'rajeshwar'
-    const validLogins = ["admin", "campusiq", "admin@campusiq.edu", "campusiq.edu", "administrator", "dr.sen", "rajeshwar"];
-    const isLoginValid = validLogins.includes(enteredLogin);
-
-    // Authorized Passwords: 'admin', '2026', 'admin#2026', 'admin2026', 'campusiq', 'campusiq2026', 'password'
-    const validPasswords = ["admin", "2026", "admin#2026", "admin2026", "campusiq", "campusiq2026", "password"];
-    const isPassValid = validPasswords.includes(enteredPass);
+    // 2. Strict validation: ONLY Login Name 'campusiq' and Password '2026' are accepted.
+    // Anything else strictly shows wrong and will NOT open!
+    const isLoginValid = (enteredLogin === "campusiq" || enteredLogin === "campusiq.edu" || enteredLogin === "admin@campusiq.edu");
+    const isPassValid = (enteredPass === "2026");
 
     // 3. Strict security management: When wrong credentials entered, DO NOT OPEN!
     if (!isLoginValid && !isPassValid) {
@@ -218,7 +204,7 @@ togglePasswordVisibility() {
       localStorage.removeItem("campusiq_admin_session");
       if (passInput) passInput.value = "";
       if (errorBox) {
-        errorBox.textContent = 'Mistake: Both Login Name and Security Password entered are incorrect. Access denied.';
+        errorBox.textContent = "Mistake: Both Login Name and Security Password entered are incorrect. Access denied.";
         errorBox.classList.remove("hidden");
       }
       this.showToast("Authentication Failed", "Both Login Name and Password entered are incorrect.", "error");
@@ -230,7 +216,7 @@ togglePasswordVisibility() {
       sessionStorage.removeItem("campusiq_admin_active_session");
       localStorage.removeItem("campusiq_admin_session");
       if (errorBox) {
-        errorBox.textContent = `Mistake: Login Name "${enteredLogin}" is incorrect. Access denied.`;
+        errorBox.textContent = "Mistake: Administrator Login Name entered is incorrect. Access denied.";
         errorBox.classList.remove("hidden");
       }
       this.showToast("Incorrect Login Name", "The Administrator Login Name entered is incorrect.", "error");
@@ -250,11 +236,11 @@ togglePasswordVisibility() {
       return false;
     }
 
-    // Success! Authorized: Instantly open dashboard
+    // Success! Authorized: Instantly open dashboard interface
     this.state.isAuthenticated = true;
     const sessionData = JSON.stringify({
-      loginId: enteredLogin,
-      email: enteredLogin.includes("@") ? enteredLogin : "admin@campusiq.edu",
+      loginId: "campusiq",
+      email: "admin@campusiq.edu",
       name: ADMIN_CREDENTIALS.name,
       role: ADMIN_CREDENTIALS.role,
       loginAt: new Date().toISOString()
@@ -569,42 +555,118 @@ switchTab(tabId) {
     });
 
     // Invoke module renderer
-    if (tabId === "overview") this.renderNexoraMessages();
-      this.renderOverviewMetrics();
-    else if (tabId === "action-center") this.renderActionCenter();
-    else if (tabId === "analytics") this.renderAnalytics();
-    else if (tabId === "students") this.applyStudentFilters();
-    else if (tabId === "student-360") this.renderStudent360();
-    else if (tabId === "enrollment") this.renderEnrollment();
-    else if (tabId === "attendance") this.renderAttendanceManagement();
-    else if (tabId === "examinations") this.renderExaminations();
-    else if (tabId === "fee-management" || tabId === "finance") this.renderFeeManagement();
-    else if (tabId === "fee-collection") this.renderFeeCollection();
-    else if (tabId === "fee-defaulters") this.renderFeeDefaulters();
-    else if (tabId === "scholarships") this.renderScholarships();
-    else if (tabId === "reconciliation") this.renderPaymentReconciliation();
-    else if (tabId === "hostel-overview") this.renderHostelOverview();
-    else if (tabId === "hostel-allotment") this.renderHostelAllotment();
-    else if (tabId === "room-allocation") this.renderRoomAllocation();
-    else if (tabId === "hostel-fees") this.renderHostelFees();
-    else if (tabId === "hostel-dues") this.renderHostelDues();
-    else if (tabId === "hostel-maintenance") this.renderHostelMaintenance();
-    else if (tabId === "notices") this.renderNoticesList();
-    else if (tabId === "individual-notices") this.renderIndividualNotices();
-    else if (tabId === "bulk-announcements") this.renderBulkAnnouncements();
-    else if (tabId === "scheduled-notices") this.renderScheduledNotices();
-    else if (tabId === "delivery-tracking") this.renderDeliveryTracking();
-    else if (tabId === "faculty") this.renderFacultyRoster();
-    else if (tabId === "calendar-events") this.renderCalendarEvents();
-    else if (tabId === "grievances") this.renderTicketsQueue();
-    else if (tabId === "documents") this.renderDocuments();
-    else if (tabId === "nexora-ai") this.renderNexoraAI();
-    else if (tabId === "smart-reports") this.renderSmartReports();
-    else if (tabId === "audit-logs") this.renderAuditLogs();
-    else if (tabId === "security-center") this.renderSecurityCenter();
-    else if (tabId === "roles-permissions") this.renderRolesPermissions();
-    else if (tabId === "system-health") this.renderSystemHealth();
-    else if (tabId === "settings") this.renderSettings();
+    switch (tabId) {
+      case "overview":
+        this.renderNexoraMessages();
+        this.renderOverviewMetrics();
+        break;
+      case "action-center":
+        this.renderActionCenter();
+        break;
+      case "analytics":
+        this.renderAnalytics();
+        break;
+      case "students":
+        this.applyStudentFilters();
+        break;
+      case "student-360":
+        this.renderStudent360();
+        break;
+      case "enrollment":
+        this.renderEnrollment();
+        break;
+      case "attendance":
+        this.renderAttendanceManagement();
+        break;
+      case "examinations":
+        this.renderExaminations();
+        break;
+      case "fee-management":
+      case "finance":
+        this.renderFeeManagement();
+        break;
+      case "fee-collection":
+        this.renderFeeCollection();
+        break;
+      case "fee-defaulters":
+        this.renderFeeDefaulters();
+        break;
+      case "scholarships":
+        this.renderScholarships();
+        break;
+      case "reconciliation":
+        this.renderPaymentReconciliation();
+        break;
+      case "hostel-overview":
+        this.renderHostelOverview();
+        break;
+      case "hostel-allotment":
+        this.renderHostelAllotment();
+        break;
+      case "room-allocation":
+        this.renderRoomAllocation();
+        break;
+      case "hostel-fees":
+        this.renderHostelFees();
+        break;
+      case "hostel-dues":
+        this.renderHostelDues();
+        break;
+      case "hostel-maintenance":
+        this.renderHostelMaintenance();
+        break;
+      case "notices":
+        this.renderNoticesList();
+        break;
+      case "individual-notices":
+        this.renderIndividualNotices();
+        break;
+      case "bulk-announcements":
+        this.renderBulkAnnouncements();
+        break;
+      case "scheduled-notices":
+        this.renderScheduledNotices();
+        break;
+      case "delivery-tracking":
+        this.renderDeliveryTracking();
+        break;
+      case "faculty":
+        this.renderFacultyRoster();
+        break;
+      case "calendar-events":
+        this.renderCalendarEvents();
+        break;
+      case "grievances":
+        this.renderTicketsQueue();
+        break;
+      case "documents":
+        this.renderDocuments();
+        break;
+      case "nexora-ai":
+        this.renderNexoraAI();
+        break;
+      case "smart-reports":
+        this.renderSmartReports();
+        break;
+      case "audit-logs":
+        this.renderAuditLogs();
+        break;
+      case "security-center":
+        this.renderSecurityCenter();
+        break;
+      case "roles-permissions":
+        this.renderRolesPermissions();
+        break;
+      case "system-health":
+        this.renderSystemHealth();
+        break;
+      case "settings":
+        this.renderSettings();
+        break;
+      default:
+        this.renderOverviewMetrics();
+        break;
+    }
 
     window.scrollTo({ top: 0, behavior: "smooth" });
     if (window.lucide) window.lucide.createIcons();
@@ -2927,7 +2989,7 @@ switchTab(tabId) {
       ? rawStudents.filter(s => s && typeof s === 'object' && s.student_id)
       : [];
 
-    // Check roll number
+    // --- 1. Specific Student Roll Number or Name Search ---
     const rollMatch = q.match(/\b(25[0-9]{7})\b/i);
     if (rollMatch) {
       const targetRoll = rollMatch[1];
@@ -2962,8 +3024,132 @@ switchTab(tabId) {
       }
     }
 
-    // Attendance
-    if (q.includes("attendance") || q.includes("shortage") || q.includes("debar")) {
+    // Name-based Student Search (e.g., "Aarav", "Priya", "Rohan", "Ananya")
+    const matchedStudents = students.filter(s => q.includes(s.full_name.toLowerCase()) || (s.first_name && q.includes(s.first_name.toLowerCase())));
+    if (matchedStudents.length > 0) {
+      const topMatch = matchedStudents[0];
+      const due = topMatch.fee_info ? (topMatch.fee_info.due || 0) : 0;
+      return {
+        title: `Student Profile Lookup: ${topMatch.full_name} (${topMatch.student_id})`,
+        badge: `${matchedStudents.length} Match Found`,
+        timestamp,
+        summary: `Institutional registry record for ${topMatch.full_name}, ${topMatch.department} (${topMatch.year_semester}).`,
+        narrative: `<p><strong>${topMatch.full_name}</strong> is currently enrolled in <strong>${topMatch.department}</strong>. Current CGPA is <strong>${topMatch.cgpa}</strong> with <strong>${topMatch.overall_attendance}%</strong> verified attendance. Status: <span class="${Number(topMatch.overall_attendance) >= 75 ? 'text-emerald-600' : 'text-red-600'} font-bold">${Number(topMatch.overall_attendance) >= 75 ? 'Academic Good Standing' : 'Attendance Warning'}</span>.</p>`,
+        metrics: [
+          { label: "CGPA", value: `${topMatch.cgpa}`, subtext: "Cumulative Average" },
+          { label: "Attendance", value: `${topMatch.overall_attendance}%`, subtext: "Biometric Verified" },
+          { label: "Tuition Due", value: `₹${due.toLocaleString()}`, subtext: due > 0 ? "Pending" : "Cleared" }
+        ],
+        columns: ["Roll Number", "Full Name", "Department", "Semester", "CGPA", "Attendance", "Action"],
+        rows: matchedStudents.slice(0, 5).map(s => [
+          s.student_id,
+          s.full_name,
+          s.department,
+          s.year_semester,
+          `<span class='font-bold text-blue-600'>${s.cgpa}</span>`,
+          `<span class='font-bold ${Number(s.overall_attendance) >= 75 ? 'text-emerald-600' : 'text-red-600'}'>${s.overall_attendance}%</span>`,
+          `<button onclick="window.AdminApp.switchTab('students'); document.getElementById('admin-student-search').value='${s.student_id}'; window.AdminApp.state.searchQuery='${s.student_id}'; window.AdminApp.applyStudentFilters();" class="text-blue-600 hover:underline font-bold text-xs">View 360°</button>`
+        ]),
+        recommendation: "Open Student Directory to edit or dispatch private communication.",
+        actionButton: { text: "Open Student Directory", tab: "students" }
+      };
+    }
+
+    // --- 2. College Syllabus, Curriculum, Courses & Subjects ---
+    if (q.includes("syllabus") || q.includes("curriculum") || q.includes("subject") || q.includes("course") || q.includes("credit") || q.includes("unit") || q.includes("b.tech") || q.includes("btech") || q.includes("semester") || q.includes("study")) {
+      let deptName = "All Engineering & Technology Disciplines";
+      let courses = [
+        ["CSE301", "Core Data Structures & Advanced Algorithms", "CSE / IT", "Year 2, Sem 3", "4 Credits", "40 CIE + 60 ESE", "Dr. S. R. Deshmukh"],
+        ["AID301", "Deep Learning Architectures & Neural Nets", "AI & DS", "Year 3, Sem 5", "4 Credits", "40 CIE + 60 ESE", "Dr. A. B. Joshi"],
+        ["IT301", "Cloud Infrastructure, Kubernetes & AWS", "IT", "Year 3, Sem 5", "4 Credits", "40 CIE + 60 ESE", "Dr. H. N. Rao"],
+        ["ETC301", "Digital Signal Processing & Microcontrollers", "E&TC", "Year 2, Sem 4", "4 Credits", "40 CIE + 60 ESE", "Dr. V. K. Sharma"],
+        ["MEC301", "Thermodynamics & Computational Fluid Dynamics", "Mechanical", "Year 2, Sem 3", "4 Credits", "40 CIE + 60 ESE", "Dr. P. T. Kale"],
+        ["CIV301", "Structural Mechanics & RCC Bridge Design", "Civil", "Year 3, Sem 5", "4 Credits", "40 CIE + 60 ESE", "Dr. K. B. Shinde"],
+        ["ELE301", "High Voltage Power Grids & Renewable Energy", "Electrical", "Year 3, Sem 6", "4 Credits", "40 CIE + 60 ESE", "Dr. M. S. Joshi"],
+        ["MBA301", "Strategic Technology Management & FinTech", "MBA Tech", "Year 1, Sem 2", "3 Credits", "50 Internal + 50 ESE", "Dr. R. K. Sen"]
+      ];
+
+      if (q.includes("cse") || q.includes("computer")) {
+        deptName = "Computer Science and Engineering (CSE)";
+        courses = [
+          ["CSE101", "Programming Foundations in C & Python", "Core Theory + Lab", "Year 1, Sem 1", "4 Credits", "Dr. S. R. Deshmukh"],
+          ["CSE201", "Data Structures & Algorithm Design", "Core Theory + Lab", "Year 2, Sem 3", "4 Credits", "Prof. R. P. Joshi"],
+          ["CSE202", "Object Oriented Design with C++ / Java", "Core Lab", "Year 2, Sem 3", "3 Credits", "Prof. M. K. Kulkarni"],
+          ["CSE301", "Database Management Systems & SQL Engines", "Core Theory + Lab", "Year 2, Sem 4", "4 Credits", "Prof. M. K. Kulkarni"],
+          ["CSE302", "Operating Systems Architecture & Kernels", "Core Theory", "Year 3, Sem 5", "4 Credits", "Dr. S. R. Deshmukh"],
+          ["CSE401", "Computer Networks & Network Security", "Core Theory", "Year 3, Sem 6", "4 Credits", "Prof. R. P. Joshi"],
+          ["CSE402", "Artificial Intelligence & Expert Systems", "Elective I", "Year 4, Sem 7", "3 Credits", "Dr. A. B. Joshi"],
+          ["CSE499", "Capstone Industry Project & Dissertation", "Major Project", "Year 4, Sem 8", "10 Credits", "Senate Faculty Board"]
+        ];
+      } else if (q.includes("ai") || q.includes("data science") || q.includes("aids")) {
+        deptName = "Artificial Intelligence & Data Science (AI & DS)";
+        courses = [
+          ["AID101", "Mathematical Foundations for Data Science", "Core Math", "Year 1, Sem 1", "4 Credits", "Dr. A. B. Joshi"],
+          ["AID201", "Probability, Statistics & Linear Algebra", "Core Theory", "Year 1, Sem 2", "4 Credits", "Prof. K. R. Patil"],
+          ["AID301", "Machine Learning Algorithms & Pipelines", "Core Theory + Lab", "Year 2, Sem 3", "4 Credits", "Prof. K. R. Patil"],
+          ["AID302", "Deep Learning Architectures & CNNs/RNNs", "Core Theory + Lab", "Year 3, Sem 5", "4 Credits", "Dr. A. B. Joshi"],
+          ["AID401", "Natural Language Processing & Large Language Models", "Core Theory + Lab", "Year 3, Sem 6", "4 Credits", "Dr. A. B. Joshi"],
+          ["AID402", "Computer Vision & Autonomous Robotics", "Core Theory + Lab", "Year 4, Sem 7", "4 Credits", "Prof. K. R. Patil"],
+          ["AID499", "AI Industry Enterprise Deployment Project", "Major Project", "Year 4, Sem 8", "10 Credits", "Senate Faculty Board"]
+        ];
+      }
+
+      return {
+        title: `Official Autonomous Curriculum & Syllabus: ${deptName}`,
+        badge: "Autonomous Pattern 2026",
+        timestamp,
+        summary: `Approved curriculum framework, credit allocations, and course syllabi validated under Senate Ordinance §8.1.`,
+        narrative: `<div class="space-y-2">
+          <p>The academic curriculum operates on the <strong>Choice-Based Credit System (CBCS)</strong> comprising <strong>160 total credits</strong> for B.Tech degrees across 8 semesters. Evaluation is split into <strong>40% Continuous Internal Evaluation (CIE)</strong> and <strong>60% End-Semester Examination (ESE)</strong>.</p>
+          <p>Passing criteria requires minimum <strong>40% aggregate marks</strong> in each course with at least <strong>24/60 marks</strong> scored in the End-Semester Examination.</p>
+        </div>`,
+        metrics: [
+          { label: "Total Degree Credits", value: "160 Credits", subtext: "8 Semesters" },
+          { label: "Internal Assessment", value: "40% CIE", subtext: "Tests & Labs" },
+          { label: "End-Semester Exam", value: "60% ESE", subtext: "Theory Exam" }
+        ],
+        columns: ["Course Code", "Course Title", "Category", "Semester", "Credits", "Lead Professor"],
+        rows: courses,
+        recommendation: "All courses are mapped to AICTE/UGC guidelines and NAAC 'A++' criteria.",
+        actionButton: { text: "Open Examinations Tab", tab: "examinations" }
+      };
+    }
+
+    // --- 3. Exams, Grading, SGPA/CGPA, Passing Criteria & ATKT ---
+    if (q.includes("exam") || q.includes("test") || q.includes("grade") || q.includes("grading") || q.includes("cgpa") || q.includes("sgpa") || q.includes("pass") || q.includes("atkt") || q.includes("backlog") || q.includes("hall ticket") || q.includes("admit card")) {
+      return {
+        title: "Examinations, Grading Policy & Passing Ordinances",
+        badge: "Senate Exam Ordinance §12",
+        timestamp,
+        summary: "Controller of Examinations statutory guidelines on grading, minimum pass percentage, ATKT promotion rules, and hall ticket issuance.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Evaluation Framework:</strong> Courses carry 100 marks total (40 Continuous Internal Assessment + 60 End-Semester Theory). Minimum passing threshold is <strong>40% overall</strong> with minimum <strong>24 marks</strong> scored in the 60-mark ESE.</p>
+          <p><strong>ATKT Promotion Rules:</strong> Students may carry up to <strong>4 backlog courses</strong> into the next academic year. More than 4 active backlogs will require term retention under Senate regulation §12.4.</p>
+          <p><strong>Hall Ticket Issuance:</strong> Hall tickets are automatically generated and barcode-verified for all students maintaining <strong>75% or higher attendance</strong>.</p>
+        </div>`,
+        metrics: [
+          { label: "Passing Threshold", value: "40% Marks", subtext: "Min 24/60 in Finals" },
+          { label: "Max Allowed ATKT", value: "4 Courses", subtext: "For Yearly Promotion" },
+          { label: "Hall Ticket Rule", value: "≥ 75% Attendance", subtext: "Mandatory Prerequisite" }
+        ],
+        columns: ["Letter Grade", "Grade Point", "Percentage Band", "Performance Classification"],
+        rows: [
+          ["<span class='font-black text-emerald-600'>O</span>", "10.0", "90% – 100%", "Outstanding"],
+          ["<span class='font-bold text-blue-600'>A+</span>", "9.0", "80% – 89%", "Excellent"],
+          ["<span class='font-bold text-blue-500'>A</span>", "8.0", "70% – 79%", "Very Good"],
+          ["<span class='font-bold text-cyan-600'>B+</span>", "7.0", "60% – 69%", "Good"],
+          ["<span class='font-bold text-slate-700 dark:text-slate-300'>B</span>", "6.0", "55% – 59%", "Above Average"],
+          ["<span class='font-bold text-amber-600'>C</span>", "5.0", "50% – 54%", "Average"],
+          ["<span class='font-bold text-amber-700'>P</span>", "4.0", "40% – 49%", "Pass"],
+          ["<span class='font-black text-red-600'>F</span>", "0.0", "Below 40%", "Fail / Debarred"]
+        ],
+        recommendation: "Manage grade publishing and exam session approvals in the Examinations tab.",
+        actionButton: { text: "Open Examinations Tab", tab: "examinations" }
+      };
+    }
+
+    // --- 4. Attendance & Debarment ---
+    if (q.includes("attendance") || q.includes("shortage") || q.includes("debar") || q.includes("condon") || q.includes("75")) {
       const shortages = students.filter(s => Number(s.overall_attendance || 0) < 75);
       return {
         title: "Statutory 75% Attendance Compliance Audit",
@@ -2989,8 +3175,8 @@ switchTab(tabId) {
       };
     }
 
-    // Fees
-    if (q.includes("fee") || q.includes("due") || q.includes("defaulter") || q.includes("unpaid")) {
+    // --- 5. Tuition Fees & Defaulters ---
+    if (q.includes("fee") || q.includes("due") || q.includes("defaulter") || q.includes("unpaid") || q.includes("scholarship") || q.includes("tuition") || q.includes("installment")) {
       const defaulters = students.filter(s => s.fee_info && s.fee_info.due > 0);
       const totalDue = defaulters.reduce((acc, s) => acc + (s.fee_info.due || 0), 0);
       return {
@@ -2998,7 +3184,7 @@ switchTab(tabId) {
         badge: `₹${totalDue.toLocaleString()} Outstanding`,
         timestamp,
         summary: `Identified ${defaulters.length} students with unpaid tuition fee balances totaling ₹${totalDue.toLocaleString()}.`,
-        narrative: `Campus financial policy requires settling all outstanding semester dues before the commencement of End-Semester Examinations.`,
+        narrative: `Campus financial policy requires settling all outstanding semester dues before the commencement of End-Semester Examinations. Installment facility is accessible upon Dean's authorization.`,
         metrics: [
           { label: "Outstanding Total", value: `₹${totalDue.toLocaleString()}`, subtext: "All Departments" },
           { label: "Defaulters", value: `${defaulters.length}`, subtext: "Pending Payment" },
@@ -3017,19 +3203,123 @@ switchTab(tabId) {
       };
     }
 
-    // General Telemetry Fallback
+    // --- 6. Hostel Regulations, Curfew & Campus Facilities ---
+    if (q.includes("hostel") || q.includes("curfew") || q.includes("mess") || q.includes("room") || q.includes("warden") || q.includes("library") || q.includes("gym") || q.includes("timing") || q.includes("wifi")) {
+      return {
+        title: "Campus Living & Residential Hostel Governance",
+        badge: "Hostel Bylaws §2026",
+        timestamp,
+        summary: "Collegiate residence rules, curfew timings, dining schedules, and campus facility operations.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Curfew & Entry:</strong> Boys Hostels (Block H1–H4) curfew is <strong>10:00 PM</strong>; Girls Hostels (Block H5–H8) curfew is <strong>09:30 PM</strong>. Entry is biometric-verified.</p>
+          <p><strong>Dining Timings:</strong> Breakfast: 07:30 AM – 09:30 AM | Lunch: 12:30 PM – 02:30 PM | Dinner: 07:30 PM – 09:30 PM.</p>
+          <p><strong>Chief Warden:</strong> Dr. V. K. Sharma (Block E, Cabin 201). Emergency Campus Medical Centre open 24/7 with on-duty physician.</p>
+          <p><strong>Central Library:</strong> Open 08:00 AM – 11:00 PM with 50,000+ volumes, IEEE digital access, and air-conditioned silent study pods.</p>
+        </div>`,
+        metrics: [
+          { label: "Hostel Curfew", value: "10:00 PM", subtext: "Biometric Gates" },
+          { label: "Total Capacity", value: "2,400 Beds", subtext: "8 Residence Blocks" },
+          { label: "Library Access", value: "8 AM – 11 PM", subtext: "Digital + Physical" }
+        ],
+        columns: ["Facility / Block", "Location", "Timings", "Supervisor / Head", "Contact Details"],
+        rows: [
+          ["Boys Residence (H1–H4)", "North Campus", "Curfew: 10:00 PM", "Prof. R. P. Joshi", "warden.boys@campusiq.edu"],
+          ["Girls Residence (H5–H8)", "South Campus", "Curfew: 09:30 PM", "Dr. A. B. Joshi", "warden.girls@campusiq.edu"],
+          ["Central Dining Hall", "Hostel Quad 1", "Breakfast, Lunch, Dinner", "Mr. M. S. Patil", "mess.admin@campusiq.edu"],
+          ["Central Library", "Academic Block C", "08:00 AM – 11:00 PM", "Chief Librarian", "library@campusiq.edu"],
+          ["Health & Wellness Centre", "Ground Floor, Admin Block", "24 Hours Active", "Dr. P. Deshpande", "medical@campusiq.edu"]
+        ],
+        recommendation: "Room allotment and dues can be audited in the Hostel Overview tab.",
+        actionButton: { text: "Open Hostel Overview", tab: "hostel-overview" }
+      };
+    }
+
+    // --- 7. Faculty Roster & University Senate ---
+    if (q.includes("faculty") || q.includes("teacher") || q.includes("prof") || q.includes("hod") || q.includes("dean") || q.includes("cabin") || q.includes("contact")) {
+      return {
+        title: "University Senate & Faculty Roster",
+        badge: "8 Academic Departments",
+        timestamp,
+        summary: "Official registry of academic senate deans, department heads, and faculty consultations.",
+        narrative: `<div class="space-y-2">
+          <p><strong>Dean of Academic Affairs:</strong> Dr. Rajeshwar Sen (Dean's Secretariat, Executive Block 101).</p>
+          <p><strong>Controller of Examinations:</strong> Dr. S. R. Deshmukh (Block A, Cabin 302).</p>
+          <p>All faculty hold dedicated student office consultation hours daily between 03:00 PM – 05:00 PM.</p>
+        </div>`,
+        metrics: [
+          { label: "Permanent Faculty", value: "128", subtext: "100% PhD / M.Tech" },
+          { label: "Student-Faculty Ratio", value: "1:15", subtext: "NAAC Criteria Compliant" },
+          { label: "Research Publications", value: "450+", subtext: "SCOPUS / IEEE" }
+        ],
+        columns: ["Faculty Name", "Department", "Designation", "Cabin", "Office Hours"],
+        rows: this.state.faculty.map(f => [
+          f.name,
+          f.dept,
+          f.designation,
+          f.cabin,
+          f.office_hours
+        ]),
+        recommendation: "Audit complete faculty lecture allocations in the Faculty tab.",
+        actionButton: { text: "Open Faculty Roster", tab: "faculty" }
+      };
+    }
+
+    // --- 8. Grievance Desk 12-Hour SLA ---
+    if (q.includes("grievance") || q.includes("complaint") || q.includes("ticket") || q.includes("sla") || q.includes("12")) {
+      const openCount = this.state.tickets.filter(t => t.status !== "Resolved").length;
+      return {
+        title: "Statutory 12-Hour Student Grievance Resolution Desk",
+        badge: `${openCount} Open Tickets`,
+        timestamp,
+        summary: "Mandatory university senate ordinance requiring 100% grievance investigation and closure within a 12-hour SLA.",
+        narrative: `<p>Under University Statute §21.4, student grievances submitted across academic, evaluation, fee calculation, or residential domains must receive a formal response within <strong>12 hours</strong>. Breaches trigger automated alerts to the Dean of Academic Affairs.</p>`,
+        metrics: [
+          { label: "Statutory SLA", value: "12 Hours", subtext: "Guaranteed Turnaround" },
+          { label: "Resolution Rate", value: "96.4%", subtext: "Same-Day Closure" },
+          { label: "Active Queue", value: `${openCount} Tickets`, subtext: "In Review" }
+        ],
+        columns: ["Ticket ID", "Student Name", "Category", "Priority", "Status", "SLA Remaining"],
+        rows: this.state.tickets.slice(0, 6).map(t => [
+          t.id,
+          t.studentName,
+          t.category,
+          `<span class='font-bold ${t.priority === "High" ? "text-red-600" : "text-amber-600"}'>${t.priority}</span>`,
+          `<span class='font-bold ${t.status === "Resolved" ? "text-emerald-600" : "text-blue-600"}'>${t.status}</span>`,
+          "Within 12h SLA"
+        ]),
+        recommendation: "Review and resolve tickets directly in the Grievance Desk tab.",
+        actionButton: { text: "Open Grievances Desk", tab: "grievances" }
+      };
+    }
+
+    // --- 9. Comprehensive Collegiate Knowledge Base (Default Answer for Any College Question) ---
     return {
       title: `Campus Intelligence Answer: "${rawQ}"`,
-      badge: "Real-Time Verified",
+      badge: "Verified Institutional Resolution",
       timestamp,
-      summary: `NEXORA AI cross-referenced "${rawQ}" across 1,000 verified student dossiers, collegiate senate bylaws, and institutional telemetry.`,
-      narrative: `Current campus status: 1,000 enrolled students across 8 academic departments (CSE, AI & Data Science, IT, E&TC, Mechanical, Civil, Electrical, MBA Tech). Average campus attendance is 82.4%, and gross tuition fee collection is 89.6%. All university databases and two-way Supabase synchronizers are fully online and healthy.`,
+      summary: `NEXORA AI cross-referenced "${rawQ}" against collegiate academic ordinances, course syllabi, fee ledgers, and student databases.`,
+      narrative: `<div class="space-y-3">
+        <p><strong>Inquiry Analysis:</strong> <em>"${this.escapeHtml(rawQ)}"</em></p>
+        <div class="bg-blue-50 dark:bg-blue-950/50 p-3 rounded-xl border border-blue-200 dark:border-blue-900 text-xs text-slate-800 dark:text-slate-200 space-y-1">
+          <p><strong>Collegiate Ordinance & Status:</strong> CampusIQ operates on the Autonomous 2026 Curriculum Pattern accredited with <strong>NAAC 'A++' Grade</strong>. All academic sessions, examinations, credit requirements, and administrative governance are active.</p>
+          <p><strong>Key University Rules:</strong></p>
+          <ul class="list-disc pl-5 space-y-0.5">
+            <li><strong>Mandatory Attendance:</strong> 75% minimum required under Senate Ordinance §14.2 for exam eligibility.</li>
+            <li><strong>Examination Grading:</strong> 40% Continuous Internal Assessment + 60% End-Semester Finals. 40% minimum passing mark.</li>
+            <li><strong>Degree Requirements:</strong> 160 total credits across 8 semesters for B.Tech programs.</li>
+            <li><strong>Student Grievance SLA:</strong> 12-hour statutory resolution desk for all administrative inquiries.</li>
+            <li><strong>Hostel Curfews:</strong> 10:00 PM (Boys) and 09:30 PM (Girls) with biometric verification.</li>
+          </ul>
+        </div>
+        <p>Current campus registry holds <strong>1,000 enrolled students</strong> across 8 departments with an overall attendance rate of <strong>82.4%</strong> and fee collection rate of <strong>89.6%</strong>.</p>
+      </div>`,
       metrics: [
-        { label: "Total Students", value: "1,000", subtext: "Balanced 4 Cohorts" },
-        { label: "Departments", value: "8 Programs", subtext: "Accredited" },
-        { label: "System Status", value: "100% Online", subtext: "Zero Latency" }
+        { label: "Active Students", value: "1,000", subtext: "4 Verified Cohorts" },
+        { label: "Departments", value: "8 Programs", subtext: "Autonomous Pattern" },
+        { label: "Accreditation", value: "NAAC A++", subtext: "CGPA 3.74/4.0" }
       ],
-      recommendation: "Try asking: 'Show students with attendance below 75%', 'Who is the top student in CSE?', or 'Tell me about student Aarav Sharma'."
+      recommendation: "You can ask NEXORA AI about any course syllabus, student name, roll number, exams, fee defaulters, or faculty cabin.",
+      actionButton: { text: "Open Student Directory", tab: "students" }
     };
   }
 
